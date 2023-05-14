@@ -1,0 +1,30 @@
+# main links
+main:
+  - title: "Category"
+    url: /categories-grid/ #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Tag"
+    url: /tags/ #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "By Year"
+    url: /year-archive-grid/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  - title: "Search"
+    url: /search/
+
+docs:
+  - title: "목차"
+    children:
+    # - title: "DeepLearning"
+    #   url: /deeplearning/
+    - title: "카테고리"
+      url: /categories/
+    - title: "Algorithm & Data Structure"
+      url: /categories/algo/
+
+    
