@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Project/2023-05-14.md",
+                "file": "Django_Project/2023-05-14-test.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Project/2023-05-14.md",
+                "file": "Django_Project/2023-05-14-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Project/2023-05-14.md",
+                "file": "Django_Project/2023-05-14-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Project/2023-05-14.md"
+                "file": "Django_Project/2023-05-14-test.md"
               }
             }
           }
@@ -146,10 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8410b7b9c6b2312",
+  "active": "db48f9cdfef3b3ef",
   "lastOpenFiles": [
-    "Django_Project/2023-05-14.md",
-    "Untitled",
-    "Django_Project"
+    "DeepLearning/ch5_오차역전파법/2023-05-07-Backpropagation practice.md",
+    "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
+    "DeepLearning/ch5_오차역전파법",
+    "DeepLearning/ch4_신경망 학습/2023-04-14-Learning Algorithm.md",
+    "DeepLearning/ch4_신경망 학습/2023-04-09-Neural network training.md",
+    "DeepLearning/ch4_신경망 학습",
+    "DeepLearning/ch3_신경망/2023-03-30-Neural network.md",
+    "DeepLearning/ch3_신경망",
+    "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
+    "DeepLearning/ch2_퍼셉트론",
+    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화/2023-05-14-Batch Normalization.md",
+    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화",
+    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값/2023-05-12-Weight initialization.md",
+    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값",
+    "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신/2023-05-12- parameter update.md",
+    "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신",
+    "DeepLearning/ch6_학습 관련 기술",
+    "Untitled 1",
+    "Django_Project/2023-05-14-test.md",
+    "DeepLearning"
   ]
 }
