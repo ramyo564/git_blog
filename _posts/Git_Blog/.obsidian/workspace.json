@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Project/2023-05-14-test.md",
+                "file": "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Project/2023-05-14-test.md",
+                "file": "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Project/2023-05-14-test.md",
+                "file": "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Project/2023-05-14-test.md"
+                "file": "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md"
               }
             }
           }
@@ -146,9 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db48f9cdfef3b3ef",
+  "active": "b8410b7b9c6b2312",
   "lastOpenFiles": [
     "DeepLearning/ch5_오차역전파법/2023-05-07-Backpropagation practice.md",
+    "Django_Project/2023-05-14-test.md",
     "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
     "DeepLearning/ch5_오차역전파법",
     "DeepLearning/ch4_신경망 학습/2023-04-14-Learning Algorithm.md",
@@ -166,7 +167,6 @@
     "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신",
     "DeepLearning/ch6_학습 관련 기술",
     "Untitled 1",
-    "Django_Project/2023-05-14-test.md",
     "DeepLearning"
   ]
 }

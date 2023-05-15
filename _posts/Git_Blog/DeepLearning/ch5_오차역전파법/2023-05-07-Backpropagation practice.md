@@ -223,7 +223,7 @@ for key in grad_numerical.keys():
 >	- `network.numerical_gradient(x_batch, t_batch)` 는 이전 포스팅에서 설명한 로직과 동일하게 돌아간다.
 >	- `network.gradient(x_batch, t_batch)`는 우선 순전파의 결과를 마지막 레이어에 저장되는데  `SoftmaxWithLoss`의 계층이 이용된다.
 >		- 여기서 y값은 softmax의 확률로 변환 되고 정답 레이블은 원 핫 인코딩이되어 이것을 손실함수  `cross_entropy_error` 를 거쳐 리턴한다.
->		- 이 때 정답 레이블이 원-핫 인코딩이므로 `(self.y - self.t) / batch_size` 로 리턴된 미분값 dout를 갖는다.
+>		- 이 때 정답 레이블이 원-핫 인코딩이므로 `(self.y - self.t) / batch_size` 로 리턴된 값을 객체 dout에 넣는다.
 >		- 이 때 layer를 딕셔너리 키 값 Affine1, Relu1, Affine2 으로 저장해둔 벨류 값을 순서대로 리스트 형태로 변환한 뒤 reverse()를 통해 거꾸로 돌려준다.
 >		- 거꾸로 돌려준 밸류 값들에 아까 구한값을 객체 dout에 넣어준다.
 >		- 그렇게 구한 값을 다시 키값 w1,b1,w2,b2 에 차례대로 객체 grad_backprop 에 넣어준다.
