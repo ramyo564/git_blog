@@ -2,7 +2,7 @@
 layout: single
 title: " 메개변수 갱신 "
 categories: ML_DL
-tag: [Python,"[BIG][밑딥] 매개변수 갱신"]
+tag: [Python,"[밑딥] 매개변수 갱신"]
 toc: true
 toc_sticky: true
 author_profile: false

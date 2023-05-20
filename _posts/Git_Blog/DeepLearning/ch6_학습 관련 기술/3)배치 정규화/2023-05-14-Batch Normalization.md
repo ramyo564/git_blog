@@ -1,8 +1,8 @@
 ---
 layout: single
-title: " Batch Normalization "
+title: " 배치정규화 "
 categories: ML_DL
-tag: [Python,"[BIG][밑딥] 배치정규화"]
+tag: [Python,"[밑딥] 배치정규화"]
 toc: true
 toc_sticky: true
 author_profile: false

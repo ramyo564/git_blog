@@ -2,7 +2,7 @@
 layout: single
 title: " 가중치의 초깃값 "
 categories: ML_DL
-tag: [Python,"[BIG][밑딥] 가중치의 초깃값"]
+tag: [Python,"[밑딥] 가중치의 초깃값"]
 toc: true
 toc_sticky: true
 author_profile: false
