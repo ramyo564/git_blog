@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
+                "file": "CS/개발상식/2023-05-21-Basic Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5046501159668,
-    "collapsed": true
+    "width": 200.5046501159668
   },
   "right": {
     "id": "899f72456e634839",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
+                "file": "CS/개발상식/2023-05-21-Basic Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
+                "file": "CS/개발상식/2023-05-21-Basic Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md"
+                "file": "CS/개발상식/2023-05-21-Basic Computer Science.md"
               }
             }
           }
@@ -149,8 +148,13 @@
   },
   "active": "b8410b7b9c6b2312",
   "lastOpenFiles": [
-    "DeepLearning/ch6_학습 관련 기술/4)오버피팅/2023-05-16-overfiting.md",
+    "CS/개발상식/2023-05-14-test 1.md",
+    "CS/개발상식/2023-05-21-Basic Computer Science.md",
+    "Django_Project/2023-05-14-test.md",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
+    "CS/개발상식",
+    "CS",
+    "DeepLearning/ch6_학습 관련 기술/4)오버피팅/2023-05-16-overfiting.md",
     "DeepLearning/ch6_학습 관련 기술/3)배치 정규화/2023-05-14-Batch Normalization.md",
     "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값/2023-05-12-Weight initialization.md",
     "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신/2023-05-12- parameter update.md",
@@ -158,7 +162,6 @@
     "DeepLearning/ch4_신경망 학습/2023-04-14-Learning Algorithm.md",
     "DeepLearning/ch5_오차역전파법/2023-05-07-Backpropagation practice.md",
     "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
-    "Django_Project/2023-05-14-test.md",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
@@ -174,8 +177,6 @@
     "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
     "DeepLearning/ch2_퍼셉트론",
     "DeepLearning/ch6_학습 관련 기술/3)배치 정규화",
-    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값",
-    "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신",
-    "DeepLearning/ch6_학습 관련 기술"
+    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값"
   ]
 }
