@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " 배치정규화 "
+title: " [딥러닝 기초] 배치정규화 "
 categories: ML_DL
 tag: [Python,"[밑딥] 배치정규화"]
 toc: true

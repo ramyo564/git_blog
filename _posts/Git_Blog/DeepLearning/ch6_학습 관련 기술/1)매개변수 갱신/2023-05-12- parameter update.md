@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " 메개변수 갱신 "
+title: " [딥러닝 기초] 메개변수 갱신 "
 categories: ML_DL
 tag: [Python,"[밑딥] 매개변수 갱신"]
 toc: true

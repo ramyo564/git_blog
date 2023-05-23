@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "신경망 구현해보기!"
+title: " [딥러닝 기초] 신경망 구현해보기!"
 categories: ML_DL
 tag: [Python,"[밑딥] 신경망 구현해보기",시그모이드 sigmoid function,계단함수 step function,ReLU,소프트맥스 함수 softmax function]
 toc: true

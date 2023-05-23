@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "학습 알고리즘 구현하기!"
+title: " [딥러닝 기초] 학습 알고리즘 구현하기!"
 categories: ML_DL
 tag: [Python,"[밑딥] 학습 알고리즘 구현하기!"]
 toc: true

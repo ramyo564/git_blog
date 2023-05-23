@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " 적절한 하이퍼파라미터 값 찾기 "
+title: " [딥러닝 기초] 적절한 하이퍼파라미터 값 찾기 "
 categories: ML_DL
 tag: [Python,"[밑딥] 적절한 하이퍼파라미터 값 찾기"]
 toc: true

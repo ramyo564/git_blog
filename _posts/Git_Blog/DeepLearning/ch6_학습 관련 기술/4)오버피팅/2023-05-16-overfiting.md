@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " 오버피팅 "
+title: " [딥러닝 기초] 오버피팅 "
 categories: ML_DL
 tag: [Python,"[밑딥] 오버피팅"]
 toc: true

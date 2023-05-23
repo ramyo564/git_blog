@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "퍼셉트론 구현해보기!"
+title: " [딥러닝 기초] 퍼셉트론 구현해보기!"
 categories: ML_DL
 tag: [Python,"[밑딥] 퍼셉트론 구현해보기",AND 게이트,OR 게이트,NAND 게이트,XOR 게이트]
 toc: true

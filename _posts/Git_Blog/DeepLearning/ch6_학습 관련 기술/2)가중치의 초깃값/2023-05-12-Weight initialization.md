@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " 가중치의 초깃값 "
+title: " [딥러닝 기초] 가중치의 초깃값 "
 categories: ML_DL
 tag: [Python,"[밑딥] 가중치의 초깃값"]
 toc: true

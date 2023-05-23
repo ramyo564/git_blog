@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "오차역전파법!"
+title: " [딥러닝 기초] 오차역전파법!"
 categories: ML_DL
 tag: [Python,"[밑딥] 오차역전파법!"]
 toc: true

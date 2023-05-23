@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "신경망 학습!"
+title: " [딥러닝 기초] 신경망 학습!"
 categories: ML_DL
 tag: [Python,"[밑딥] 경사 하강법"]
 toc: true
