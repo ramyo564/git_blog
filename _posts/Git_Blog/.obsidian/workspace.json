@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/temp.md",
+                "file": "SQL/PostgreSQL/temp 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5046501159668,
-    "collapsed": true
+    "width": 200.5046501159668
   },
   "right": {
     "id": "899f72456e634839",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL/temp.md",
+                "file": "SQL/PostgreSQL/temp 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL/temp.md",
+                "file": "SQL/PostgreSQL/temp 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL/temp.md"
+                "file": "SQL/PostgreSQL/temp 1.md"
               }
             }
           }
@@ -150,11 +149,13 @@
   },
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
+    "SQL/temp.md",
+    "SQL/PostgreSQL/temp 1.md",
+    "SQL/PostgreSQL/2023-05-25-Practice.md",
     "SQL/PostgreSQL/2023-05-25-Advanced command.md",
     "SQL/PostgreSQL/2023-05-24-Joins.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
-    "SQL/temp.md",
     "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
     "Django_Project/test.md",
     "DeepLearning/ch3_신경망/2023-03-30-Neural network.md",

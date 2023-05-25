@@ -43,7 +43,7 @@ SELECT CURRENT_DATE
 	- 글자로 바꿔주는 함수
 	- TO_CHAR(date_col, 'mm-dd-yyyy')
 - [데이터 포맷 참고](https://www.postgresql.org/docs/current/functions-formatting.html)
-
+- [데이터 포맷 참고2](https://www.postgresql.org/docs/current/functions-datetime.html)
 ```postgresql
 SELECT EXTRACT (YEAR FROM payment_date) AS year
 FROM payment;
