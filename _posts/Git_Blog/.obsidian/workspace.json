@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1aa6348d047199b3",
+        "id": "2ce3ff06b031c8fd",
         "type": "tabs",
         "children": [
           {
-            "id": "b8410b7b9c6b2312",
+            "id": "5410aeb4fe0d0664",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
+                "file": "SQL/temp.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5046501159668
+    "width": 200.5046501159668,
+    "collapsed": true
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
+                "file": "SQL/temp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
+                "file": "SQL/temp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md"
+                "file": "SQL/temp.md"
               }
             }
           }
@@ -143,11 +144,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8410b7b9c6b2312",
+  "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
+    "SQL/PostgreSQL/2023-05-25-Advanced command.md",
+    "SQL/PostgreSQL/2023-05-24-Joins.md",
+    "SQL/PostgreSQL/2023-05-24-Group_by.md",
+    "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
+    "SQL/temp.md",
+    "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
+    "Django_Project/test.md",
     "DeepLearning/ch3_신경망/2023-03-30-Neural network.md",
     "DeepLearning/ch4_신경망 학습/2023-04-14-Learning Algorithm.md",
     "DeepLearning/ch4_신경망 학습/2023-04-09-Neural network training.md",
@@ -160,7 +169,6 @@
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
     "CS/개발상식/test.md",
-    "Django_Project/test.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
@@ -174,7 +182,6 @@
     "DeepLearning/ch5_오차역전파법",
     "DeepLearning/ch4_신경망 학습",
     "DeepLearning/ch3_신경망",
-    "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
     "DeepLearning/ch2_퍼셉트론",
     "DeepLearning/ch6_학습 관련 기술/3)배치 정규화",
     "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값"
