@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/PostgreSQL/temp 1.md",
+                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5046501159668
+    "width": 200.5046501159668,
+    "collapsed": true
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL/PostgreSQL/temp 1.md",
+                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL/PostgreSQL/temp 1.md",
+                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL/PostgreSQL/temp 1.md"
+                "file": "SQL/PostgreSQL/2023-05-27-Create table.md"
               }
             }
           }
@@ -150,7 +151,7 @@
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
     "SQL/temp.md",
-    "SQL/PostgreSQL/temp 1.md",
+    "SQL/PostgreSQL/2023-05-27-Create table.md",
     "SQL/PostgreSQL/2023-05-25-Practice.md",
     "SQL/PostgreSQL/2023-05-25-Advanced command.md",
     "SQL/PostgreSQL/2023-05-24-Joins.md",
