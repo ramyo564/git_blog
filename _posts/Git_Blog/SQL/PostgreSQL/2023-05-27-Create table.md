@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "[PostgreSQL] 테이블 컨트롤"
+title: "[PostgreSQL] How to Control Table"
 categories: SQL
 tag: [Python,"[PostgreSQL] 데이터베이스 테이블 만들기 및 컨트롤"]
 toc: true

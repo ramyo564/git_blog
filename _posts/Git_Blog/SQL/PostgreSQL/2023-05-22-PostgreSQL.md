@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "[PostgreSQL] 기초 SQL"
+title: "[PostgreSQL] Basic SQL"
 categories: SQL
 tag: [Python,"[PostgreSQL] 기초 구문"]
 toc: true
