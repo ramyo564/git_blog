@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "[PostgreSQL] 고급명령어"
+title: "[PostgreSQL] Advanced command"
 categories: SQL
 tag: [Python,"[PostgreSQL] 고급명령어"]
 toc: true
