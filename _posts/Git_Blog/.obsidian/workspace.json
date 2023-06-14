@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
+                "file": "SQL/PostgreSQL/2023-05-24-Group_by.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
+                "file": "SQL/PostgreSQL/2023-05-24-Group_by.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL/PostgreSQL/2023-05-27-Create table.md",
+                "file": "SQL/PostgreSQL/2023-05-24-Group_by.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL/PostgreSQL/2023-05-27-Create table.md"
+                "file": "SQL/PostgreSQL/2023-05-24-Group_by.md"
               }
             }
           }
@@ -149,18 +149,18 @@
   },
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
+    "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
+    "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
     "SQL/PostgreSQL/2023-05-25-Practice1.md",
     "SQL/PostgreSQL/2023-05-25-Advanced command.md",
     "SQL/PostgreSQL/2023-05-24-Joins.md",
+    "SQL/PostgreSQL/2023-05-27-Create table.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",
-    "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
     "Django_Project/2023-06-01-request.get.md",
     "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-07-admin security.md",
     "Django_Project/2023-06-09-refactoring.md",
     "Django_Project/2023-06-09-session logout.md",
-    "SQL/PostgreSQL/2023-05-27-Create table.md",
-    "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
     "temp.md",
     "Django_Project/2023-06-04-Django ORM.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
