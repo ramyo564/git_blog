@@ -12,6 +12,9 @@ sidebar:
 ---
 # 서버를 올려보자
 
+개념이 없어서 정말 삽질 많이했다
+개념을 알아야 삽질을 덜 하는데 처음부터 개념 공부를 하기에는 너무 재미가 없어서 그냥 구현하고 싶은거 해보고 오류 생길 때마다 고치면서 진행했다 
+
 [Deploying a Django application to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
 
 우선 AWS 로 아이디를 만들면 Root account를 볼 수 있는데 어플리케이션 배포를 할 때 root account를 사용하는건 별로 추천되지 않는다.
@@ -57,8 +60,10 @@ option_settings: aws:elasticbeanstalk:container:python: WSGIPath: greatkart.wsgi
 `python manage.py collectstatic` 를 실행하면 된다.
 
 그리고 `eb init -p python-3.x django-greatkart-app` 로 앱을 만들어준다.
-공홈에는 3.7로 나와있긴한데 3.11도 나와있다.
-그 후 계정 ID를 입력한다 
+공홈에는 3.7로 나와있긴한데 3.11도 나와있다
+3.11로 작업했으니 3.11로 진행했다.
+
+계정 ID를 입력한다 
 오르쪽 상단에 계정 ID : xxxx-xxxx-xxxx 의 숫자 형태로 있다.
 
 ![](https://i.imgur.com/2okyrrd.png)
@@ -81,9 +86,6 @@ option_settings: aws:elasticbeanstalk:container:python: WSGIPath: greatkart.wsgi
 
 ![](https://i.imgur.com/Yj4P3ZO.png)
 
-보통 이렇게 넘어가는데 나는 갑자기 지역이 웨스트로 잡혀서
-다시 만들었다.
-설정을 본인이 원하는데로 맞춘후
 `eb create 원하는이름`  으로 가상환경을 만들어준다.
 (시간이 좀 오래걸린다.)
 
@@ -127,7 +129,7 @@ global:
   branch: null
   default_ec2_keyname: null
   default_platform: Python 3.11
-  default_region: us-west-2
+  default_region: us-west-2 <- 이부분
   include_git_submodules: true
   instance_profile: null
   platform_name: null
@@ -138,19 +140,19 @@ global:
   workspace_type: Application
 ```
 
-초기 설정이 아니라서 그런지 계속 디폴트로 위와 같이 깔려서 처음 설치후 다시 초기화 설정을 해주었다.
-초기화 설정은 아래 코드를 입력하면된다.
-
 ```code
 eb init --interactiv
 ```
+
+예전에 한 번 AWS를 만져본적 있는데 그 것 때문인지 아니면 그냥 디폴트로 west로 잡히는지는 잘 모르겠다
+근데 터미널에서 `eb init --interactiv` 를 실행하면 알아서 다시 잡아준다.
 
 이렇게 실행해주고 이제 내 환경 설정에 맞게 선택해주면 알아서 해당 파일 정보가 바뀐다.
 
 ![](https://i.imgur.com/Yu9ICeW.png)
 
 역시 예상이 맞았다.
-예전에는 이런 오류가 나면 뭔 소린지도 모르겠고 그냥 스트레스만 받았는데 하도 오류가 난걸 해결하다보니 요즘은 어떤 오류가 나더라도 별 느낌이 없다. 
+예전에는 이런 오류가 나면 뭔 소린지도 모르겠고 그냥 스트레스만 받았는데 하도 오류가 난걸 해결하다보니 요즘은 어떤 오류가 나더라도 별로 스트레스를 안 받는다. 
 처음에는 오류 해결 한 번 하면 희열을 느꼈는데 지금은 그냥 원인 찾고 구글링하고 구글링 해서 없으면 그냥 오류를 단계별로 해결하면 대부분 해결되서 이제는 딱히 어려울 것도 없다
 
 ```code
@@ -169,13 +171,20 @@ Environment details for: django-greatkart-env
   Health: Red
 ```
 
-위와 같이 Health: Red 로 나오면 그냥 서버 다시 시작하면 된다.
-여기서 CNAME은 도메인 네임이다.
+위와 같이 Health: Red 로 나오면 그냥 서버를 다시 시작하면 된다.
+이 때 실수했었던게 AWS에서 빌드가 끝날때까지 기다리고 했어야 했는데 그냥 무시하고 진행해서 오류가 났었다. 
+git을 사용한다면 AWS와 버전이 맞아야 인스턴스가 빌드되기 때문에 이 부분을 꼭 확인하자
+
+위에 CNAME은 도메인 네임이다.
 해당 도메인 네임을 settings.py 에서 변경해야 한다.
+왜냐하면 장고에서의 보안정책 때문에 HOST 주소가 안맞으면 실행이 안된다.
 
 ```settings.py
 ALLOWED_HOSTS = ['django-greatkart-env.eba-hgmyb93v.ap-northeast-2.elasticbeanstalk.com']
 ```
+로컬에서도 어차피 계속 확인을 해야하니 정신건강을 위해 `"*"` 를 추가해주자
+`"*"` 를 추가하면 모든 도메인 주소를 허용한다.
+
 
 ## Elastic Beanstalk Restart
 
@@ -183,7 +192,7 @@ ALLOWED_HOSTS = ['django-greatkart-env.eba-hgmyb93v.ap-northeast-2.elasticbeanst
 
 ![](https://i.imgur.com/HTbvDO3.png)
 
-밑에는 이전에 초기 설정을 잘못해서 생성된건데 시간이 지나면 알아서 없어진다고 한다.
+밑에는 이전에 초기 설정을 잘못해서 삭제했는데 시간이 지나면 알아서 없어진다고 한다.
 
 ![](https://i.imgur.com/b5FRUhW.png)
 
@@ -196,8 +205,7 @@ ALLOWED_HOSTS = ['django-greatkart-env.eba-hgmyb93v.ap-northeast-2.elasticbeanst
 
 ![](https://i.imgur.com/m98DTj3.png)
 
-여기서 . env 에서 설정했던걸 해주면 된다.
-API 키 등을 여기에 넣어주면 된다.
+여기서 . env 에서 설정했던 값들을 넣어주면 된다.
 
 ## ERROR Environment health has transitioned from Info to Degraded
 
@@ -207,7 +215,7 @@ API 키 등을 여기에 넣어주면 된다.
 찾아 보니 명령제한 시간 때문에 그런거 같았다.
 명령제한 시간은 
 해당 부분을 1800 으로 늘리고 해결
-아마 회원가입 인증 이메일을 보내는 부분에서 시간이 좀 걸려서 그런거 같다.
+아마 경로가 잘못되거나 db 연결이 제대로 되지 않아서 발생한 것 같다.
 [참고](https://serverfault.com/questions/992394/elastic-beanstalk-health-degraded)
 
 ![](https://i.imgur.com/KnkjNEm.png)
@@ -225,7 +233,7 @@ eb deploy
 ![](https://i.imgur.com/9DLWsAx.png)
 
 채용공고를 보면 장고 + mysql을 쓰는거 같은데 이 부분이 궁금해서 찾아보면 대부분 장고에서 PostgreSQL 을 쓴다고 한다.
-요즘에는 둘의 성능차가 그렇게 크지는 않지만 대부분 커뮤니티에서 장고의 제약 없이 데이터베이스를 쓰려면 PostgreSQL이 가장 좋다고들 한다.
+요즘에는 둘의 성능차가 그렇게 크지는 않지만 대부분 커뮤니티에서 장고에서 제약 없이 데이터베이스를 쓰려면 PostgreSQL이 가장 좋다고들 한다.
 그렇다고 mysql이 지원 안되거나 안좋은건 아니라고 한다.
 
 ![](https://i.imgur.com/wy68xQr.png)
@@ -275,7 +283,7 @@ pip install psycopg2-binary
 pip freeze > requirements.txt
 ```
 
-그후 로컬 서버가 아니라 AWS 서버에서 돌아가게 만들기 위해서
+로컬 서버가 아니라 AWS 서버에서 돌아가게 만들기 위해서
 .ebextensions 폴더에 db-migrate.config 파일 만들고 아래의 코드를 입력해준다.
 
 ```python
@@ -293,6 +301,7 @@ option_settings:
 
 2번은 관리자 아이디를 만드는거라 만들고 지워야한다.
 AWS에서 migrate를 하는 작업이다.
+근데 어차피 로컬에서 만든 DB를 연결시키면 로컬에서 쓰던게 그대로 옮겨지니 딱히 크게 상관은 없없다.
 
 ![](https://i.imgur.com/fL2Y167.png)
 
@@ -312,23 +321,24 @@ cfnbootstrap.construction_errors.ToolError: Command 02_createsuperuser failed
 2023-06-13 02:33:51,962 [ERROR] -----------------------BUILD FAILED!------------------------
 2023-06-13 02:33:51,963 [ERROR] Unhandled exception during build: Command 02_createsuperuser failed
 ```
-
+위에 관리자 계정이 안 만들어져서 오류가 계속 발생했다.
+Nginx 에서 계속 가상환경을 못 불러오는게 문제였는데 이 부분은 아무리 뒤져봐도 잘 모르겠었고 지금도 이해가 잘 안간다.
+근데 대충 돌아가는 환경을 보니 굳이 db 연결전에 관리자 계정을 안만들어도 될거 같아서 그냥 해당 부분을 삭제하고 migrate를 진행했는데 문제가 없었다.
 
 
 ![](https://i.imgur.com/4dnuNcH.png)
 
+이번에는 유니코드 인코딩이 문제였다.
+해당부분 인터넷으로 찾아보니까 한글이 문제였는데 그냥 한글도 인식 가능하게 아래와 같이 변경해주면 된다.
 
-stream_or_string = stream_or_string.decode('cp949')
-
-
-
-from django.contrib.contenttypes.models import ContentType
-
-from django.contrib.contenttypes.models import ContentType
+`stream_or_string = stream_or_string.decode('cp949')`
 
 
 ![](https://i.imgur.com/0bKVfVJ.png)
 
+문제없이 데이터 이전이 성공적으로 되었다.
+
+DB와 연결시키고 나서 역시나 오류가 발생했다.
 
 ```code
 botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
@@ -336,5 +346,9 @@ botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupporte
 ```
 
 https://stackoverflow.com/questions/54788998/djangoaws-s3-botocore-exceptions-clienterror-an-error-occurred-accessdenied
+
+어떤 애가 `AWS_DEFAULT_ACL = None` 이렇게 하라고 했는데 해결이 안되서 밑에 글을 더 읽어 보니
+권한문제였다.
+static 폴더에서 이미지등을 못 갖고 왔는데 그냥 권한 문제만 해결해주면 된다.
 
 ![](https://i.imgur.com/NOfyH5E.png)
