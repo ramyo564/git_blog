@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Project/2023-06-09-refactoring.md",
+                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.50206756591797
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Project/2023-06-09-refactoring.md",
+                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Project/2023-06-09-refactoring.md",
+                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Project/2023-06-09-refactoring.md"
+                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md"
               }
             }
           }
@@ -149,14 +150,17 @@
   },
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
+    "Django DRF/2023-06-17-Django basic packages.md",
+    "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+    "CS/개발상식/test.md",
     "Django_Project/2023-06-09-session logout.md",
+    "Django DRF",
+    "Django_Project/2023-06-01-request.get.md",
     "Django_Project/2023-06-09-refactoring.md",
     "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-07-admin security.md",
     "Django_Project/2023-06-04-Django ORM.md",
-    "Django_Project/2023-06-01-request.get.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
-    "CS/개발상식/test.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
@@ -173,8 +177,6 @@
     "DeepLearning/ch5_오차역전파법/2023-05-07-Backpropagation practice.md",
     "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신/2023-05-12- parameter update.md",
     "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값/2023-05-12-Weight initialization.md",
-    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화/2023-05-14-Batch Normalization.md",
-    "DeepLearning/ch6_학습 관련 기술/4)오버피팅/2023-05-16-overfiting.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
@@ -189,7 +191,6 @@
     "DeepLearning/ch4_신경망 학습",
     "DeepLearning/ch3_신경망",
     "DeepLearning/ch2_퍼셉트론",
-    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화",
-    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값"
+    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화"
   ]
 }

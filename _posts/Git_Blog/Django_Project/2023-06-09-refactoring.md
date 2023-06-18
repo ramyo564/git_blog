@@ -3,7 +3,7 @@
 layout: single
 title: "[Django] 씹고 뜯고 맛보고 리팩토링"
 categories: Django
-tag: [Python,"[Django] 리팩토링 "]
+tag: [Python,"[Django] 리팩토링 ","Python 쇼핑몰"]
 toc: true
 toc_sticky: true
 author_profile: false
