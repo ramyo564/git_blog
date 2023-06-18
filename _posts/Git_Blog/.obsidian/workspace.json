@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+                "file": "Django DRF/2023-06-19-Control settings.py.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "899f72456e634839",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+                "file": "Django DRF/2023-06-19-Control settings.py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+                "file": "Django DRF/2023-06-19-Control settings.py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md"
+                "file": "Django DRF/2023-06-19-Control settings.py.md"
               }
             }
           }
@@ -150,8 +149,9 @@
   },
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
-    "Django DRF/2023-06-17-Django basic packages.md",
     "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+    "Django DRF/2023-06-19-Control settings.py.md",
+    "Django DRF/2023-06-17-Django basic packages.md",
     "CS/개발상식/test.md",
     "Django_Project/2023-06-09-session logout.md",
     "Django DRF",
@@ -176,7 +176,6 @@
     "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
     "DeepLearning/ch5_오차역전파법/2023-05-07-Backpropagation practice.md",
     "DeepLearning/ch6_학습 관련 기술/1)매개변수 갱신/2023-05-12- parameter update.md",
-    "DeepLearning/ch6_학습 관련 기술/2)가중치의 초깃값/2023-05-12-Weight initialization.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
