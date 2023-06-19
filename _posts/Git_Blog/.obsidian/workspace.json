@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/Source Control.md",
+                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/Source Control.md",
+                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/Source Control.md",
+                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/Source Control.md"
+                "file": "Django_Project/2023-06-20-vscode extensions python black.md"
               }
             }
           }
@@ -149,19 +150,21 @@
   },
   "active": "5410aeb4fe0d0664",
   "lastOpenFiles": [
-    "Django DRF/2023-06-17-Django basic packages.md",
+    "Django_Project/Django first project.md",
+    "Django_Project/2023-06-20-vscode extensions python black.md",
+    "Django DRF/2023-06-19-build DRF.md",
     "Django DRF/Source Control.md",
     "Django DRF/2023-06-19-Control settings.py.md",
-    "Django DRF/2023-06-19-build DRF.md",
+    "Django_Project/2023-06-09-session logout.md",
+    "Django_Project/2023-06-04-Django ORM.md",
+    "Django_Project/2023-06-01-request.get.md",
+    "Django DRF/2023-06-17-Django basic packages.md",
     "Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
     "CS/개발상식/test.md",
-    "Django_Project/2023-06-09-session logout.md",
     "Django DRF",
-    "Django_Project/2023-06-01-request.get.md",
     "Django_Project/2023-06-09-refactoring.md",
     "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-07-admin security.md",
-    "Django_Project/2023-06-04-Django ORM.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
@@ -174,8 +177,6 @@
     "DeepLearning/ch2_퍼셉트론/2023-03-25-Perceptron.md",
     "DeepLearning/ch3_신경망/2023-03-30-Neural network.md",
     "DeepLearning/ch4_신경망 학습/2023-04-14-Learning Algorithm.md",
-    "DeepLearning/ch4_신경망 학습/2023-04-09-Neural network training.md",
-    "DeepLearning/ch5_오차역전파법/2023-04-22-Backpropagation.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
