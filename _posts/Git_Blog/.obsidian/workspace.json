@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
+                "file": "Django_Project/2023-06-09-refactoring.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "899f72456e634839",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
+                "file": "Django_Project/2023-06-09-refactoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Project/2023-06-20-vscode extensions python black.md",
+                "file": "Django_Project/2023-06-09-refactoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Project/2023-06-20-vscode extensions python black.md"
+                "file": "Django_Project/2023-06-09-refactoring.md"
               }
             }
           }
@@ -148,10 +147,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5410aeb4fe0d0664",
+  "active": "db48f9cdfef3b3ef",
   "lastOpenFiles": [
-    "Django_Project/Django first project.md",
+    "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-20-vscode extensions python black.md",
+    "Django_Project/Django first project.md",
     "Django DRF/2023-06-19-build DRF.md",
     "Django DRF/Source Control.md",
     "Django DRF/2023-06-19-Control settings.py.md",
@@ -163,7 +163,6 @@
     "CS/개발상식/test.md",
     "Django DRF",
     "Django_Project/2023-06-09-refactoring.md",
-    "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-07-admin security.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",

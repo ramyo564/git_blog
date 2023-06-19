@@ -88,4 +88,3 @@ black .
 ```
 
 ![](https://i.imgur.com/bWpXIOp.png)
-
