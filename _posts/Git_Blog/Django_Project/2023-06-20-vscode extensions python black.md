@@ -88,3 +88,61 @@ black .
 ```
 
 ![](https://i.imgur.com/bWpXIOp.png)
+
+## Flake 8
+
+혹시 다른 파이썬 개발자들은 어떻게 환경 설정하는지 궁금해서 찾아봤는데 Flask8 도 많이 쓰는거 같다.
+
+이전에 Black Formatter 는 저장하는 순간 pep-8의 규칙에 맞게 알아서 변환되면서 저장되는데
+Flake 8은 프로그램을 실행하지 않고 문법 오류나 코딩 규약 위반 등을 분석해준다.
+
+한 마디로 너무나 편해진다
+
+<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/MtGY4FcgMmgzFXSXca/video" width="480"></iframe></div>
+
+
+Black Formatter 와 같이 사용하면 충돌이 날 수 있어서 다음과 같은 셋팅을 해주는게 좋다.
+
+```python
+settings.json
+
+{
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "88"
+    ],
+
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
+}
+```
+
+88은 검사 코드 줄이 88자의 최대라는 의미다.
+
+![](https://i.imgur.com/Tgz1CsP.png)
+
+
+
+
+![](https://i.imgur.com/b426sI8.png)
+
+설치하자마자 엄청난 오류들이 뜨는 데 사실상 오류가 아닌 경우도 많다.
+
+![](https://i.imgur.com/6S8xbJE.png)
+
+아주 엄격하게 검사를 해준다.
+
+![](https://i.imgur.com/vGPBDlP.png)
+위와 같이 오류가 아닌 경우에도 오류라고 나오는 경우가 있는데 이건 또 따로 세분화해서 설정 가능하다.
