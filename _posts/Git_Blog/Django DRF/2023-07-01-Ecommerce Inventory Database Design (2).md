@@ -12,6 +12,9 @@ sidebar:
 ---
 # 새로운 테이블을 추가
 
+![](https://i.imgur.com/HCYYswy.png)
+
+
 ![](https://i.imgur.com/G7gYUmX.png)
 
 
@@ -437,8 +440,8 @@ End to End 테스트는 소프트 웨어의 흐름을 테스트한다.
 
 ## Testing : Model factories
 
-실제로 일부 테스트를 생성하기 위해 데이터가 필요한데 가능한 동적인 방식으로 수행하려고 한다.    
-팩토리는 테스트에 사용할 실제 객체를 빠르고 쉽게 생성하는데 도움이 된다.    
+모델 테스트를 진행할 때 데이터가 필요하다.     
+팩토리는 테스트에 사용할 실제 객체를 빠르고 쉽게 생성하는데 유용하다.
 
 ```python
 pip install pytest-factoryboy
@@ -463,3 +466,110 @@ pytest-factoryboy는 pytest 테스트 함수에서 FactoryBoy 팩토리를 사�
 test 폴더에 prouct 앱과 관련된 모든 테스트가 포함되며 init.py 파일을 생성해 둔다.     
 파일명은 모듈 안에 있는 테스트를 식별하고 접근하기 쉽게 만드는게 좋다     
 
+### 테스트 패턴
+Arrange - Act - Assert
+
+[테스트패턴 매우 자세한 설명](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
+
+1. **_Arrange_** inputs and targets. _Arrange_ steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.
+2. **_Act_** on the target behavior. _Act_ steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
+3. **_Assert_** expected outcomes. _Act_ steps should elicit some sort of response. _Assert_ steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.
+
+```python
+test_models.py
+
+import pytest
+pytestmark = pytest.mark.django_db <- 데이터 베이스 접근
+
+class TestCategoryModel:
+    def test_str_method(self, category_factory):
+        # Arrange
+        # Act
+        x = category_factory()
+        # Assert
+        assert x.__str__() == "test_category"
+
+```
+
+
+```python
+factories.py
+
+import factory
+from product.models import Brand, Category, Product
+
+class CategoryFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Category
+    name = "test_category"
+```
+
+
+```python
+conftest.py
+
+from pytest_factoryboy import register
+from .factories import CategoryFactory
+
+register(CategoryFactory)
+-> 실제로는 category_factory로 접근된다.
+```
+
+![](https://i.imgur.com/8m3Q9qh.png)
+
+
+![](https://i.imgur.com/ChOUElh.png)
+이런식으로 모델을 테스트 한다.
+
+test_models.py
+![](https://i.imgur.com/3nftEw5.png)
+
+![](https://i.imgur.com/b2os4Nf.png)
+
+## Test API End to End
+
+![](https://i.imgur.com/2VpVV9E.png)
+
+```python
+pytest -s
+```
+위 명령어를 찍으면 pass 나 fail 여부 뿐만 아니라 print에서 출력되는 부분을 모두 확인할 수 있다.
+create_batch 는 Factory Boy 라이브러리에서 제공하는 기능 중 하나다.    
+테스트 데이터를 생성하기 위한 도구로서 create_batch 는 지정된 팩토리를 사용해서 여러 개의 모델 인스턴스를 일괄적으로 생성하는 메서드다.    
+category_factory.create_batch(4) 는 Category 객체를 데이터베이스 4개를 저장한다.     
+이런 방식으로 테스트에서 실제 데이터에 대한 검증을 수행한다.
+ 
+
+![](https://i.imgur.com/EBYMofd.png)
+
+현재 name의 벨류 값이 하드코딩으로 test_category로 되어 있는데 이 부분을 바꿔주면 테스트를 진행하는데 있어서 용이하다.
+
+
+```python
+import factory
+from product.models import Brand, Category, Product
+
+class CategoryFactory(factory.django.DjangoModelFactory):
+
+    class Meta:
+
+        model = Category
+        
+  # name = 'test_category' 밑에 처럼 사용하면 아래와 같은 값을 터머널에서 확인할 수 있다.
+    name = factory.Sequence(lambda n: "Category_%d" % n)
+```
+
+
+![](https://i.imgur.com/vaSvup4.png)
+
+### % 연산자
+
+`%s`는 문자열, `%d`는 정수, `%f`는 부동소수점 숫자를 나타탠다.
+
+```python
+name = "John"
+age = 25
+
+message = "My name is %s and I am %d years old." % (name, age)
+print(message)
+```
