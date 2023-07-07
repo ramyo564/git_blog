@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: " [Django DRF] Ecommerce inventory Database Design (2)"
+title: " [Django DRF] project (1)"
 categories: Django
 tag: [Python,"[Django DRF] Project eCommerce RESTful API","[Django DRF] 테이블 연결시키기"]
 toc: true
@@ -119,6 +119,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
 ViewSet은 View의 실제 로직이 처리되는 곳으로, 클라이언트로부터의 요청을 처리하고 데이터베이스에서 데이터를 수집한 후 클라이언트에게 반환하는 역할을 한다.     
 
+views.py
 ```python
 from django.shortcuts import render
 from rest_framework import viewsets
@@ -143,8 +144,13 @@ class CategoryView(viewsets.ViewSet):
 ```
 
 
-데이터를 반환해야하므로 list 함수를 사용하여 데이터를 반환하는 방법을 정의했다.     
+`many=True`는 `CafeSerializer`가 다수의 객체를 직렬화(serialize)해야 함을 나타내는 매개변수다.     
+`CafeSerializer`는 `Cafe` 모델의 단일 객체를 직렬화할 수 있지만, `many=True`를 설정하면 다수의 `Cafe` 객체를 직렬화할 수 있도록 해준다.     
+즉, `queryset`에 포함된 모든 `Cafe` 객체를 직렬화하고, 해당 데이터를 리스트 형태로 반환합니다. 이를 통해 다수의 `Cafe` 객체를 한 번에 처리할 수 있다.      
 
+
+
+데이터를 반환해야하므로 list 함수를 사용하여 데이터를 반환하는 방법을 정의했다.     
 데이터를 직렬화하기 위해 Serializer를 정의하고, Serializer에는 self와 queryset을 전달한다.     
 queryset은 우리가 데이터베이스에서 수집한 데이터다.     
 
@@ -174,6 +180,7 @@ ViewSet의 메서드 핸들러들은 .as_view() 메서드를 사용하여 뷰의
 
 일반적으로 뷰셋(viewset)의 뷰를 명시적으로 urlconf에 등록하는 대신, 자동으로 urlconf를 결정해주는 라우터 클래스에 뷰셋을 등록한다.
 
+(root) urls.py
 ```python
 from django.contrib import admin
 from django.urls import include, path
@@ -194,7 +201,7 @@ urlpatterns = [
 
 여기서 CategoryView 가 뷰셋의 역할을 하는데 여기서 두 가지의 장점이 있다.    
 1. 반복되는 로직을 단일 클래스로 결합할 수 있다.
-2. 쿼리셋을 한 번만 지정하면 여러 뷰에서 사요 가능하다.
+2. 쿼리셋을 한 번만 지정하면 여러 뷰에서 사용 가능하다.
 3. 라우터를 사용함으로써 URL conf를 직접 다룰 필요가 없어진다.
 4. 일반적인 뷰와 URL conf를 사용하는 것은 명시적이며 더 많은 제어력이 제공된다.
 5. ViewSet은 빠르게 시작하거나 큰 API에서 URL 구성을 일관되게 적용하고 싶을 때 유용하다.
@@ -208,6 +215,21 @@ urlpatterns = [
 [drf-spectacular.](https://drf-spectacular.readthedocs.io/en/latest/)
 
 DRF spectacular 는 API에 대한 모든 정보를 모아주고 해당 정보를 프론트엔드 패키지인 Swaggy UI 와 같은 형식으로 제공하여 다른 개발자나 API와 상호 작용하려는 사용자에게 정보를 제공해준다.      
+
+DRF-Spectacular은 Django REST framework(DRF)를 위한 강력한 API 문서화 도구다. DRF-Spectacular은 OpenAPI(이전의 Swagger) 스펙을 사용하여 API 스키마를 자동으로 생성하고, DRF의 기능과 설정을 자동으로 탐지하여 문서화한다.     
+
+DRF-Spectacular의 주요 기능과 장점은 다음과 같다:     
+
+1. 자동 스키마 생성: DRF-Spectacular은 DRF의 serializers, viewsets, routers 등을 스캔하여 자동으로 API 스키마를 생성한다. 이를 통해 개발자는 수동으로 API 스키마를 작성하지 않고도 빠르고 정확한 문서를 생성할 수 있다.     
+    
+2. 상세한 문서화: DRF-Spectacular은 API 엔드포인트, 요청 및 응답 객체, 인증 및 권한 설정 등에 대한 상세한 문서를 제공한다. 개발자와 API 사용자는 각 엔드포인트의 기능, 매개변수, 응답 형식 등을 명확히 이해할 수 있다.     
+    
+3. 커스터마이즈 가능: DRF-Spectacular은 다양한 커스터마이즈 옵션을 제공하여 문서화된 API의 외형과 동작을 조정할 수 있다. 테마 설정, 필드 숨기기, 태그 추가 등을 통해 문서화를 개발자의 요구에 맞게 조정할 수 있다.     
+    
+4. 인터랙티브한 UI: DRF-Spectacular은 기본적으로 Swagger UI와 ReDoc를 지원하여 API 문서를 시각적으로 보기 쉽게 제공한다. 이를 통해 API 사용자는 엔드포인트를 테스트하고 예상되는 응답을 확인할 수 있다.     
+    
+
+DRF-Spectacular은 DRF 프로젝트에 간단하게 통합되며, 설정이 간단하고 사용자 친화적이다. 따라서 DRF 기반의 프로젝트에서 API 문서화에 대한 요구 사항이 있는 경우 DRF-Spectacular을 고려할 수 있다.      
 
 
 `pip install drf-spectacular`
@@ -255,11 +277,15 @@ urlpatterns = [
 ```
 
 `SpectacularAPIView, SpectacularSwaggerView` 2개의 패키지를 불러온 후 아래와 같이 url 을 설정해주면 schema에 접속하면 이전에 로컬로 만든 데이터가 다운로드되고     
-docs 까지 치면 웹에서 데이터를 확인할 수 있다.     
+docs 까지 치면 웹에서 데이터를 확인할 수 있다.      
+
+이 때 시리얼라이저를 설정하지 않아서 오류가 나지만 우선 아래와 같이 작동하는 부분은 확인이 가능하다.    
 
 ![](https://i.imgur.com/7Z8lWo7.png)
 
 ### 추가작업
+`unable to guess serializer` 오류가 나는 이유는 어떤 시리얼 라이저를 사용하는 지에 대한 여부를 확인 할 수 없어서다.     
+
 view set을 사용할 때 적어도 어떤 시리얼라이저를 사용할지 지정해줘야 한다.     
 그렇지 않으면 Seialize와 DRF Spectacular가 데이터를 모을 때 이전에 설정했던 list 함수에서 어떤 serialize를 사용하는지 알 수 없다.     
 이 때 `extend_schema` 패키지를 이용해서 엔드포인트의 동작과 관련된 많은 세부 정보를 문서로 기술할 수 있다.
@@ -270,7 +296,7 @@ view set을 사용할 때 적어도 어떤 시리얼라이저를 사용할지 �
 3. 예시 요청과 응답의 정의: `@extend_schema`를 사용하여 API 엔드포인트의 예시 요청과 응답을 제공하고, 실제 데이터가 어떻게 보일지 예시를 통해 보여줄 수 있다.
 4. 세부 정보 추가: API 엔드포인트에 대한 자세한 설명, 사용 예제, 비즈니스 로직 설명 등과 같은 세부 정보를 추가할 수 있다.
 
-이러한 방식으로 `@extend_schema`를 사용하면 API 문서를 보다 상세하게 작성하고, API 사용자에게 더 나은 사용 경험을 제공할 수 있다.
+이러한 방식으로 `@extend_schema`를 사용하면 API 문서를 보다 상세하게 작성하고, API 사용자에게 더 친화적으로 제공할 수 있다.
 
 ```python
 product/views.py
@@ -279,7 +305,6 @@ from drf_spectacular.utils import extend_schema
 class CategoryView(viewsets.ViewSet):
 
     '''
-
     A simple Viewset for viewing all categories
 
     '''
@@ -408,7 +433,10 @@ coverage html
 pip install pytest-cov
 ```
 
+```python
 pytest --cov
+```
+
 
 ## Unit and End-to-End Testing
 
@@ -519,7 +547,7 @@ register(CategoryFactory)
 
 
 ![](https://i.imgur.com/ChOUElh.png)
-이런식으로 모델을 테스트 한다.
+이런식으로 모델을 테스트 코드를 짠다.
 
 test_models.py
 ![](https://i.imgur.com/3nftEw5.png)
@@ -528,6 +556,7 @@ test_models.py
 
 ## Test API End to End
 
+test_endpoints.py
 ![](https://i.imgur.com/2VpVV9E.png)
 
 ```python
