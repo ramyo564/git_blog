@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/dev104.md",
+                "file": "Django DRF/dev105.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/dev104.md",
+                "file": "Django DRF/dev105.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/dev104.md",
+                "file": "Django DRF/dev105.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/dev104.md"
+                "file": "Django DRF/dev105.md"
               }
             }
           }
@@ -150,8 +150,9 @@
   },
   "active": "1b2e399445407fe3",
   "lastOpenFiles": [
+    "Django DRF/2023-07-11-dev104.md",
+    "Django DRF/dev105.md",
     "Django DRF/2023-07-08-dev103.md",
-    "Django DRF/dev104.md",
     "temp.md",
     "Django DRF/2023-07-06-dev101 dev102.md",
     "Django DRF/2023-07-01-Project Initiation.md",
@@ -176,7 +177,6 @@
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
     "SQL/PostgreSQL/2023-05-25-Practice1.md",
     "SQL/PostgreSQL/2023-05-25-Advanced command.md",
-    "SQL/PostgreSQL/2023-05-24-Joins.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
