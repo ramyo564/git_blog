@@ -11,7 +11,7 @@ sidebar:
 
 ---
 # API Integration
-
+{% raw %}
 ## Build : Install Axios and create first API request (CORS intro)
 
 ```
@@ -78,3 +78,37 @@ export const MEDIA_URL = "http://127.0.0.1:8000";
 
 ## Build : Axios Interceptor
 
+JWT Interceptor는 JWT(JSON Web Token)를 사용하여 인증된 사용자의 HTTP 요청을 가로채고 처리하는 기능을 제공하는 인터셉터(interceptor)다.
+
+JWT는 웹 애플리케이션에서 사용자 인증에 자주 사용되는 토큰 기반의 인증 방식이다. 사용자가 로그인하면 서버에서 JWT를 발급하고, 이 토큰을 클라이언트(예: 브라우저)에 저장한다. 그 후, 사용자가 다른 요청을 보낼 때마다 JWT를 함께 전송하여 서버에서 해당 사용자를 인증하고 접근 권한을 확인할 수 있다.
+
+JWT Interceptor는 클라이언트에서 HTTP 요청을 보낼 때마다 요청 헤더에 JWT를 자동으로 포함시키는 역할을 한다. 이를 통해 사용자가 로그인한 상태에서 인증이 필요한 요청을 보낼 때 매번 JWT를 직접 설정하는 번거로움을 피할 수 있다. JWT Interceptor는 보통 웹 애플리케이션의 HTTP 클라이언트에 통합되어 사용된다.
+
+간단한 사용 예시:
+
+```javascript
+import axios from 'axios';
+
+const jwtToken = localStorage.getItem('jwtToken');
+
+const axiosInstance = axios.create({
+  baseURL: 'https://api.example.com',
+  headers: {
+    Authorization: `Bearer ${jwtToken}`, // JWT를 요청 헤더에 자동으로 포함
+  },
+});
+
+axiosInstance.get('/user/profile'); // 서버로 인증된 요청을 보낼 때 JWT가 자동으로 포함됨
+
+```
+
+위 코드에서 `axiosInstance`는 JWT를 인증 헤더에 자동으로 포함시켜 서버로 요청을 보내는 데 사용된다. 이렇게 JWT Interceptor를 사용하면 매번 수동으로 JWT를 설정하지 않아도 된다. 이는 보안성을 높이고 클라이언트에서 JWT를 효과적으로 관리할 수 있도록 도와준다.
+
+
+
+
+
+
+
+
+{% endraw %}
