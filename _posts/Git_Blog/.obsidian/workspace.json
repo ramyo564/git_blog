@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/2023-07-20-Chat Server.md",
+                "file": "Django DRF/API Integration.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "through",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/2023-07-20-Chat Server.md",
+                "file": "Django DRF/API Integration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/2023-07-20-Chat Server.md",
+                "file": "Django DRF/API Integration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/2023-07-20-Chat Server.md"
+                "file": "Django DRF/API Integration.md"
               }
             }
           }
@@ -149,23 +149,24 @@
   },
   "active": "ade5dc096a794d83",
   "lastOpenFiles": [
-    "Django DRF/Front End Templating.md",
+    "Django DRF/2023-07-24-Front End.md",
+    "Django DRF/API Integration.md",
     "Django DRF/2023-07-20-Chat Server.md",
+    "Django DRF/dev105.md",
     "Django DRF/Untitled.md",
-    "Django DRF/Untitled 1.md",
-    "Django DRF/2023-07-06-dev101 dev102.md",
+    "Django DRF/Eshop.md",
+    "Django_Project/2023-06-20-vscode extensions python black.md",
     "Django DRF/2023-07-01-Project Initiation.md",
     "Django DRF/2023-06-19-Control settings.py.md",
-    "Django DRF/dev105.md",
-    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
-    "Django DRF/2023-06-17-Django basic packages.md",
     "Django DRF/2023-06-19-build DRF.md",
+    "Django DRF/2023-06-17-Django basic packages.md",
+    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
+    "Django DRF/2023-07-06-dev101 dev102.md",
     "Django DRF/2023-07-11-dev104.md",
     "Django DRF/2023-07-08-dev103.md",
     "temp.md",
     "CS/개발상식/test.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
-    "Django_Project/2023-06-20-vscode extensions python black.md",
     "Django_Project/Django first project.md",
     "Django_Project/Django second project.md",
     "Django_Project/2023-06-09-refactoring.md",
@@ -175,7 +176,6 @@
     "Django_Project/2023-06-01-request.get.md",
     "Django DRF",
     "Django_Project/2023-06-07-admin security.md",
-    "SQL/PostgreSQL/2023-05-24-Group_by.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",

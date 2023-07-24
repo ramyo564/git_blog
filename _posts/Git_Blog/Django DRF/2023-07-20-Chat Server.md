@@ -731,6 +731,9 @@ if settings.DEBUG:
 
 ## Build : Model Refactor for Icons and Banners in Django Model
 
+[구글 아이콘](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:home:FILL@0;wght@400;GRAD@0;opsz@48)
+
+
 models.py
 ```python
 def category_icon_upload_path(instance, filename):
