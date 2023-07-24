@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/API Integration.md",
+                "file": "Django DRF/2023-07-24-Front End.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/API Integration.md",
+                "file": "Django DRF/2023-07-24-Front End.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/API Integration.md",
+                "file": "Django DRF/2023-07-24-Front End.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/API Integration.md"
+                "file": "Django DRF/2023-07-24-Front End.md"
               }
             }
           }
@@ -149,12 +149,13 @@
   },
   "active": "ade5dc096a794d83",
   "lastOpenFiles": [
-    "Django DRF/2023-07-24-Front End.md",
-    "Django DRF/API Integration.md",
-    "Django DRF/2023-07-20-Chat Server.md",
+    "Django_Project/2023-06-01-request.get.md",
     "Django DRF/dev105.md",
-    "Django DRF/Untitled.md",
     "Django DRF/Eshop.md",
+    "Django DRF/Untitled.md",
+    "Django DRF/2023-07-24-Front End.md",
+    "Django DRF/2023-07-20-Chat Server.md",
+    "Django DRF/API Integration.md",
     "Django_Project/2023-06-20-vscode extensions python black.md",
     "Django DRF/2023-07-01-Project Initiation.md",
     "Django DRF/2023-06-19-Control settings.py.md",
@@ -173,7 +174,6 @@
     "Django_Project/2023-06-09-django aws.md",
     "Django_Project/2023-06-09-session logout.md",
     "Django_Project/2023-06-04-Django ORM.md",
-    "Django_Project/2023-06-01-request.get.md",
     "Django DRF",
     "Django_Project/2023-06-07-admin security.md",
     "CS/개발상식",
