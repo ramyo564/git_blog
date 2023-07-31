@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/2023-07-28-API Integration.md",
+                "file": "Django DRF/2023-07-31-Building Chat Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/2023-07-28-API Integration.md",
+                "file": "Django DRF/2023-07-31-Building Chat Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/2023-07-28-API Integration.md",
+                "file": "Django DRF/2023-07-31-Building Chat Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/2023-07-28-API Integration.md"
+                "file": "Django DRF/2023-07-31-Building Chat Services.md"
               }
             }
           }
@@ -149,13 +149,14 @@
   },
   "active": "ade5dc096a794d83",
   "lastOpenFiles": [
-    "Django DRF/2023-07-24-Front End.md",
+    "Django DRF/dev105.md",
+    "Django DRF/2023-07-31-Building Chat Services.md",
     "Django DRF/2023-07-28-API Integration.md",
+    "Django DRF/Untitled.md",
+    "Django DRF/2023-07-24-Front End.md",
     "Django_Project/2023-06-01-request.get.md",
     "Django DRF/2023-07-20-Chat Server.md",
-    "Django DRF/dev105.md",
     "Django DRF/Eshop.md",
-    "Django DRF/Untitled.md",
     "Django_Project/2023-06-20-vscode extensions python black.md",
     "Django DRF/2023-07-01-Project Initiation.md",
     "Django DRF/2023-06-19-Control settings.py.md",
@@ -175,7 +176,6 @@
     "Django_Project/2023-06-09-session logout.md",
     "Django_Project/2023-06-04-Django ORM.md",
     "Django DRF",
-    "Django_Project/2023-06-07-admin security.md",
     "CS/개발상식",
     "CS",
     "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
