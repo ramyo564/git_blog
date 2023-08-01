@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/2023-07-31-Building Chat Services.md",
+                "file": "React/2023-08-02-Basic JavaScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/2023-07-31-Building Chat Services.md",
+                "file": "React/2023-08-02-Basic JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django DRF/2023-07-31-Building Chat Services.md",
+                "file": "React/2023-08-02-Basic JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/2023-07-31-Building Chat Services.md"
+                "file": "React/2023-08-02-Basic JavaScript.md"
               }
             }
           }
@@ -149,14 +149,20 @@
   },
   "active": "c6e9155e0478d950",
   "lastOpenFiles": [
+    "Django_Project/Django first project.md",
+    "Django_Project/Django second project.md",
+    "React/2023-08-02-Basic JavaScript.md",
+    "temp.md",
+    "React",
     "Django DRF/dev105.md",
     "Django DRF/2023-07-31-Building Chat Services.md",
-    "Django DRF/2023-07-28-API Integration.md",
+    "Django DRF/Authentication.md",
+    "Django DRF/Eshop.md",
     "Django DRF/Untitled.md",
+    "Django DRF/2023-07-28-API Integration.md",
     "Django DRF/2023-07-24-Front End.md",
     "Django_Project/2023-06-01-request.get.md",
     "Django DRF/2023-07-20-Chat Server.md",
-    "Django DRF/Eshop.md",
     "Django_Project/2023-06-20-vscode extensions python black.md",
     "Django DRF/2023-07-01-Project Initiation.md",
     "Django DRF/2023-06-19-Control settings.py.md",
@@ -166,15 +172,10 @@
     "Django DRF/2023-07-06-dev101 dev102.md",
     "Django DRF/2023-07-11-dev104.md",
     "Django DRF/2023-07-08-dev103.md",
-    "temp.md",
     "CS/개발상식/test.md",
     "CS/개발상식/2023-05-21-Basic Computer Science.md",
-    "Django_Project/Django first project.md",
-    "Django_Project/Django second project.md",
     "Django_Project/2023-06-09-refactoring.md",
     "Django_Project/2023-06-09-django aws.md",
-    "Django_Project/2023-06-09-session logout.md",
-    "Django_Project/2023-06-04-Django ORM.md",
     "Django DRF",
     "CS/개발상식",
     "CS",
@@ -189,7 +190,6 @@
     "DeepLearning/ch5_오차역전파법",
     "DeepLearning/ch4_신경망 학습",
     "DeepLearning/ch3_신경망",
-    "DeepLearning/ch2_퍼셉트론",
-    "DeepLearning/ch6_학습 관련 기술/3)배치 정규화"
+    "DeepLearning/ch2_퍼셉트론"
   ]
 }
