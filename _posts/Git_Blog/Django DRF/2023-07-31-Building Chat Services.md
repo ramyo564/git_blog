@@ -3431,17 +3431,686 @@ MUI(Materail-UI) 라이브러리의 컴포넌트들을 사용하여 UI를 구성
 
 ![](https://i.imgur.com/H42iTbA.png)
 
+## Build : Templating - Message Input
+
+### MessageInterface.tsx
+
+```typescript
+import { useState } from "react";
+
+import { useParams } from "react-router-dom";
+
+import useWebSocket, { SendMessage } from "react-use-websocket";
+
+import useCrud from "../../hooks/useCrud";
+
+import { Server } from "../../@types/server.d";
+
+import { Avatar, Box, List, ListItem, ListItemAvatar, ListItemText, TextField, Typography, useTheme } from "@mui/material";
+
+import MessageInterfaceChannels from "./MessageInterfaceChannels";
+
+  
+
+interface SendMessageData {
+
+  type: string;
+
+  message: string;
+
+  [key: string]: any;
+
+}
+
+  
+
+interface ServerChannelProps {
+
+  data: Server[];
+
+}
+
+  
+
+interface Message {
+
+  sender: string;
+
+  content: string;
+
+  timestamp: string;
+
+}
+
+  
+
+const messageInterface = (props: ServerChannelProps) => {
+
+  const { data } = props;
+
+  const theme = useTheme()
+
+  const [newMessage, setNewMessage] = useState<Message[]>([]);
+
+  const [message, setMessage] = useState("");
+
+  const { serverId, channelId } = useParams();
+
+  const server_name = data?.[0]?.name ?? "Server";
+
+  const { fetchData } = useCrud<Server>(
+
+    [],
+
+    `/messages/?channel_id=${channelId}`
+
+  );
+
+  const socketUrl = channelId
+
+    ? `ws://127.0.0.1:8000/${serverId}/${channelId}`
+
+    : null ;
+
+  
+
+  const { sendJsonMessage } = useWebSocket(socketUrl, {
+
+    onOpen: async () => {
+
+      try {
+
+        const data = await fetchData();
+
+        setNewMessage([]);
+
+        setNewMessage(Array.isArray(data) ? data : []);
+
+        console.log("Connected!!!");
+
+      } catch (error) {
+
+        console.log(error);
+
+      }
+
+    },
+
+    onClose: () => {
+
+      console.log("Closed!");
+
+    },
+
+    onError: () => {
+
+      console.log("Error!");
+
+    },
+
+    onMessage: (msg) => {
+
+      const data = JSON.parse(msg.data);
+
+      setNewMessage((prev_msg) => [...prev_msg, data.new_message]);
+
+      setMessage("");
+
+    },
+
+  });
+
+  
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+
+    if (e.key === "Enter"){
+
+      e.preventDefault();
+
+      sendJsonMessage({
+
+        type: "message",
+
+        message,
+
+      } as SendMessageData);
+
+    }
+
+  
+
+  };
+
+  
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+    e.preventDefault();
+
+    sendJsonMessage({
+
+      type: "message",
+
+      message,
+
+    } as SendMessageData);
+
+  };
+
+  
+
+  return (
+
+      <>
+
+        <MessageInterfaceChannels data={data} />
+
+        {channelId == undefined ? (
+
+          <Box
+
+            sx = {{
+
+              overflow: "hidden",
+
+              p: { xs: 0},
+
+              height: `calc(80vh)`,
+
+              display: "flex",
+
+              justifyContent: "center",
+
+              alignItems: "center",
+
+            }}
+
+          >
+
+            <Box
+
+              sx= {{
+
+                textAlign: "center"
+
+              }}
+
+            >
+
+              <Typography
+
+                variant="h4"
+
+                fontWeight={700}
+
+                letterSpacing={"-0.5px"}
+
+                sx = {{
+
+                  px:5,
+
+                  maxWidth: "600px",
+
+                }}
+
+              >
+
+                Welcome to {server_name}
+
+              </Typography>
+
+              <Typography>
+
+                {data?.[0]?.description ?? "This is our home"}
+
+              </Typography>
+
+            </Box>
+
+          </Box>
+
+        ) : (
+
+          <>
+
+  
+
+            <Box sx={{ overflow: "hidden", p:0, height: `calc(100vh - 100px)` }}>
+
+              <List sx={{ width: "100%", bgcolor: "background.paper "}}>
+
+                {newMessage.map((msg: Message, index: number) => {
+
+                  return(
+
+                    <ListItem key={index} alignItems="flex-start">
+
+                      <ListItemAvatar>
+
+                        <Avatar alt="user image"/>
+
+                      </ListItemAvatar>
+
+                      <ListItemText
+
+                        primaryTypographyProps={{
+
+                          fontSize: "12px",
+
+                          variant: "body2",
+
+                        }}
+
+                        primary={
+
+                          <Typography
+
+                            component="span"
+
+                            variant="body1"
+
+                            color="text.primary"
+
+                            sx = {{
+
+                              display: "inline",
+
+                              fontW: 600
+
+                            }}
+
+                          >
+
+                            {msg.sender}
+
+                          </Typography>
+
+                        }
+
+                        secondary= {
+
+                          <Box>
+
+                            <Typography
+
+                              variant = "body1"
+
+                              style={{
+
+                                overflow: "visible",
+
+                                whiteSpace: "normal",
+
+                                textOverflow: "clip",
+
+                              }}
+
+                              sx = {{
+
+                                display: "inline",
+
+                                lineHeight: 1.2,
+
+                                fontWeight: 400,
+
+                                letterSpacing: "-0.2px",
+
+                              }}
+
+                              component="span"
+
+                              color="text.primary"
+
+                            >
+
+                              {msg.content}
+
+                            </Typography>
+
+                          </Box>
+
+                        }
+
+                      />
+
+                    </ListItem>
+
+                  );
+
+                })}
+
+              </List>
+
+  
+
+            </Box>
+
+            <Box sx={{ position: "sticky", bottom: 0, width: "100%" }}>
+
+              <form
+
+                onSubmit={handleSubmit}
+
+                style={{
+
+                  bottom: 0,
+
+                  right: 0,
+
+                  padding: "1rem",
+
+                  backgroundColor: theme.palette.background.default,
+
+                  zIndex: 1,
+
+                }}
+
+              >
+
+                <Box sx={{ display: "flex" }}>
+
+                  <TextField
+
+                    fullWidth
+
+                    multiline
+
+                    value={message}
+
+                    minRows={1}
+
+                    maxRows={4}
+
+                    onKeyDown={handleKeyDown}
+
+                    onChange={(e) => setMessage(e.target.value) }
+
+                    sx={{ flexGrow: 1 }}
+
+                  />
+
+                </Box>
+
+  
+
+              </form>
+
+  
+
+            </Box>
+
+        </>
+
+      )}
+
+    </>
+
+  );
+
+};
+
+  
+
+export default messageInterface;
+
+```
+
+1. `useState`를 이용하여 state 변수들을 정의된다. `newMessage`는 채팅 메시지들을 담는 배열, `message`는 사용자가 입력한 새로운 메시지를 담는 문자열이다.
+    
+2. `useParams`를 사용하여 현재 라우터의 파라미터(serverId, channelId)를 받아온다
+    
+3. `useCrud` 커스텀 훅을 사용하여 해당 채널에 대한 메시지 데이터를 가져온다
+    
+4. WebSocket을 이용하여 서버와 실시간으로 통신하고 새로운 메시지가 도착할 때마다 state 변수 `newMessage`를 업데이트 한다
+    
+5. 컴포넌트가 리렌더링될 때마다 채팅 메시지를 가져오기 위해 `fetchData` 함수를 호출한다.
+    
+6. 채팅 메시지를 표시하는 부분은 조건부 렌더링을 통해 구성되어 있다. `channelId`가 없는 경우, 채널이 선택되지 않은 상태이므로 환영 메시지를 표시한다. `channelId`가 있는 경우, 채팅 메시지를 리스트로 표시한다.
+    
+7. `newMessage` 배열을 `map` 함수를 이용하여 각각의 채팅 메시지를 리스트 아이템으로 표시한다. 메시지의 보낸 사람과 내용을 표시하고, `ListItemText` 컴포넌트를 사용하여 메시지의 텍스트를 스타일링하여 표시한다.
+
+### 메세지 입력창
+
+1. 먼저, 입력창을 생성하기 위해 `<Box>` 컴포넌트를 사용한다. 이 Box 컴포넌트는 `position: sticky`를 설정하여 하단에 고정되도록 하며, `width: 100%`로 화면 너비를 꽉 채우도록 설정한다.
+2. 그 아래에 `<form>`을 추가하고, `onSubmit` 핸들러를 지정한다. 이 onSubmit 핸들러는 나중에 구현할 예정이다.
+3. Box 안에 `<Box>` 컴포넌트를 하나 더 추가하여 Flex 형태로 만들어 준다. 이로써 입력창을 입력과 버튼이 같은 줄에 위치하게 된다.
+4. 이 Box 안에 `<TextField>` 컴포넌트를 추가한다. 이 컴포넌트는 사용자가 메시지를 입력할 수 있는 입력창이다.
+5. 하단에 입력창을 sticky로 고정한다.
+
+이렇게 입력창을 구성한 후, 필요한 스타일을 추가하여 디자인을 완성한다. 그리고 `<form>`의 `onSubmit` 핸들러를 구현하여 사용자가 메시지를 입력하고 전송할 수 있도록 한다
+
+위와 같이 구현하면, 메시지 입력창이 항상 화면 하단에 고정되어 있으며, 스크롤을 내리더라도 입력창이 항상 보이게 된다.
 
 
 
+![](https://i.imgur.com/TXO8y7M.png)
+
+
+## Build : Templating - Message Scroling
+
+
+### Scroll.tsx
+```typescript
++import { Box } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { useCallback, useEffect, useRef } from "react";
+
+interface ScrollProps {
+    children: React.ReactNode;
+}
+
+const ScrollContainer = styled(Box)(() => ({
+    height: `calc(100vh - 190px)`,
+    overflowY: "scroll",
+    "&::-webkit-scrollbar": {
+        width: "8px",
+        height: "8px",
+    },
+    "&::-webkit-scrollbar-thumb": {
+        backgroundColor: "#888",
+        borderRadius: "4px",
+    },
+    "&::-webkit-scrollbar-thumb:hover": {
+        backgroundColor: "#555",
+    },
+    "&::-webkit-scrollbar-track": {
+        // backgroundColor: "#f0f0f0",
+    },
+    "&::-webkit-scrollbar-corner": {
+        backgroundColor: "transparent",
+    },
+}));
+
+const Scroll = ({ children }: ScrollProps ) => {
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    const scrollToBottom = useCallback(() => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+        }
+    }, []);
+
+    useEffect(() => {
+        scrollToBottom();
+    }, [scrollToBottom, children]);
+
+    return <ScrollContainer ref={scrollRef}>{children}</ScrollContainer>
+};
+export default Scroll;
+```
+
+ `ScrollContainer` 컴포넌트는 Material-UI의 `Box` 컴포넌트를 이용하여 만들어진다.
+
+- `height`를 `calc(100vh - 190px)`로 설정하여 컨테이너의 높이를 뷰포트 높이에서 190픽셀을 뺀 값으로 지정한다.
+- `overflowY: "scroll"`을 적용하여 컨테이너 안의 내용이 넘칠 때 수직 스크롤바를 추가한다.
+- CSS 의사 요소(`&::-webkit-scrollbar`, `&::-webkit-scrollbar-thumb` 등)를 사용하여 스크롤바의 모양을 스타일링한다.
+
+
+`Scroll` 컴포넌트는 `ScrollContainer` 스타일드 컴포넌트를 사용하는 함수형 컴포넌트다. `children` prop을 받아 `ScrollContainer` 컴포넌트로 감싼 후, 새로운 컨텐츠가 추가될 때 자동으로 컨텐츠를 하단으로 스크롤하는 기능을 제공한다.
+
+다음은 컴포넌트의 동작이다:
+
+- `useRef` 훅을 사용하여 `scrollRef`라는 ref를 생성한다. 이 ref는 `ScrollContainer` DOM 요소에 접근하기 위해 사용된다.
+- `useCallback` 훅을 사용하여 `scrollToBottom` 함수를 정의한다. 이 함수는 `ScrollContainer` 안의 컨텐츠를 하단으로 스크롤하는 역할을 한다.
+- `useEffect` 훅을 사용하여 컴포넌트가 마운트될 때(`useEffect`에 빈 배열, `[]`을 전달하여) 컨텐츠를 하단으로 스크롤하는 효과를 적용한다. 이 효과는 `scrollToBottom` 함수와 `children` prop에 의존하므로, `children`이 변경될 때마다 효과가 발동된다.
+- 마지막으로, 컴포넌트는 제공된 `children`을 감싼 `ScrollContainer`를 렌더링하며, `ref` 속성을 사용하여 `scrollRef`를 할당한다.
+
+요약하면, 이 코드는 커스텀 `Scroll` 컴포넌트를 생성하고 스타일이 적용된 컨테이너로 `children`을 감싸며, 새로운 컨텐츠가 추가될 때 자동으로 컨텐츠를 하단으로 스크롤한다. 스타일드 컨테이너에는 커스텀 스크롤바 디자인이 적용되며, 높이는 뷰포트 높이에서 190픽셀을 뺀 값으로 설정된다.
+
+## Build : Templating - Message DateTime
+
+### MessageInterface.tsx
+
+```typescript
+  function formatTimeStamp(timestamp: string):string {
+    const date = new Date(Date.parse(timestamp));
+    const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+    const formattedTime = date.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+    return `${formattedDate} at ${formattedTime}`;
+  }
+
+  return (
+      <>
+       ............
+
+```
+
+`formatTimeStamp` 함수는 전달받은 `timestamp` 문자열을 날짜와 시간 형식으로 변환하여 반환하는 역할을 한다. `new Date`를 이용하여 `timestamp`를 JavaScript `Date` 객체로 변환하고, `toLocaleTimeString`을 이용하여 시간 형식을 지정한다. 그리고 `formattedDate`와 `formattedTime`을 합쳐서 날짜와 시간을 포맷팅한 문자열을 반환한다.     
+
+```typescript
+<>
+  <MessageInterfaceChannels data={data} />
+  {channelId == undefined ? (
+    // 채널이 선택되지 않았을 때의 JSX
+  ) : (
+    // 채널이 선택되었을 때의 JSX
+    <>
+      <Box 
+        sx={{ 
+          overflow: "hidden",
+          p: 0,
+          height: `calc(100vh - 100px)`,
+        }}
+      >
+        <Scroll>
+          <List sx={{ width: "100%", bgcolor: "background.paper" }}>
+            {newMessage.map((msg: Message, index: number) => {
+              return (
+                <ListItem key={index} alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Avatar alt="user image" />
+                  </ListItemAvatar>
+                  <ListItemText
+                    primaryTypographyProps={{
+                      fontSize: "12px",
+                      variant: "body2",
+                    }}
+                    primary={
+                      <>
+                        <Typography
+                          component="span"
+                          variant="body1"
+                          color="text.primary"
+                          sx={{
+                            display: "inline",
+                            fontW: 600
+                          }}
+                        >
+                          {msg.sender}
+                        </Typography>
+                        <Typography
+                          component="span"
+                          variant="caption"
+                          color="textSecondary"
+                        >
+                          {" at "}
+                          {formatTimeStamp(msg.timestamp)}
+                        </Typography>
+                      </>
+                    }
+                    secondary={
+                      <>
+                        <Typography
+                          variant="body1"
+                          style={{
+                            overflow: "visible",
+                            whiteSpace: "normal",
+                            textOverflow: "clip",
+                          }}
+                          sx={{
+                            display: "inline",
+                            lineHeight: 1.2,
+                            fontWeight: 400,
+                            letterSpacing: "-0.2px",
+                          }}
+                          component="span"
+                          color="text.primary"
+                        >
+                          {msg.content}
+                        </Typography>
+                      </>
+                    }
+                  />
+                </ListItem>
+              );
+            })}
+          </List>
+        </Scroll>
+      </Box>
+      <Box sx={{ position: "sticky", bottom: 0, width: "100%" }}>
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            bottom: 0,
+            right: 0,
+            padding: "1rem",
+            backgroundColor: theme.palette.background.default,
+            zIndex: 1,
+          }}
+        >
+          <Box sx={{ display: "flex" }}>
+            <TextField
+              fullWidth
+              multiline
+              value={message}
+              minRows={1}
+              maxRows={4}
+              onKeyDown={handleKeyDown}
+              onChange={(e) => setMessage(e.target.value)}
+              sx={{ flexGrow: 1 }}
+            />
+          </Box>
+        </form>
+      </Box>
+    </>
+  )}
+</>
+
+```
+
+위의 코드는 JSX를 사용하여 채팅 메시지를 표시하고 있다. `channelId`가 `undefined`인 경우에는 "채널이 선택되지 않았을 때의 JSX"를, `channelId`가 존재하는 경우에는 "채널이 선택되었을 때의 JSX"를 렌더링한다.
+
+- "채널이 선택되었을 때의 JSX"에서는 다음과 같은 컴포넌트들이 사용되고 있다:
+    - `Box`: MUI의 `Box` 컴포넌트로, 여러 스타일을 적용할 때 사용된다.
+    - `Scroll`: 커스텀 컴포넌트로, 자식 컴포넌트를 스크롤 가능한 형태로 렌더링한다.
+    - `List`, `ListItem`, `ListItemAvatar`, `ListItemText`: MUI의 리스트 관련 컴포넌트들로, 채팅 메시지를 리스트 형태로 표시하기 위해 사용된다.
+    - `Avatar`: MUI의 아바타 컴포넌트로, 유저 이미지를 표시하기 위해 사용된다.
+    - `Typography`: MUI의 텍스트를 표시하는 컴포넌트로, 유저명, 메시지 내용, 타임스탬프 등을 표시하기 위해 사용된다.
+    - `TextField`: MUI의 텍스트 입력을 받는 컴포넌트로, 메시지를 입력하고 전송하기 위해 사용된다.
+
+위 코드에서 `<MessageInterfaceChannels data={data} />` 라인은 `MessageInterfaceChannels` 컴포넌트를 렌더링하고 있다. 이 컴포넌트에서는 `data`를 이용하여 서버 정보를 표시한다.     
+
+그리고 `newMessage` 배열을 `map` 함수를 사용하여 순회하면서 각 메시지를 리스트 형태로 표시하고 있다. 유저명, 메시지 내용, 타임스탬프 등은 `Typography` 컴포넌트를 사용하여 표시하며, 시간 형식은 `formatTimeStamp` 함수를 사용하여 변환한다.     
+
+채팅 메시지 입력을 위한 `TextField` 컴포넌트가 하단에 고정되어 있으며, 입력한 메시지를 `onSubmit` 이벤트나 `onKeyDown` 이벤트를 통해 전송할 수 있도록 처리하고 있다.
 
 
 
-
-
-
-
-
-
+![](https://i.imgur.com/hWE8q57.png)
 
 {% endraw %}
