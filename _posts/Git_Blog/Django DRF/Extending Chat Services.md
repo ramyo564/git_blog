@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: " [Django DRF] React DjangoDRF project (5) "
+title: " [Django DRF] React DjangoDRF project (6) "
 categories: Django
 tag: [Python,"[Django DRF] DjangoDRF + React chat project",]
 toc: true
@@ -11,5 +11,9 @@ sidebar:
 
 ---
 
-# Authentication
+# Extending Chat Services
+{% raw %}
 
+## Build: Server Membership
+
+{% endraw %}
