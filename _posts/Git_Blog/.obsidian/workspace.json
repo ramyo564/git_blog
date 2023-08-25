@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c3fa1687e89d8f2a",
+        "id": "26d43b86538f5713",
         "type": "tabs",
         "children": [
           {
-            "id": "c6e9155e0478d950",
+            "id": "e2e8d636204369e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django DRF/2023-08-09-Authentication.md",
+                "file": "Algorithm/leetcode/2023-08-25-55. Jump Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "coverage",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 262.5011329650879
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,25 +85,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django DRF/2023-08-09-Authentication.md",
+                "file": "Algorithm/leetcode/2023-08-25-55. Jump Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "46e30799a8271440",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Django DRF/2023-08-09-Authentication.md",
-                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -125,12 +113,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django DRF/2023-08-09-Authentication.md"
+                "file": "Algorithm/leetcode/2023-08-25-55. Jump Game.md"
+              }
+            }
+          },
+          {
+            "id": "c34908b72feea977",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Algorithm/leetcode/2023-08-25-55. Jump Game.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -147,49 +147,86 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c6e9155e0478d950",
+  "floating": {
+    "id": "931c8ed52f8e5cd0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "1bae1dbe64ff6b0a",
+        "type": "window",
+        "children": [
+          {
+            "id": "e959f9d9fd379d88",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2cd324cdccb3e7f2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 538,
+        "y": 17,
+        "width": 694,
+        "height": 678,
+        "maximize": false,
+        "zoom": -1.5
+      }
+    ]
+  },
+  "active": "e2e8d636204369e6",
   "lastOpenFiles": [
-    "Django DRF/Extending Chat Services.md",
-    "Django DRF/2023-08-09-Authentication.md",
-    "Django DRF/Untitled.md",
-    "Django DRF/Eshop.md",
-    "Django DRF/2023-07-31-Building Chat Services.md",
-    "Django DRF/2023-08-03-dev105.md",
-    "React/Basic React.md",
-    "React/2023-08-02-Basic JavaScript.md",
-    "Django_Project/Django first project.md",
-    "Django_Project/Django second project.md",
-    "temp.md",
-    "React",
-    "Django DRF/2023-07-28-API Integration.md",
-    "Django DRF/2023-07-24-Front End.md",
-    "Django_Project/2023-06-01-request.get.md",
-    "Django DRF/2023-07-20-Chat Server.md",
-    "Django_Project/2023-06-20-vscode extensions python black.md",
-    "Django DRF/2023-07-01-Project Initiation.md",
-    "Django DRF/2023-06-19-Control settings.py.md",
-    "Django DRF/2023-06-19-build DRF.md",
-    "Django DRF/2023-06-17-Django basic packages.md",
-    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
-    "Django DRF/2023-07-06-dev101 dev102.md",
-    "Django DRF/2023-07-11-dev104.md",
-    "Django DRF/2023-07-08-dev103.md",
-    "CS/개발상식/test.md",
-    "CS/개발상식/2023-05-21-Basic Computer Science.md",
-    "Django DRF",
-    "CS/개발상식",
-    "CS",
-    "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기",
+    "Algorithm/leetcode/2023-08-25-Best Time to Buy and Sell Stock II.md",
+    "Algorithm/leetcode/2023-08-25-Best Time to Buy and Sell Stock 121번.md",
+    "Algorithm/leetcode/2023-08-25-55. Jump Game.md",
+    "Algorithm/leetcode/2023-08-25-Rotate Array 189번.md",
+    "Algorithm/leetcode/2023-07-10-169. Majority Element.md",
+    "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+    "Algorithm/leetcode/2023-08-25-Remove Duplicates from Sorted Array II 80번.md",
+    "Algorithm/leetcode/2023-08-24-Remove Element 27번.md",
+    "Algorithm/leetcode/2023-08-24-Remove Duplicates from Sorted Array 26번.md",
+    "Algorithm/leetcode/2023-08-08-62. Unique Paths.md",
+    "Algorithm/leetcode/알고리즘 과제 표준.md",
+    "Algorithm/programmers/lv_2/2023-08-01-kakao code test  Valid period of personal information collection2.md",
+    "Algorithm/programmers/lv_2/2023-07-18-kakao code test  Valid period of personal information collection1.md",
+    "Algorithm/programmers/lv_2/2023-08-09-kakao code test Candidate key.md",
+    "Algorithm/programmers/lv_2/2023-07-02- geolidugi hwag-in check distance.md",
+    "Algorithm/programmers/lv_0/2023-04-06-reminder2.md",
+    "Algorithm/programmers/lv_0/2023-04-01-reminder1.md",
+    "Algorithm/programmers/lv_0/2023-04-01-fraction.md",
+    "Algorithm/programmers/lv_0/2023-04-06-print age.md",
+    "Algorithm/programmers/lv_0/2023-04-01-division.md",
+    "Algorithm/programmers/lv_2",
+    "Algorithm/programmers/lv_0/2023-04-05-2times array.md",
+    "Algorithm/programmers/lv_0/2023-03-31-compare numbers.md",
+    "Algorithm/programmers/lv_0/2023-04-01-times numbers.md",
+    "Algorithm/programmers/lv_0/2023-04-01-sub numbers.md",
+    "Algorithm/programmers/lv_0/2023-03-31-sum numbers.md",
+    "Algorithm/programmers/lv_0/2023-04-19-lv_0.md",
+    "Algorithm/programmers/lv_0",
+    "Algorithm/programmers",
+    "Untitled",
+    "Algorithm/leetcode",
+    "Algorithm",
+    "Algorithm/Algo/Lv.0/Lv_0/page_1",
+    "Algorithm/Algo/Lv.0/Lv_0",
+    "Algorithm/Algo/Lv.0/Day_2",
+    "Algorithm/Algo/Lv.0/Day_1",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",
     "Pasted image 20230516140722.png",
     "Pasted image 20230516140717.png",
-    "Pasted image 20230516140650.png",
-    "DeepLearning/ch6_학습 관련 기술/4)오버피팅",
-    "DeepLearning/ch5_오차역전파법",
-    "DeepLearning/ch4_신경망 학습",
-    "DeepLearning/ch3_신경망",
-    "DeepLearning/ch2_퍼셉트론"
+    "Pasted image 20230516140650.png"
   ]
 }

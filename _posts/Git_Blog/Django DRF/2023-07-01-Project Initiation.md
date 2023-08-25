@@ -231,8 +231,9 @@ DRF-Spectacular의 주요 기능과 장점은 다음과 같다:
 
 DRF-Spectacular은 DRF 프로젝트에 간단하게 통합되며, 설정이 간단하고 사용자 친화적이다. 따라서 DRF 기반의 프로젝트에서 API 문서화에 대한 요구 사항이 있는 경우 DRF-Spectacular을 고려할 수 있다.      
 
-
-`pip install drf-spectacular`
+```
+pip install drf-spectacular
+```
 
 ```python
 settings.py
