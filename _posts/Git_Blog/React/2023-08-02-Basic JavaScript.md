@@ -2,7 +2,7 @@
 
 layout: single
 title: "[React] JavaScript 기본기"
-categories: Django
+categories: React
 tag: [Python,"[React] JavaScript 기본기"]
 toc: true
 toc_sticky: true
