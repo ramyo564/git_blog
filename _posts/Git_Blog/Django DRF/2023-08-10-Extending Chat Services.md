@@ -12,7 +12,7 @@ sidebar:
 ---
 
 # Extending Chat Services
-{% raw %}
+
 ## Build: Server Membership
 
 ### server/views.py
@@ -117,6 +117,8 @@ router.register(
 따라서, 동적인 URL 경로나 특정 값 추출이 필요한 경우, 정규식을 사용하여 URL 패턴을 구성하는 것은 유용한 방법이다.
 
 ### JoinServerButton.tsx
+
+{% raw %}
 
 ```typescript
 import { useMembershipContext } from "../../context/MemberContext";

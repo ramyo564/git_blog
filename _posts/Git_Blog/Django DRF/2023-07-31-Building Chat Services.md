@@ -12,7 +12,7 @@ sidebar:
 ---
 
 # Building Chat Services
-{% raw %}
+
 ## 비동기 웹 어플리캐이션 
 
 Django Channels는 Django의 비동기 기능을 확장하는 서드파티 라이브러리다. 기존의 Django는 동기식 요청-응답 모델을 따르는데, 클라이언트 요청마다 Django 뷰에서 처리를 하고 서버가 해당하는 HTTP 응답을 반환한다. 그러나 Channels는 WebSocket과 같은 비동기 통신, 백그라운드 작업 등을 처리할 수 있도록 Django의 기능을 확장해준다.     
@@ -128,7 +128,7 @@ Django Channels의 라우팅을 설정하는 작업을 해야한다. HTTP와 웹
 우선, ASGI 파일(chat/asgi.py)에 필요한 리소스를 임포트해야 한다. channels.routing에서 ProtocolTypeRouter와 URLRouter를 임포트한 후 ProtocolTypeRouter는 HTTP와 웹소켓 트래픽을 분리하는 데 사용되며, URLRouter는 URL 패턴을 설정하는 데 사용된다.
 
 그리고 두 개의 라우터를 생성한다. 하나는 HTTP 데이터를 처리하기 위한 것으로 기존의 Django URL과 뷰를 사용하고. 다른 하나는 웹소켓 데이터를 처리하기 위한 것으로 WebSocket의 URL을 설정해야 한다.
-
+{% raw %}
 urls.py
 ```python
 from django.conf import settings

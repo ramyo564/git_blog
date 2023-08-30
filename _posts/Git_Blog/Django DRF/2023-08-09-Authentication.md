@@ -12,7 +12,7 @@ sidebar:
 ---
 
 # Authentication
-{% raw %}
+
 
 ## Build: Installing Dajngorestframework - simplejwt
 
@@ -43,7 +43,7 @@ REST_FRAMEWORK = {
 기존 세션방식은 주석처리
 
 urls.py
-
+{% raw %}
 ```python
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,

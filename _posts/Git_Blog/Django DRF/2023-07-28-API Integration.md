@@ -11,7 +11,7 @@ sidebar:
 
 ---
 # API Integration
-{% raw %}
+
 ## Build : Install Axios and create first API request (CORS intro)
 
 ```
@@ -41,6 +41,7 @@ Axios는 브라우저와 Node.js에서 모두 동작하는 자바스크립트 �
 Django 에서 쓰는 포트랑 바이트에서 쓰는 포트 너버가 다르기 때문에 이 부분의 문제를 해결하기 위해서
 아래의 라이브러리를 사용해줘야 한다.
 (포트넘버가 다르면 엑세스 할 수 가 없다.)
+
 ```python
 pip install django-cors-headers
 ```
@@ -85,7 +86,7 @@ JWT는 웹 애플리케이션에서 사용자 인증에 자주 사용되는 토�
 JWT Interceptor는 클라이언트에서 HTTP 요청을 보낼 때마다 요청 헤더에 JWT를 자동으로 포함시키는 역할을 한다. 이를 통해 사용자가 로그인한 상태에서 인증이 필요한 요청을 보낼 때 매번 JWT를 직접 설정하는 번거로움을 피할 수 있다. JWT Interceptor는 보통 웹 애플리케이션의 HTTP 클라이언트에 통합되어 사용된다.     
 
 간단한 사용 예시:
-
+{% raw %}
 ```javascript
 import axios from 'axios';
 
