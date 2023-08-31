@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Project/2023-06-01-request.get.md",
+                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Project/2023-06-01-request.get.md",
+                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Project/2023-06-01-request.get.md"
+                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Project/2023-06-01-request.get.md",
+                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,8 +147,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "db48f9cdfef3b3ef",
+  "active": "2d853662f91f08a8",
   "lastOpenFiles": [
+    "Untitled 2.md",
+    "temp.md",
+    "Django_Project/2023-06-01-request.get.md",
     "Django DRF/2023-08-10-Extending Chat Services.md",
     "Django DRF/2023-08-09-Authentication.md",
     "Django DRF/2023-07-31-Building Chat Services.md",
@@ -172,9 +175,6 @@
     "Algorithm/leetcode/2023-08-08-62. Unique Paths.md",
     "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
     "Algorithm/leetcode/2023-08-24-Remove Duplicates from Sorted Array 26번.md",
-    "Algorithm/leetcode/2023-08-24-Remove Element 27번.md",
-    "Algorithm/leetcode/2023-08-25-55. Jump Game.md",
-    "Algorithm/leetcode/2023-08-25-Best Time to Buy and Sell Stock 121번.md",
     "Algorithm/programmers/lv_2",
     "Algorithm/programmers/lv_0",
     "Algorithm/programmers",
