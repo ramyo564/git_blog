@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f06785c29644a6ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
+                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md"
+                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md"
               }
             }
           },
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
+                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,10 +160,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d853662f91f08a8",
+  "active": "f06785c29644a6ae",
   "lastOpenFiles": [
-    "Untitled 2.md",
+    "SQL/PostgreSQL/2023-05-24-Group_by.md",
+    "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
     "temp.md",
+    "upgrade_django.md",
+    "wanted.md",
     "Django_Project/2023-06-01-request.get.md",
     "Django DRF/2023-08-10-Extending Chat Services.md",
     "Django DRF/2023-08-09-Authentication.md",
@@ -172,9 +188,6 @@
     "Algorithm/leetcode/2023-08-25-Best Time to Buy and Sell Stock II.md",
     "Algorithm/leetcode/2023-08-25-Remove Duplicates from Sorted Array II 80번.md",
     "Algorithm/leetcode/2023-08-25-Rotate Array 189번.md",
-    "Algorithm/leetcode/2023-08-08-62. Unique Paths.md",
-    "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
-    "Algorithm/leetcode/2023-08-24-Remove Duplicates from Sorted Array 26번.md",
     "Algorithm/programmers/lv_2",
     "Algorithm/programmers/lv_0",
     "Algorithm/programmers",
