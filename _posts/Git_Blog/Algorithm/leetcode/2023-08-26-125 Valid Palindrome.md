@@ -2,12 +2,13 @@
 layout: single
 title: "[125. Valid Palindrome] (알고리즘)"
 categories: Algo
-tag: ["leetcode",Python,"125. Valid Palindrome"]
+tags:
+  - leetcode
+  - Python
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 
 ## 문제

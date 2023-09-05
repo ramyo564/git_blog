@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2d853662f91f08a8",
+            "id": "6418779100c2fb93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f06785c29644a6ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+                "file": "Algorithm/leetcode/알고리즘 과제 표준 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+                "file": "Algorithm/leetcode/알고리즘 과제 표준 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md"
+                "file": "Algorithm/leetcode/알고리즘 과제 표준 1.md"
               }
             }
           },
@@ -136,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+                "file": "Algorithm/leetcode/알고리즘 과제 표준 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,34 +147,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f06785c29644a6ae",
+  "active": "6418779100c2fb93",
   "lastOpenFiles": [
+    "Algorithm/leetcode/2023-09-05-33. Search in Rotated Sorted Array.md",
+    "Algorithm/leetcode/알고리즘 과제 표준 1.md",
+    "Algorithm/leetcode/알고리즘 과제 표준.md",
+    "Algorithm/leetcode/2032-09-04-162. Find Peak Element.md",
+    "Algorithm/leetcode/2023-09-04-148. Sort List.md",
+    "Algorithm/leetcode/2023-08-31-242. Valid Anagram.md",
+    "Algorithm/leetcode/2023-08-24-Merge Sorted Array 88번.md",
+    "Algorithm/leetcode/2023-08-29-141. Linked List Cycle.md",
+    "Algorithm/leetcode/2023-08-29-167. Two Sum Input Array Is Sorted 2.md",
+    "Algorithm/leetcode/2023-08-30-1. Two Sum.md",
+    "Algorithm/leetcode/2023-08-30-21. Merge Two Sorted Lists.md",
+    "Algorithm/leetcode/2023-08-30-150. Evaluate Reverse Polish Notation.md",
+    "Algorithm/leetcode/2023-08-30-155. Min Stack.md",
+    "Algorithm/leetcode/2023-08-30-219. Contains Duplicate II.md",
+    "Algorithm/leetcode/2023-08-30-383. Ransom Note.md",
+    "Django DRF/2023-07-06-dev101 dev102.md",
+    "Django DRF/2023-07-01-Project Initiation.md",
+    "Django DRF/2023-06-19-Control settings.py.md",
+    "Django DRF/2023-06-19-build DRF.md",
+    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
+    "django 초기설정.md",
     "SQL/PostgreSQL/2023-05-24-Group_by.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
     "temp.md",
     "upgrade_django.md",
     "wanted.md",
-    "Django_Project/2023-06-01-request.get.md",
-    "Django DRF/2023-08-10-Extending Chat Services.md",
-    "Django DRF/2023-08-09-Authentication.md",
-    "Django DRF/2023-07-31-Building Chat Services.md",
-    "Django DRF/2023-07-28-API Integration.md",
-    "Django DRF/2023-07-24-Front End.md",
-    "DeepLearning/ch6_학습 관련 기술/5)적절한 하이퍼파라미터 값 찾기/2023-05-14-hyperparameter.md",
-    "Django DRF/2023-06-17-Django basic packages.md",
-    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
-    "Algorithm/leetcode/2023-08-29-141. Linked List Cycle.md",
-    "Algorithm/leetcode/알고리즘 과제 표준 1.md",
-    "Algorithm/leetcode/21. Merge Two Sorted Lists.md",
-    "Algorithm/leetcode/2023-08-29-2. Add Two Numbers.md",
-    "Algorithm/leetcode/2023-08-28-209. Minimum Size Subarray Sum.md",
-    "Algorithm/leetcode/2023-08-28-3. Longest Substring Without Repeating Characters.md",
-    "Algorithm/leetcode/알고리즘 과제 표준.md",
-    "Algorithm/leetcode/2023-08-27-167. Two Sum II - Input Array Is Sorted.md",
-    "Algorithm/leetcode/2023-07-10-169. Majority Element.md",
-    "Algorithm/leetcode/2023-08-25-Best Time to Buy and Sell Stock II.md",
-    "Algorithm/leetcode/2023-08-25-Remove Duplicates from Sorted Array II 80번.md",
-    "Algorithm/leetcode/2023-08-25-Rotate Array 189번.md",
     "Algorithm/programmers/lv_2",
     "Algorithm/programmers/lv_0",
     "Algorithm/programmers",

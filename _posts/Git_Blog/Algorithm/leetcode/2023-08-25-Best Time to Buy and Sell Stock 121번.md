@@ -2,12 +2,13 @@
 layout: single
 title: "[121. Best Time to Buy and Sell Stock] (알고리즘)"
 categories: Algo
-tag: ["leetcode",Python,"121. Best Time to Buy and Sell Stock"]
+tags:
+  - leetcode
+  - Python
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 
 ## 문제
