@@ -2,7 +2,7 @@
 ```python
 python -m venv venv
 python.exe -m pip install --upgrade pip
-python install django
+pip install django
 django-admin startproject core .
 pip install black
 pip install flake8
