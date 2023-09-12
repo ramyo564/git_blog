@@ -199,4 +199,5 @@ djongo를 사용하는 부분에 있어서 꺼려했던 나의 솔직한 이유�
 [몽고B에서 장고 사용](https://www.mongodb.com/compatibility/mongodb-and-django)
 
 어차피 몽고 DB를 사용하기로 결정했으니 큰 오류 없이 잘 넘어갔으면 좋겠다.     
+오류가 생기면 issue 부분에 기록하고 그 때 대처하기로 했다.
 몽고DB를 사용하면서 생기는 오류들은 지속적으로 기록 👍
