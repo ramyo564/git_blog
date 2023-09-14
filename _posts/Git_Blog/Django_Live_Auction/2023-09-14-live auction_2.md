@@ -62,6 +62,7 @@ djongo 에서 orm 처리를 똑바로 못 해서 몽고 db에 데이터가 올�
 
 ![](https://media2.giphy.com/media/mP4240mOW8ngA/giphy.gif?cid=ecf05e47l5prnmyzyrzkrf7jnk9ff6xp5xebgy7ivwwxhid1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
+아마 장고 내부에서 djongo가 NoSQL 매핑하다 포기하고 이렇게 깽판쳐서 오류가 나는게 아닐까 싶다.
 
 ## django에서 mongoDB 를 사용하려면 어떻게 해야될까?
 
