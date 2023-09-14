@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django_Live_Auction/2023-09-14-live auction_2.md",
+                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django_Live_Auction/2023-09-14-live auction_2.md",
+                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django_Live_Auction/2023-09-14-live auction_2.md"
+                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django_Live_Auction/2023-09-14-live auction_2.md",
+                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,8 +159,8 @@
   },
   "active": "c60404533a8c830f",
   "lastOpenFiles": [
-    "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
     "Django_Live_Auction/2023-09-14-live auction_2.md",
+    "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
     "Django_Live_Auction/2023-09-11-live auction_1.md",
     "Algorithm/leetcode/2023-09-14-133. Clone Graph.md",
     "Algorithm/leetcode/373. Find K Pairs with Smallest Sums.md",
