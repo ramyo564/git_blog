@@ -52,13 +52,13 @@ Yohan -> develop
 	- 경매 낙찰된 후 혹은 경매진행 당시 내용 변경 방지를 위해 PUT,PATCH 기능 제외
 	- 내용 수정이 필요한 경우 진행 중인 경매를 삭제후 재등록 해야함
 
-**3. Products 경매삭제** - POST
+**3. Products 경매삭제** - DELETE
 
 - /products/<str:pk>delete    
 - 본인 경매상품만 삭제 가능
 - 경매가 종료되지 않았을 때만 삭제 가능
 
-**4. Products 이미지 등록 - DELETE
+**4. Products 이미지 등록** - POST
 
 - /products/upload-images
 - 인증된 사용자 + 등록된 상품에 이미지 등록
@@ -104,8 +104,13 @@ Yohan -> develop
 
 
 
+## 어드민 패널 썸네일 적용
+
+![어드민 패널](https://github.com/wodnrP/realtime_auction/assets/103474568/4d338d12-b95a-4e9f-9b6c-35008543ba35)
 
 
+
+## 팀원들에게 받은 코드 리뷰 부분
 
 
 
