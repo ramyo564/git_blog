@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
+                "file": "Django_Live_Auction/2023-09-16-live_auction_3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
+                "file": "Django_Live_Auction/2023-09-16-live_auction_3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md"
+                "file": "Django_Live_Auction/2023-09-16-live_auction_3.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
+                "file": "Django_Live_Auction/2023-09-16-live_auction_3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -159,6 +159,10 @@
   },
   "active": "c60404533a8c830f",
   "lastOpenFiles": [
+    "wanted.md",
+    "Django_Live_Auction/2023-09-16-live_auction_3.md",
+    "Django_Live_Auction/template.md",
+    "Django_Live_Auction/Untitled.md",
     "Django_Live_Auction/2023-09-14-live auction_2.md",
     "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
     "Django_Live_Auction/2023-09-11-live auction_1.md",
@@ -181,10 +185,6 @@
     "django 초기설정.md",
     "Algorithm/leetcode/알고리즘 과제 표준.md",
     "Algorithm/leetcode/2023-07-10-169. Majority Element.md",
-    "upgrade_django.md",
-    "temp.md",
-    "wanted.md",
-    "Django DRF/Untitled.md",
     "Django_Live_Auction",
     "Algorithm/programmers/lv_2",
     "Algorithm/programmers/lv_0",
