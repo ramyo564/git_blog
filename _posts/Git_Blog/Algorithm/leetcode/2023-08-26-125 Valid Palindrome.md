@@ -11,7 +11,7 @@ toc_sticky: true
 author_profile: false
 sidebar:
 ---
-
+`Two Pointers`
 ## 문제
 
 [문제 링크](https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150)

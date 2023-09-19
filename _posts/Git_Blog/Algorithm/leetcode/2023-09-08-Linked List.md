@@ -11,6 +11,7 @@ toc_sticky: true
 author_profile: false
 sidebar:
 ---
+`Linked List`
 # Linked list
 
 - 링크드 리스트는 데이터를 삽입하고 삭제하는 연산이 많고 크기가 동적으로 변할 때 유용하며 배열과 같이 빠른 랜덤 엑세스가 필요하지 않을 때 적합하다.      

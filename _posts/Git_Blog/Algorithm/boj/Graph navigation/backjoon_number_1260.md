@@ -12,7 +12,11 @@ toc_sticky: true
 author_profile: false
 sidebar:
 ---
+`BFS` `DFS`
 ## 문제
+
+
+
 
 [문제 링크](https://www.acmicpc.net/problem/1260)
 

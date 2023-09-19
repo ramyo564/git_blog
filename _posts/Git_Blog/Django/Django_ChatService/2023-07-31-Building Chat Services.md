@@ -1,7 +1,7 @@
 ---
 layout: single
 title: " [Django DRF] React DjangoDRF project (4) "
-categories: Django_Chat_Service_with_React
+categories: Django_Chat_Service
 tags:
   - Python
   - "[Django"

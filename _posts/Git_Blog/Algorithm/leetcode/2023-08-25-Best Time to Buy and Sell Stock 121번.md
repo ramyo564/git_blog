@@ -12,6 +12,7 @@ author_profile: false
 sidebar:
 ---
 
+`Array`
 ## 문제
 
 [문제 링크](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/?envType=study-plan-v2&envId=top-interview-150)

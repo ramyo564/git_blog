@@ -10,6 +10,8 @@ sidebar:
 
 ---
 # Java vs JavaScript vs Python
+
+`LV 0`
 ## 문제 푸는건 5초 정리는 10분...
 
 - 하다보니까 이제 3개 점점 못 해지는 느낌...
