@@ -16,31 +16,19 @@
             }
           },
           {
-            "id": "04a4f5112320192a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4ee9b689d10ca863",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django_Live_Auction/template.md",
+                "file": "Django/Django_ChatService/2023-07-20-Chat Server.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5011329650879
+    "width": 282.5011329650879
   },
   "right": {
     "id": "899f72456e634839",
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django_Live_Auction/template.md",
+                "file": "Django/Django_ChatService/2023-07-20-Chat Server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django_Live_Auction/template.md"
+                "file": "Django/Django_ChatService/2023-07-20-Chat Server.md"
               }
             }
           },
@@ -144,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django_Live_Auction/template.md",
+                "file": "Django/Django_ChatService/2023-07-20-Chat Server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,42 +168,42 @@
   },
   "active": "4ee9b689d10ca863",
   "lastOpenFiles": [
-    "Django/Django_Live_Auction/2023-09-19-testtest.md",
-    "Django/Django_Live_Auction/template.md",
-    "django 초기설정.md",
-    "Untitled.md",
+    "Django/Django_ChatService/2023-07-24-Front End.md",
+    "Django/Django_ChatService/2023-07-28-API Integration.md",
+    "Django/Django_ChatService/2023-07-31-Building Chat Services.md",
+    "Django/Django_ChatService/2023-08-09-Authentication.md",
+    "Django/Django_ChatService/2023-08-10-Extending Chat Services.md",
+    "Django/Django_ChatService/2023-07-20-Chat Server.md",
     "upgrade_django.md",
-    "wanted.md",
-    "이력서 질문.md",
-    "temp.md",
-    "Django DRF/2023-07-01-Project Initiation.md",
-    "Django DRF/2023-06-19-Control settings.py.md",
-    "Django DRF/2023-06-19-build DRF.md",
-    "Django DRF/2023-06-18-Ecommerce Inventory Database Design (1).md",
-    "Django DRF/2023-06-17-Django basic packages.md",
-    "Algorithm/boj/Graph navigation/backjoon_number_1260.md",
-    "Algorithm/boj/Graph navigation",
-    "Algorithm/programmers/알고리즘 과제 표준 1.md",
-    "Algorithm/leetcode/2023-09-15-909. Snakes and Ladders.md",
-    "Algorithm/boj",
-    "Algorithm/leetcode/2023-07-10-169. Majority Element.md",
-    "Algorithm/leetcode/2023-09-08-Linked List.md",
-    "Django DRF/2023-08-09-Authentication.md",
-    "Django DRF/2023-07-20-Chat Server.md",
-    "Django_Live_Auction/2023-09-16-live_auction_3.md",
-    "Django_Live_Auction/template.md",
-    "Django_Live_Auction/Untitled.md",
-    "Django_Live_Auction/2023-09-14-live auction_2.md",
-    "Django_Live_Auction/2023-09-11-live auction_1.md",
-    "Algorithm/leetcode/2023-09-14-133. Clone Graph.md",
-    "Django_Live_Auction",
-    "Algorithm/programmers/lv_2",
-    "Algorithm/programmers/lv_0",
-    "Algorithm/programmers",
-    "Algorithm/leetcode",
-    "Algorithm",
-    "Algorithm/Algo/Lv.0/Lv_0/page_1",
-    "Algorithm/Algo/Lv.0/Lv_0",
+    "Django/Django_Basic/Django first project.md",
+    "Django/Django_Basic/2023-06-20-vscode extensions python black.md",
+    "Django/Django_Basic/2023-06-17-Django basic packages.md",
+    "Django/Django_Basic/2023-06-09-session logout.md",
+    "Django/Django_Basic/2023-06-09-refactoring.md",
+    "Django/Django_Basic/2023-06-09-django aws.md",
+    "Django/Django_Basic/2023-06-07-admin security.md",
+    "Django/Django_Basic/2023-06-04-Django ORM.md",
+    "Django/Django_Basic/2023-06-01-request get.md",
+    "Django/Django DRF/2023-06-19-build DRF.md",
+    "Django/Django DRF/2023-06-18-Ecommerce Inventory Database Design.md",
+    "aws/AWS MYSQL.md",
+    "Django/Django4_upgrade/Section8/2023-05-16-shopping_mall_5s.md",
+    "Django/Django4_upgrade/Section7/2023-05-16-shopping_mall_4s.md",
+    "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
+    "Django/Django4_upgrade/Section5/2023-05-15-shopping_mall_2s.md",
+    "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
+    "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
+    "Django/Django4_upgrade/Section18/2023-05-26-shopping_mall_13s.md",
+    "Django/Django4_upgrade/Section8",
+    "Django/Django4_upgrade/Section7",
+    "Django/Django4_upgrade/Section6",
+    "Django/Django4_upgrade/Section5",
+    "Django/Django4_upgrade/Section4",
+    "Django/Django4_upgrade/Section19",
+    "Django/Django4_upgrade/Section18",
+    "Django/Django4_upgrade/Section17",
+    "Django/Django4_upgrade/Section16",
+    "Django/Django4_upgrade/Section15",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",
