@@ -26,9 +26,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4ee9b689d10ca863",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Django_Live_Auction/2023-09-19-testtest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Django/Django_Live_Auction/2023-09-19-testtest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Django/Django_Live_Auction/2023-09-19-testtest.md"
               }
             }
           },
@@ -132,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Django/Django_Live_Auction/2023-09-19-testtest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,49 +178,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "floating": {
-    "id": "35e6f14a6d0d2413",
-    "type": "floating",
-    "children": [
-      {
-        "id": "98377d81af078363",
-        "type": "window",
-        "children": [
-          {
-            "id": "caa1720047dae7f2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4ee9b689d10ca863",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "upgrade_django.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1355,
-        "y": -72,
-        "width": 327,
-        "height": 193,
-        "maximize": false,
-        "zoom": -1.5
-      }
-    ]
-  },
-  "active": "04a4f5112320192a",
+  "active": "4ee9b689d10ca863",
   "lastOpenFiles": [
-    "upgrade_django.md",
-    "Untitled.md",
-    "wanted.md",
+    "Django/Django_Live_Auction/template.md",
+    "Django/Django_Live_Auction/2023-09-19-testtest.md",
     "django 초기설정.md",
+    "Untitled.md",
+    "upgrade_django.md",
+    "wanted.md",
     "이력서 질문.md",
     "temp.md",
     "Django DRF/2023-07-01-Project Initiation.md",
@@ -231,8 +208,6 @@
     "Django_Live_Auction/2023-09-14-live auction_2.md",
     "Django_Live_Auction/2023-09-11-live auction_1.md",
     "Algorithm/leetcode/2023-09-14-133. Clone Graph.md",
-    "Algorithm/leetcode/373. Find K Pairs with Smallest Sums.md",
-    "Algorithm/leetcode/2023-08-30-21. Merge Two Sorted Lists.md",
     "Django_Live_Auction",
     "Algorithm/programmers/lv_2",
     "Algorithm/programmers/lv_0",
