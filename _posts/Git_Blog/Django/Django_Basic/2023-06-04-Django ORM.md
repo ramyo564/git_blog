@@ -1,14 +1,15 @@
 ---
-
 layout: single
 title: "[Django] ORM"
-categories: Django
-tag: [Python,"[Django] ORM"]
+categories: Django_Basic
+tags:
+  - Python
+  - ORM
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 ## 장고에서 사용하는 ORM은 뭘까?
 

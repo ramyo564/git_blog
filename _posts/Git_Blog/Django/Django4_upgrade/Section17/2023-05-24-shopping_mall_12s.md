@@ -13,7 +13,7 @@ author_profile: false
 sidebar:
 ---
 # 체크아웃 페이지 만들기
-`[Django] 장바구니 체크아웃`
+
 {% raw %}
 
 #### carts>views.py

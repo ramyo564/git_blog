@@ -1,16 +1,19 @@
 ---
 layout: single
-title: "프로그래머스 배열 두배 만들기 (알고리즘)"
+title: 프로그래머스 배열 두배 만들기 (알고리즘)
 categories: Algo
-tag: [Java,Python,JavaScript,Lv_0,"배열 두배 만들기","자바함수Arrays.stream","자바함수map","자바함수toArray","자스함수reduce","자스함수map"]
+tags:
+  - Java
+  - Python
+  - JavaScript
+  - Lv_0
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
-# Java vs JavaScript vs Python
-`LV 0`
+# Lv 0
+
 ## 문제 푸는건 5초 정리는 10분...
 
 - 하루 시작은 알고리즘 한 문제 풀기로 시작

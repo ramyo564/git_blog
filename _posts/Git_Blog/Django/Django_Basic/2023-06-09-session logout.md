@@ -1,14 +1,16 @@
 ---
-
 layout: single
 title: "[Django] 세션 자동 로그아웃?"
-categories: Django
-tag: [Python,"[Django] 세션 타이머 "]
+categories: Django_Basic
+tags:
+  - Python
+  - 세션
+  - 타이머
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 # 장고 세션 자동 로그아웃
 

@@ -1,14 +1,16 @@
 ---
-
 layout: single
 title: "[Django] admin 보안 어디까지 강화해봤?"
-categories: Django
-tag: [Python,"[Django] admin 보안 "]
+categories: Django_Basic
+tags:
+  - Python
+  - admin
+  - 보안
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 # 장고의 admin 보안기능 강화
 

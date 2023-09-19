@@ -13,8 +13,9 @@ author_profile: false
 sidebar:
 ---
 # 비밀번호 리셋
-`[Django] 비밀번호 리셋`
+
 - 비밀번호 리셋은 이전에 아이디를 만들 때의 로직과 매우 유사하다.
+
 {% raw %}
 
 #### accounts/views.py

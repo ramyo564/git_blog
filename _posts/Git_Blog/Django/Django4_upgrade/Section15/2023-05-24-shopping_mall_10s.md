@@ -13,8 +13,6 @@ sidebar:
 ---
 # 로그인 페이지 연결하기
 
-`[Django] 로그인 구현(2)`
-
 {% raw %}
 
 #### accounts/views.py

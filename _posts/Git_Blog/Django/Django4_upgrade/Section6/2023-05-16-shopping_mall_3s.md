@@ -12,8 +12,8 @@ author_profile: false
 sidebar:
 ---
 # 상품에 맞는 모델을 어떻게 만들까?
-{% raw %}
 
+{% raw %}
 ## Products 모델 만들기
 ### models.py
 ```python
@@ -108,11 +108,15 @@ INSTALLED_APPS = [
 ```
 >- 따로 라이브러리 설치 필요 없이 그냥 `humanize` 를 앱에 등록해준다.
 
+
+
 ```python
 {% load humanize %}
 
 {{ product.price|intcomma}}
 ```
+
+
 >- 그 후 static 폴더처럼 호출한 뒤 태그를 씌워주면 적용된다.
 >- [참고]([django.contrib.humanize | Django documentation | Django (djangoproject.com)](https://docs.djangoproject.com/en/4.2/ref/contrib/humanize/))
 
@@ -198,9 +202,6 @@ def store(request, category_slug=None):
 >- 이렇게 하면 슬러그 주소가 없을 경우 기존에 랜더링 했던 것과 동일하게 출력을 한다.
 >- 만약 매개변수 값이 있다면 `get_object_or_404` 를 통해 Category 에서 슬러그 주소와 일치하는 값이 있다면 객체 categories로 보내고 없으면 404 오류를 만든다.
 >- categories 값이 만들어 졌다면 필터를 거쳐 products 객체를 만든후 context로 보내주면 된다.
-
-
-
 
 
 {% endraw %}

@@ -4,16 +4,13 @@ title: " [Django DRF] project (1)"
 categories: Django_DRF_Practice
 tags:
   - Python
-  - "[Django"
-  - DRF]
   - Project
   - eCommerce
   - RESTful
   - API
-  - "[Django"
-  - DRF]
   - 테이블
   - 연결시키기
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false

@@ -1,14 +1,17 @@
 ---
-
 layout: single
 title: "[Django] 씹고 뜯고 맛보고 리팩토링"
-categories: Django
-tag: [Python,"[Django] 리팩토링 ","Python 쇼핑몰"]
+categories: Django_Basic
+tags:
+  - Python
+  - 리팩토링
+  - Python
+  - 쇼핑몰
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 # 코드 리팩토링하기
 

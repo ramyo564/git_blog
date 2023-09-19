@@ -1,19 +1,14 @@
 ---
 layout: single
-title: " [Django DRF] Control settings.py (1) "
+title: " [Django DRF] Control settings.py"
 categories: Django_DRF_Practice
 tags:
   - Python
-  - "[Django"
-  - DRF]
   - Project
   - eCommerce
   - RESTful
   - API
-  - "[Django"
-  - DRF]
   - Control
-  - settings.py
 toc: true
 toc_sticky: true
 author_profile: false

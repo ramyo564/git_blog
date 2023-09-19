@@ -12,13 +12,11 @@ toc_sticky: true
 author_profile: false
 sidebar:
 ---
-# 검색 및 페이지 수 구현
-
-`페이지 네이션 구현`
+# 검색 및 페이지 네이션 구현
 
 {% raw %}
-
 ## 페이지 수 구현
+
 - 장고는 정말 모든 게 준비되어있다. 그냥 본인이 찾아서 쏙쏙 뽑아먹으면 된다.
 - [Django Paginator](https://docs.djangoproject.com/en/4.2/ref/paginator/) 공식문서에 자세히 나와있는데 참고하면 좋다.
 

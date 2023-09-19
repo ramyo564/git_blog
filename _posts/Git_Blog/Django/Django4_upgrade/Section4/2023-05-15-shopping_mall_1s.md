@@ -12,9 +12,12 @@ toc_sticky: true
 author_profile: false
 sidebar:
 ---
-# 초기설정 편하게 하기
 
-`[Django] 장고에서 템플릿 쉽게 관리하기`
+# 장고에서 템플릿 쉽게 관리하기
+
+{% raw %}
+
+## 초기설정 편하게 하기
 
 > 이번 토이 프로젝트의 목표는 다음과 같다.
 
@@ -22,7 +25,6 @@ sidebar:
 2. 구현하면서 대충 넘어갔었던 기본 원리에 좀 더 집중
 
 ## 장고에서 templates 폴더 관리하기
-{% raw %}
 
 장고에서 templates 관리의 디폴트는 본인이 만든 app 폴더에 templates -> app 이름의 폴더다.
 
@@ -86,9 +88,4 @@ STATICFILES_DIRS = [
 - 최종 배포 전에 `python manage.py collectstatic ` 를 해서 파일을 한 곳에 모아두기만 하면 된다.
 - 그럼 알아서 해당 경로에 static 파일들이 모아진 폴더가 만들어지고 `{% load static %}` 만 잘 호출해주면 된다.
 - ![](https://i.imgur.com/ouGUZhe.png)
-
-
-
-
-
 {% endraw %}

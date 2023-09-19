@@ -1,14 +1,15 @@
 ---
-
 layout: single
 title: "[Django] AWS에 서버 올리기"
-categories: Django
-tag: [Python,"[Django] AWS "]
+categories: Django_Basic
+tags:
+  - Python
+  - AWS
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 # 서버를 올려보자
 

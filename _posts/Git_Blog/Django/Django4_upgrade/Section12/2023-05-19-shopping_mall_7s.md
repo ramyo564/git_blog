@@ -11,9 +11,11 @@ author_profile: false
 sidebar:
 ---
 # Variation Manager
-`[Django] Variation Manager`
+
 {% raw %}
+
 ## 모델만들기
+
 models.py
 ```python
 class VariationManager(models.Manager):

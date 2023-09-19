@@ -9,8 +9,8 @@ author_profile: false
 sidebar:
 
 ---
-# Java vs JavaScript vs Python
-`LV 0`
+# Lv 0
+
 ## 문제 푸는건 5초 정리는 10분...
 
 - 하루 시작은 알고리즘 한 문제 풀기로 시작

@@ -1,17 +1,13 @@
 ---
 layout: single
-title: " [Django DRF] Ecommerce inventory Database Design (1) "
+title: " [Django DRF] Ecommerce inventory Database Design"
 categories: Django_DRF_Practice
 tags:
   - Python
-  - "[Django"
-  - DRF]
   - Project
   - eCommerce
   - RESTful
   - API
-  - "[Django"
-  - DRF]
   - Ecommerce
   - Inventory
   - Database

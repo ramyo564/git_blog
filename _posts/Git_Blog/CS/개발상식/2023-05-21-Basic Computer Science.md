@@ -1,14 +1,15 @@
 ---
-
 layout: single
 title: " [Django] Test "
-categories: Django
-tag: [Python,"[BIG][Django] User management",]
+categories: Django_Basic
+tags:
+  - Python
+  - User
+  - management
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 # 좋은 코드란 무엇인가
 

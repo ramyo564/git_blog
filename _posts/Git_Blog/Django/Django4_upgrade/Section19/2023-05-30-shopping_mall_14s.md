@@ -13,7 +13,7 @@ author_profile: false
 sidebar:
 ---
 # 결제 연동시키기
-`[Django] 페이팔,카카오페이 등 결제 연동시키기`
+
 {% raw %}
 
 [페이팔 사이트](https://developer.paypal.com/docs/checkout/standard/upgrade-integration/)

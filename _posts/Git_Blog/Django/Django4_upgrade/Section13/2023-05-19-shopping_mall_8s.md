@@ -12,9 +12,8 @@ author_profile: false
 sidebar:
 ---
 # Adding Variation in Cart Item
-`[Django] Adding Variation in Cart Item`
-{% raw %}
 
+{% raw %}
 #### cart/views.py
 ```python
 def add_cart(request, product_id):

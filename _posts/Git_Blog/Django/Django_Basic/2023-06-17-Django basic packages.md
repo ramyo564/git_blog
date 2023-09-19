@@ -1,11 +1,9 @@
 ---
 layout: single
 title: " [Django DRF] Django 기본 패키지 (1) "
-categories: Django_DRF_Practice
+categories: Django_Basic
 tags:
   - Python
-  - "[Django"
-  - DRF]
   - Project
   - eCommerce
   - RESTful

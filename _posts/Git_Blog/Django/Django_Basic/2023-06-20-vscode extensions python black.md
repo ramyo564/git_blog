@@ -1,14 +1,18 @@
 ---
-
 layout: single
 title: "[Django] 장고를 사용하면서 쓰면 유용한 vs코드 익스텐션"
-categories: Django
-tag: [Python,"[Django] VScode extensions for python & Django "]
+categories: Django_Basic
+tags:
+  - Python
+  - VScode
+  - extensions
+  - for
+  - python
+  - Django
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 
 # PEP-8 ?

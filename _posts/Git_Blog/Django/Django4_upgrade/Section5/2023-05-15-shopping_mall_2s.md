@@ -13,6 +13,7 @@ author_profile: false
 sidebar:
 ---
 # 모델을 어떻게 커스텀할까?
+
 {% raw %}
 
 ## 어드민 페이지 커스텀하기
@@ -199,6 +200,4 @@ class FlatPageAdmin(admin.ModelAdmin):
 winpty 는 Windows 콘솔과 통신이 가능한 인터페이스를 제공하는 윈도우 소프트웨어 패키지다.
 - [참고 및 출처](https://thinkground.studio/django-windows-git-bash-createsuperuser-%EC%83%9D%EC%84%B1-%EB%B6%88%EA%B0%80/)
 출처 : https://wikidocs.net/10294
-
-
 {% endraw %}

@@ -12,7 +12,7 @@ author_profile: false
 sidebar:
 ---
 # 로그인 페이지 만들기
-`[Django] 로그인 구현(1)`
+
 {% raw %}
 
 ## 회원가입 양식 만들기
