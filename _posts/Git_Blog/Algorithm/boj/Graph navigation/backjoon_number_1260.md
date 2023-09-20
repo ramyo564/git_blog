@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[1260번 DFS와 BFS] (알고리즘)"
+title: "[백준 1260번 DFS와 BFS] (알고리즘)"
 categories: Algo
 tags:
   - Python
