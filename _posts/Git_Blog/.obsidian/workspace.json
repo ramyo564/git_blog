@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "upgrade_django.md",
+                "file": "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "upgrade_django.md",
+                "file": "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "upgrade_django.md"
+                "file": "Django/Django_Live_Auction/2023-09-21-live_auction_4.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "upgrade_django.md",
+                "file": "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,6 +159,10 @@
   },
   "active": "46034943dc91c4b0",
   "lastOpenFiles": [
+    "Django/Django_Live_Auction/template 1.md",
+    "Django/Django_Live_Auction/2023-09-16-live_auction_3.md",
+    "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
+    "upgrade_django.md",
     "Untitled 1.md",
     "Untitled.md",
     "Algorithm/leetcode/2023-08-30-155. Min Stack.md",
@@ -178,15 +182,11 @@
     "Django/Django_ChatService/2023-07-31-Building Chat Services.md",
     "Django/Django_ChatService/2023-08-09-Authentication.md",
     "Django/Django_ChatService/2023-08-10-Extending Chat Services.md",
-    "upgrade_django.md",
     "Django/Django_Basic/Django first project.md",
     "Django/Django_Basic/2023-06-20-vscode extensions python black.md",
     "Django/Django_Basic/2023-06-17-Django basic packages.md",
     "Django/Django_Basic/2023-06-09-session logout.md",
     "Django/Django_Basic/2023-06-09-refactoring.md",
-    "Django/Django_Basic/2023-06-09-django aws.md",
-    "Django/Django_Basic/2023-06-07-admin security.md",
-    "Django/Django_Basic/2023-06-04-Django ORM.md",
     "Django/Django4_upgrade/Section8",
     "Django/Django4_upgrade/Section7",
     "Django/Django4_upgrade/Section6",
