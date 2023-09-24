@@ -7,6 +7,7 @@ tags:
   - 초기설정
   - templates
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

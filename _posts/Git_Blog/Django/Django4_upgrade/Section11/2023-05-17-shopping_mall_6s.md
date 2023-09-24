@@ -7,6 +7,7 @@ tags:
   - Paginator
   - Search
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

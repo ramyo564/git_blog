@@ -5,6 +5,7 @@ categories: Django_ShoppingMall
 tags:
   - Python
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

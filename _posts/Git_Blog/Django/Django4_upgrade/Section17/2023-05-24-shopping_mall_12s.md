@@ -7,6 +7,7 @@ tags:
   - 장바구니
   - 체크아웃
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

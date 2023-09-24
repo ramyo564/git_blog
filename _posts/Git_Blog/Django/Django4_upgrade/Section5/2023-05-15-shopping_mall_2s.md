@@ -7,6 +7,7 @@ tags:
   - 모델
   - 커스텀하기
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

@@ -6,6 +6,7 @@ tags:
   - Python
   - Variation
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

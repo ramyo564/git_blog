@@ -5,8 +5,8 @@ categories: Django_ShoppingMall
 tags:
   - Python
   - 비밀번호
-  - 리셋
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

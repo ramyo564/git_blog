@@ -5,8 +5,8 @@ categories: Django_ShoppingMall
 tags:
   - Python
   - 결제
-  - 연동
   - Django
+  - Project_ShoppingMall
 toc: true
 toc_sticky: true
 author_profile: false

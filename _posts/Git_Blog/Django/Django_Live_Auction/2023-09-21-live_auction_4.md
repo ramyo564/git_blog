@@ -56,13 +56,13 @@ API 로 테스트를 했을 당시에는 문제가 없었다. 근데 팀원으�
 
 그렇다면 receiver를 통해서 set_auction_active를 호출할 때 if created의 조건을 만들어야지만 재귀호출에 빠지지 않는다는건데       
 
-솔직히 왜 if created 조건이 있을 때만 재귀 호출을 막을 수 있는지 100% 이해가 가지 않았다
+솔직히 왜 if created 조건이 있을 때만 재귀 호출을 막을 수 있는지 100% 이해가 가지 않았다 (뭐가 다른 거지? 뭘 내가 이해 못한거지...?)
 
 ![](https://media0.giphy.com/media/5Zesu5VPNGJlm/giphy.gif?cid=ecf05e47h6scpw9hngh89vhgwb46kjtxac5b3pfy0um92xh1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 그렇다면 직접 알아보는거 말고는 방법이 없다.. 😑
 
-## @receiver 재귀호출이 이러난 이유!
+## @receiver 재귀호출이 일어난 이유!
 
 `@receiver(post_save, sender="product.Products")` 신호 핸들러는 `product.Products` 모델에서 `post_save` 신호를 받아들인다. 이 신호는 해당 모델의 객체가 저장될 때마다 트리거된다.      
 
