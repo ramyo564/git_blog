@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "46034943dc91c4b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithm/codetree/codetree_virus_check 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "21b064b2ce2e41de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithm/leetcode/2023-09-19-198. House Robber.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3cd13afc223b56c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,14 +157,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3cd13afc223b56c5",
+  "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
-    "Algorithm/programmers/kakao/right before song.md",
-    "Algorithm/leetcode/2023-09-19-198. House Robber.md",
-    "Algorithm/codetree/codetree_virus_check 1.md",
-    "Algorithm/programmers/lv_2/2023-07-02- geolidugi hwag-in check distance.md",
-    "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
     "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
+    "Django/Django_Live_Auction/live_auction_5.md",
+    "Django/Django_Live_Auction/2023-09-16-live_auction_3.md",
+    "Algorithm/codetree/racing with rabbits.md",
+    "Algorithm/boj/Graph navigation/backjoon_number_1260.md",
+    "Algorithm/codetree/codetree_virus_check 1.md",
+    "Algorithm/codetree/알고리즘 과제 표준 1.md",
+    "upgrade_django.md",
+    "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
+    "wanted.md",
+    "Algorithm/leetcode/2023-09-19-198. House Robber.md",
+    "Algorithm/programmers/kakao/right before song.md",
+    "Algorithm/programmers/lv_2/2023-07-02- geolidugi hwag-in check distance.md",
     "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
     "Django/Django4_upgrade/Section18/2023-05-26-shopping_mall_13s.md",
     "Django/Django4_upgrade/Section17/2023-05-24-shopping_mall_12s.md",
@@ -204,14 +185,7 @@
     "Django/Django4_upgrade/Section7/2023-05-16-shopping_mall_4s.md",
     "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
     "Django/Django4_upgrade/Section5/2023-05-15-shopping_mall_2s.md",
-    "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
-    "Django/Django_Live_Auction/2023-09-14-live auction_2.md",
-    "Django/Django_Basic/2023-06-20-vscode extensions python black.md",
     "Django/Django4_upgrade/Section20",
-    "Django/Django_Basic/2023-06-09-refactoring.md",
-    "Django/Django_Basic/2023-06-09-session logout.md",
-    "Django/Django_Basic/2023-06-17-Django basic packages.md",
-    "Django/Django_Basic/Django first project.md",
     "Algorithm/programmers/kakao",
     "Algorithm/codetree",
     "Django/Django4_upgrade/Section8",
