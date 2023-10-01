@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md"
+                "file": "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,6 +159,7 @@
   },
   "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
+    "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
     "Algorithm/boj/Heap/2023-09-29-backjoon_number_1927.md",
     "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
     "Algorithm/boj/backjoon_number_.md",
@@ -173,7 +174,6 @@
     "upgrade_django.md",
     "wanted.md",
     "Algorithm/codetree/racing with rabbits.md",
-    "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
     "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
     "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
     "Algorithm/boj/Graph navigation/backjoon_number_1260.md",
