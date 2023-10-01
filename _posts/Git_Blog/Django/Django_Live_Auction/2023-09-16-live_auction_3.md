@@ -4,7 +4,6 @@ title: " [Django DRF] 실시간 경매 live auction (3)"
 categories: Django_Live_Auction
 tags:
   - Python
-  - MongoDB
   - Project_Live_Auction
 toc: true
 toc_sticky: true
