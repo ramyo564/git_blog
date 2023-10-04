@@ -1,14 +1,15 @@
 ---
-
 layout: single
 title: "[React] JavaScript 기본기"
 categories: React
-tag: [Python,"[React] JavaScript 기본기"]
+tags:
+  - Python
+  - JavaScript
+  - 기본기
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
-
 ---
 
 # 자바스크립트 기본기

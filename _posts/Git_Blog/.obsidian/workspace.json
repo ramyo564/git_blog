@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "React/Basic React.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "React/Basic React.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md"
+                "file": "React/Basic React.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "React/Basic React.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,10 @@
   },
   "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
+    "React/Basic JavaScript0.md",
+    "React/Basic React.md",
     "Django/Django_Celery/django_celery_.md",
+    "Django/Django_Celery/django_celery_ 1.md",
     "Django/Django_middle_class/2023-10-03-middle_class_2.md",
     "Django/Django_Celery",
     "Django/Django4_upgrade/Section12/2023-05-19-shopping_mall_7s.md",
@@ -183,9 +186,6 @@
     "Algorithm/boj/Graph navigation/backjoon_number_1260.md",
     "Algorithm/boj/Heap/2023-09-29-backjoon_number_1927.md",
     "Algorithm/boj/Heap/2023-10-02-backjoon_number_11279.md",
-    "Algorithm/boj/Heap/2023-09-29-backjoon_number_1417.md",
-    "Algorithm/boj/backjoon_number_.md",
-    "Django/Django_Live_Auction/live_auction_5.md",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",
