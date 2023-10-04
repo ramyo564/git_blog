@@ -108,7 +108,7 @@ FROM python:${PYTHON_VERSION} as python
 - `FROM python:${PYTHON_VERSION} as python` 
 	- 도커 이미지를 빌드할 때 기본 이미지를 지정하는 지시어다.
 
-도커에서 멀티 스테이지 빌드를 구현하는데 이를 통해 중간 이미지를 생성하고 필요한 파일을 추출한 다음 최종 이미지르 생성하 때 중간 이미지의 일부만 복사할 수 있다.     
+도커에서 멀티 스테이지 빌드를 구현하는데 이를 통해 중간 이미지를 생성하고 필요한 파일을 추출한 다음 최종 이미지를 생성할 때 중간 이미지의 일부만 복사할 수 있다.     
 이로써 최종 이미지의 크기를 줄이고, 빌드 과정을 최적화 할 수 있다.
 
 ### python-build-stage
@@ -127,7 +127,7 @@ RUN pip wheel --wheel-dir /usr/src/app/wheels \
   -r ${BUILD_ENVIRONMENT}.txt
 ```
 
-- FROM 지시문에서 새로운 빌드 스테이지를 정의한다. 이 때 스테이지 이름은 python-build-stage다
+- FROM 지시문에서 새로운 빌드 스테이지를 정의한다. 이 때 스테이지 이름은 python-build-stage 다
 	- 멀티 스테이지 빌드는 빌드 프로세스를 단순화 하고, 최종 이미지의 크기를 최적화하며, 빌드 시간을 단축하는 데 유용하다.
 	- 첫 번째 스테이지에서 사용한 모든 빌드 도구 및 임시 파일은 최종 이미지에 포함되지 않는다.
 - `RUN apt-get update && apt-get install --no-install-recommends -y ...`:
@@ -251,10 +251,7 @@ RUN chmod +x /start
     - "Django/entrypoint"는 Django 웹 애플리케이션을 시작하는 데 사용되는 스크립트다. Django 애플리케이션을 초기화하고 서버를 시작하는 역할을 수행한다.
 2. **start**:
     - "start"는 일반적으로 Docker 컨테이너 내에서 애플리케이션 또는 서비스를 시작하는 데 사용되는 스크립트다.
-3. **Celery worker**:
-    - "Celery"는 Python 기반의 분산 작업 큐 시스템이다. "Celery worker"는 이 큐 시스템에서 작업을 처리하는 데 사용되는 컴퓨팅 노드 또는 프로세스를 나타낸다.  "Celery worker" 스크립트는 백그라운드에서 비동기 작업을 수행하기 위해서다.
-4. **Flower**:
-    - "Flower"는 Celery 작업 큐 모니터링 도구다. "Flower" 서비스를 실행하면 Celery 작업 큐의 상태를 모니터링하고 관리할 수 있으며, 대시보드를 통해 작업 큐의 상태를 시각적으로 확인할 수 있다.
+
 
 
 ```python
