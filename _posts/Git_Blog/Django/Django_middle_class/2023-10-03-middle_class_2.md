@@ -100,7 +100,7 @@ FROM python:${PYTHON_VERSION} as python
 - ARG는 Docerfile에서 사용할 변수를 정의하는 지시어다. 
 	- PYTHON_VERSION 이라는 변수를 만들고 이 값은 3.11.2-bullseye
 	- bullseye는 코드명인데 위에 참고를 클릭하면 자세히 나온다.
-		- Debian 은 안정적인 Linux 배포판인데 bullseye는 Debian 11에서 사용할 수 있는 표준 피키지 및 라이브러리 세트가 포함되어 있다.
+		- Debian 은 안정적인 Linux 배포판인데 bullseye는 Debian 11에서 사용할 수 있는 표준 패키지 및 라이브러리 세트가 포함되어 있다.
 			- aws에서 mysql 라이브러리를 설치할 때 패키지에 포함이 되어 있지 않아서 수동으로 깔아줬던걸 떠올리면 된다.
 	- 윈도우 사용자는 -windowsservercore 를 사용하면 된다.
 		- 윈도우로 개발할 때 뭔가 제약이 많아서 이참에 리눅스를 깔았다.
@@ -174,7 +174,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 	- 컨테이너에 저장될 디렉토리
 - `ENV PYTHONDONTWRITEBYTECODE 1`
 	- 모듈을 가져올 때 PC 파일인 바이트코드 파일 작성을 건너뛰도록 함
-		- 파이썬은 모듈을 가져올 때 일반적으로 소스 코드를 바이트코드로 컴파일해서 PC에 저장한다. 미리 컴파일된 바이트 코드를 직접 로드할 수 있으믈롤 이후에 모듈을 가져오는 속도가 빨라진다.
+		- 파이썬은 모듈을 가져올 때 일반적으로 소스 코드를 바이트코드로 컴파일해서 PC에 저장한다. 미리 컴파일된 바이트 코드를 직접 로드할 수 있으므로 이후에 모듈을 가져오는 속도가 빨라진다.
 		- 하지만 도커 컨테이너에서 디스크 공간 사용량 및 시스템을 클린하게 유지하기 위해 이런 파일들은 잘 생성하지 않는다고 한다.
 - `ENV PYTHONUNBUFFERED 1`
 	- 파이썬 출력이 버퍼링 되지 않도록 설정 -> 터미널로 직접 전송 -> 어플리케이션으로 출력을 실시간 표시
@@ -398,8 +398,8 @@ export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES
 python << END
 ```
 
-- 환경변수 DATABASE_URL은 *.postgres* 에서 정보를 갖고온다.
-- python << END는 해당 시점부터 파이썬 코드가 실행되는 지점이라고 생각하면된다.
+- 환경변수 DATABASE_URL은 *.postgres* 에서 정보를 갖고 온다.
+- python << END는 해당 시점부터 파이썬 코드가 실행되는 지점이라고 생각하면 된다.
 
 ```python
 python << END
@@ -448,7 +448,7 @@ while True:
 END
 ```
 
-- 데이터 베이스에 연결을 시도한 후 성공하면 break으로 종료시킨다.
+- 데이터 베이스에 연결을 시도한 후 성공하면 break으로 종료 시킨다.
 - 연결이 실패하면 일정시간동안 대기시키고 너무 오래 지속되면 error를 띄운다.
 - time.time() 은 현재 시간을 초로 계산하는데 결론은 연결에 실패했을 경우 1초 쉬었다가 30초가 지나도 연결을 못 하면 errer를 띄운다.
 
