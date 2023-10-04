@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "boj/Heap/2023-10-04-backjoon_number_14235.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "boj/Heap/2023-10-04-backjoon_number_14235.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "boj/Heap/2023-09-29-backjoon_number_1417.md",
+                "file": "boj/Heap/2023-10-04-backjoon_number_14235.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "boj/Heap/2023-09-29-backjoon_number_1417.md"
+                "file": "boj/Heap/2023-10-04-backjoon_number_14235.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "bfabf6dede5cf71f",
   "lastOpenFiles": [
-    "boj/Heap/2023-10-02-backjoon_number_11279.md",
-    "boj/Heap/backjoon_number_14235.md",
     "boj/Heap/2023-09-29-backjoon_number_1417.md",
+    "boj/Heap/2023-10-02-backjoon_number_11279.md",
+    "boj/Heap/2023-10-04-backjoon_number_14235.md",
     "boj/Heap/2023-09-29-backjoon_number_1927.md",
     "codetree/racing with rabbits.md",
     "boj/backjoon_number_.md",
