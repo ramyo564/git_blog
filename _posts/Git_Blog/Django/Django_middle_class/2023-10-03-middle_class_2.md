@@ -484,7 +484,7 @@ set -o nounset
 
 python manage.py migrate --no-input
 python manage.py collectstatic --no-input
-exec python manage.py runserver 0.0.0.0:8000
+exec python manage.py runserver 0.0.0.0:8000 
 ```
 
 #### .dockerignore
@@ -502,3 +502,155 @@ venv
 
 ## Configure Docker Compose
 
+*postgres/Dockerfile*
+
+```python
+FROM postgres:15-bullseye
+```
+
+*local.yml*
+```python
+version: "3.9"
+
+
+```
+
+![](https://i.imgur.com/xSaPn2A.png)
+
+
+```python
+version: "3.9"
+services:
+    api:
+        build:
+            context: .
+            dockerfile: ./docker/local/django/Dockerfile
+
+        volumes:
+            - .:/app:z
+            - static_volume:/app/staticfiles
+            - media_volume:/app/mediafiles
+
+        ports:
+            - "8000:8000"
+
+        env_file:
+            - ./.envs/.local/.django
+            - ./.envs/.local/.postgres
+
+        depends_on:
+            - postgres
+            - mailhog
+
+        command: /start
+
+        networks:
+            - authors-api
+
+
+    postgres:
+        build:
+            context: .
+            dockerfile: ./docker/local/postgres/Dockerfile
+
+        volumes:
+            - local_postgres_data:/var/lib/postgresql/data
+            - local_postgres_data_backups:/backups
+
+        env_file:
+            - ./.envs/.local/.postgres
+
+        networks:
+            - authors-api
+ 
+    mailhog:
+        image: mailhog/mailhog:v1.0.0
+        container_name: mailhog
+        ports:
+            - "8025:8025"
+
+        networks:
+            - authors-api
+
+networks:
+    authors-api:
+        driver: bridge
+
+volumes:
+    static_volume:
+    media_volume:
+    local_postgres_data: {}
+    local_postgres_data_backups: {}
+```
+
+
+- build:
+	- context: .은 현재 디랙토리를 가리킨다. 컨텍스트 키는 빌드 구성 내에서 파일 및 디렉터리 위치를 지정하는 데 사용된다.
+	- dockerfile: 은 도커파일이 어디 있는지 위치를 넣으면 된다.
+- volumes: 데이터를 유지하고 호스트 시스템과 컨테이너 간에 또는 호스트 시스템 간에 파일을 공유하는 데 사용한다.
+	- 첫 번째 볼륨에서는 현재 디렉토리를 앱 슬래시 앱에 매핑한다고 선언한다. 기본적으로 호스트 파일과 폴더를 컨테이너에 매핑하는 데 사용한다. 호스트의 코드를 변경하면 Docker 컨테이너의 코드도 변경된다.
+	- `:z` 는 올바른 SELinux 컨텍스트와 SELinux 용 보안 매커니즘이다.
+	- `:z`는 도커 컨테이너와 호스트 시스템 간의 볼륨 마운트 방법을 지정하는 도커의 옵션 중 하나다. 이 옵션은 SELinux (Security-Enhanced Linux) 시스템에서 특히 중요하며, SELinux가 활성화된 시스템에서 도커 볼륨 마운트에 영향을 미친다.
+	- SELinux는 리눅스 시스템에서 추가적인 보안 기능을 제공하는 보안 모듈 중 하나다. SELinux는 파일 및 프로세스 액세스에 대한 엄격한 보안 정책을 시행하므로, 도커 컨테이너와 호스트 시스템 간의 파일 액세스 및 권한 문제가 발생할 수 있다.
+	- `:z` 옵션은 SELinux 환경에서 도커 컨테이너로 볼륨을 마운트할 때 SELinux 정책을 준수하도록 도커에 지시한다. 즉, 컨테이너 내에서 호스트 파일 시스템으로의 액세스가 SELinux 정책을 따르도록 강제된다.
+- command: / start : 시작 쉘 스크립트로 장도 서버를 실행하는 데 사용되는 쉘 스크립트다. 파일을 다운로드하고 마이그레이션이 진행될 거다.
+- networks: 서비스를 서로 연결하는 데 사용된다. 여기서 bridge는 도커의 기본 네트워크 드라이버인 bridge 모드로 설정한다는 의미다.
+- bridge 모드는 컨테이너가 호스트 시스템과 통신할 수 있도록 하는 기본 네트워크 모드다.
+- volumes 는 컨테이너 내부의 파일 시스템이나 데이터를 컨테이너 외부에 지속적으로 저장하고 관리하는데 사용된다. 컨테이너가 종료되더라도 데이터를 보존하고 여러 컨테이너 간에 데이터를 공유하며 데이터를 백업하거나 복원하는 데 사용한다.
+
+## Run docker-compose config
+
+```
+해당 루트 파일에서 아래의 명령문 입력
+docker compose -f local.yml config
+```
+
+yml 파일이 잘 작성 되었다면 아래와 같이 내가 설정한 걸 다시 한 번 확인 할 수 있다.
+
+![](https://i.imgur.com/Hm8eq10.png)
+
+내용을 확인하고 문제가 없다면 다음 명령어 입력
+
+```
+docker compose -f local.yml up --build -d --remove-orphans
+```
+
+1. `-f local.yml`: Docker Compose 파일을 명시적으로 지정한다. 이 경우 `local.yml` 파일을 사용하여 Compose 프로젝트를 실행한다. Docker Compose 파일은 컨테이너 및 서비스 정의, 네트워크, 볼륨, 환경 변수 등을 정의하는 파일이다.
+2. `up`: Docker Compose 프로젝트를 실행한다. 이 명령은 컨테이너를 빌드하고 시작하며, 서비스 간의 상호 작용을 설정하고 네트워크를 구성한다.
+3. `--build`: 이 옵션은 컨테이너를 빌드해야 할 때 사용된다. 즉, 이미지가 존재하지 않거나 변경된 경우 해당 이미지를 다시 빌드한다.
+4. `-d`: 이 옵션은 컨테이너를 백그라운드에서 실행한다. 컨테이너가 백그라운드에서 실행되면 터미널 창이 차지되지 않고도 도커 컨테이너의 로그를 보거나 다른 작업을 수행할 수 있다. 
+5. `--remove-orphans`: 이 옵션은 현재 실행 중인 컨테이너와 관련 없는 서비스를 삭제한다. 즉, Docker Compose 파일에서 정의되지 않은 서비스 또는 컨테이너를 정리한다.
+
+
+![](https://i.imgur.com/p4sBLNC.png)
+
+
+![](https://i.imgur.com/LbgYqSD.png)
+
+![](https://i.imgur.com/dPG27Bj.png)
+
+로그 내용이 없어서 찾아보니 이슈가 있는 것 같다.
+
+[참고](https://github.com/docker/for-win/issues/12986)
+
+```python
+$ docker compose -f local.yml logs
+```
+
+콘솔에서 확인했을 때는 잘 돌아가는 걸 확인할 수 있다.
+
+![](https://i.imgur.com/xxXeR1y.png)
+
+![](https://i.imgur.com/QDOnCyv.png)
+
+![](https://i.imgur.com/IMJUM9k.png)
+
+![](https://i.imgur.com/2s1UWaa.png)
+
+연결이 잘 되었는지 확인
+
+```
+docker volume inspect drf_practice_1_local_postgres_data
+```
+
+![](https://i.imgur.com/pRwrGqb.png)
