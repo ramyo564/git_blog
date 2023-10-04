@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
+                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
+                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md"
+                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
+                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,6 +160,7 @@
   "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
     "Django/Django4_upgrade/Section12/2023-05-19-shopping_mall_7s.md",
+    "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
     "Django/Django4_upgrade/Section13/2023-05-19-shopping_mall_8s.md",
     "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
     "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
@@ -184,7 +185,6 @@
     "Algorithm/boj/backjoon_number_.md",
     "Django/Django_Live_Auction/live_auction_5.md",
     "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
-    "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",
