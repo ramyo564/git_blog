@@ -97,9 +97,9 @@ class Account(AbstractBaseUser):
     email           = models.EmailField(max_length=100, unique=True)
     phone_number    = PhoneNumberField(region='KR',max_length=13)
 ```
-> 우선 해당 라이브러리를 사용하기 위해서는 필드를 해당 라이브러리로 변경해줘야한다.
-> region 부분에 ISO 3166 로 정규화된 코드를 쓰면 된다. 
-> 요즘 대부분 집 전화가 없는 경우가 많으니 최대 길이를 13으로 하면 집 전화 부터 핸드폰 번호까지 가능하다
+> - 우선 해당 라이브러리를 사용하기 위해서는 필드를 해당 라이브러리로 변경해줘야한다.
+> - region 부분에 ISO 3166 로 정규화된 코드를 쓰면 된다. 
+> - 요즘 대부분 집 전화가 없는 경우가 많으니 최대 길이를 13으로 하면 집 전화 부터 핸드폰 번호까지 가능하다
 > 	![](https://i.imgur.com/EdCmj82.png)
 
 
@@ -140,7 +140,6 @@ def register(request):
 ```
 >- 유저네임을 따로 받아도 되지만 그냥 이메일 앞 주소를 유저네임으로 썼다
 >	- 보통 도메인을 제외하면 거의 고유 값이나 다름 없으니 중복이 될 확률도 적다고 생각했다.
->	- 그리고 개인적으로 닉네임 같은걸 정하지 못하거나 오래걸리는 성격이라 이렇게 만들었다.
 >- 커스텀한 `MyAccountManager`에 전화번호가 따로 없기 때문에 전화번호는 마지막에 넣었다.
 >- 이메일로 인증을 해서 활성화를 시킬 예정이다. 일단 더미로 메세지를 만들어 놓았다.
 
@@ -170,8 +169,11 @@ MESSAGE_TAGS = {
     {% endfor %}
 {% endif %}
 ```
+
+
 >- 베이직 템플릿에서 커스텀해서 사용하면 된다.
 >- 해당 템플릿을 연동하기 위해서 이전에 register.html 안에 static 을 불러오는 것처럼 ` {% include 'includes/alerts.html' %}` 를 상단에 넣어준다.
+
 
 ```python
 def register(request):

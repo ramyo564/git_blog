@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md"
+                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+                "file": "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,8 +159,17 @@
   },
   "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
-    "Django/Django_middle_class/2023-10-02-middle_class_1.md",
+    "Django/Django4_upgrade/Section12/2023-05-19-shopping_mall_7s.md",
+    "Django/Django4_upgrade/Section13/2023-05-19-shopping_mall_8s.md",
+    "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
+    "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
+    "Django/Django4_upgrade/Section16/2023-05-24-shopping_mall_11s.md",
+    "Django/Django4_upgrade/Section17/2023-05-24-shopping_mall_12s.md",
+    "Django/Django4_upgrade/Section18/2023-05-26-shopping_mall_13s.md",
+    "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
+    "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
     "Django/Django_middle_class/2023-10-03-middle_class_2.md",
+    "Django/Django_middle_class/2023-10-02-middle_class_1.md",
     "Algorithm/boj/Heap/2023-10-04-backjoon_number_14235.md",
     "Algorithm/boj/Heap/backjoon_number_14235.md",
     "Algorithm/boj/Heap/backjoon_number_ 1.md",
@@ -176,16 +185,7 @@
     "Django/Django_Live_Auction/live_auction_5.md",
     "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
     "Algorithm/boj/Heap/2023-10-12-backjoon_number_11279.md",
-    "Algorithm/leetcode/373. Find K Pairs with Smallest Sums.md",
-    "Algorithm/leetcode/2023-09-12-215. Kth Largest Element in an Array.md",
-    "Django/Django_Live_Auction/2023-09-16-live_auction_3.md",
     "Django/Django_middle_class",
-    "upgrade_django.md",
-    "wanted.md",
-    "Algorithm/codetree/racing with rabbits.md",
-    "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
-    "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
-    "Algorithm/codetree/codetree_virus_check 1.md",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",
     "Algorithm/codetree",

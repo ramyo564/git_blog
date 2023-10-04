@@ -27,25 +27,25 @@ sidebar:
 
 [Deploying a Django application to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
 
-우선 AWS 로 아이디를 만들면 Root account를 볼 수 있는데 어플리케이션 배포를 할 때 root account를 사용하는건 별로 추천되지 않는다고 한다.
-여러가지 이유가 있는데 간단하게 정리하면
+우선 AWS 로 아이디를 만들면 Root account를 볼 수 있는데 어플리케이션 배포를 할 때 root account를 사용하는 건 별로 추천되지 않는다고 한다.
+여러 가지 이유가 있는데 간단하게 정리하면
 
 - 보안 강화 및 권한 제어
 - 작업 추적과 분리
 
 위와 같은 이유로 IAM user를 만들어서 사용한다.
-S3 혹은 DB 등 세분화 해서 IAM user를 만들고 권한을 분리해서 관리하면 보안을 강력하게 유지 할 수 있다.
+S3 혹은 DB 등 세분화해서 IAM user를 만들고 권한을 분리해서 관리하면 보안을 강력하게 유지 할 수 있다.
 
 ## 파이썬 환경 설정
 
 ![](https://i.imgur.com/vKR3HZz.png)
 
-awsebcli 를 설치할 때는 가상환경이 아닌 로컬에 설치해야된다.    
+awsebcli 를 설치할 때는 가상환경이 아닌 로컬에 설치해야 한다.    
 `pip install awsebcli`     
-그 후 이전에 만든 프로젝트의 requirements.txt 에 버전을 뽑아와준다.    
+그 후 이전에 만든 프로젝트의 requirements.txt 에 버전을 뽑아와 준다.    
 `pip freeze requirements.txt'
-기존 루트 폴더에 .ebsxtensions 폴더를 하나 만들어준다.    
-그 후 django.config 라는 환경 설정 폴더를 만들어준다.
+기존 루트 폴더에 .ebsxtensions 폴더를 하나 만들어 준다.    
+그 후 django.config 라는 환경 설정 폴더를 만들어 준다.
 
 ```python
 option_settings: aws:elasticbeanstalk:container:python: WSGIPath: greatkart.wsgi:application aws:elasticbeanstalk:environment:proxy:staticfiles: /static: static
@@ -55,7 +55,7 @@ option_settings: aws:elasticbeanstalk:container:python: WSGIPath: greatkart.wsgi
 
 
 `greatkart` 는 모듈네임으로 처음에 장고를 시작할 때 앱 폴더의 이름으로 쓰면 된다.    
-`python manage.py collectstatic` 를 실행해서 여태까지 작업한 static 파일들을 한 곳에 모아준다.    
+`python manage.py collectstatic` 를 실행해서 여태까지 작업한 static 파일들을 한곳에 모아준다.    
 
 ## 초기 환경 설정 Error 
 
@@ -71,7 +71,7 @@ option_settings: aws:elasticbeanstalk:container:python: WSGIPath: greatkart.wsgi
 
 ERROR: ServiceError - Create environment operation is complete, but with errors. For more information, see trou
 
-첫 번째 발생한 에러다. 해당 부분을 살펴보기위해 로그를 살펴봤다.    
+첫 번째 발생한 에러다. 해당 부분을 살펴보기 위해 로그를 살펴봤다.    
 
 ```
 2023/06/09 16:56:56.277542 [ERROR] update processes [web healthd nginx cfn-hup] pid symlinks failed with error parse pid  to uint32 failed with error:strconv.ParseUint: parsing "": invalid syntax
@@ -84,8 +84,8 @@ ERROR: ServiceError - Create environment operation is complete, but with errors.
 에러를 보니 초기 설정을 잘못해서 인스턴스를 못 만들고 있는 거 같았다.    
 잘못 생성된 인스턴스를 삭제하고 초기부터 다시 설정해 줬다.    
 
-이전에 한 번 사용해서 그런건지 이전에 설정했던 환경설정이 그대로 적용 되어 있었다.      
-생성된 `.elasticbeanstalk`  폴더의 `config.yml` 을 살펴보면`default_region` 이 west로 되어있고 파이썬 버전도 다르게 설정 되어 있었다.
+이전에 한 번 사용해서 그런 건지 이전에 설정했던 환경설정이 그대로 적용되어 있었다.      
+생성된 `.elasticbeanstalk`  폴더의 `config.yml` 을 살펴보면`default_region` 이 west로 되어있고 파이썬 버전도 다르게 설정되어 있었다.
 이 부분을 서울로 바꿔주고 맨 처음에 잘못 설정했던 파이썬 버전도 맞춰주었다.    
 
 ```python
@@ -113,16 +113,16 @@ eb init --interactiv
 ```
 
 터미널에서 `eb init --interactiv` 를 실행하면 알아서 처음부터 다시 잡아준다.    
-아니면 IAM user에 등록된 부분을 다 삭제해주면 토큰이 맞지 않아서 처음부터 다시 잡을 수 있다.     
+아니면 IAM user에 등록된 부분을 다 삭제해 주면 토큰이 맞지 않아서 처음부터 다시 잡을 수 있다.     
 
-이렇게 실행해주고 이제 내 환경 설정에 맞게 선택해주면 해당 파일 정보가 바뀐다.        
+이렇게 실행해 주고 이제 내 환경 설정에 맞게 선택해 주면 해당 파일 정보가 바뀐다.        
 
 ![](https://i.imgur.com/Yu9ICeW.png)
 
 다행히 예상이 맞았다.    
 
 처음에는 개념이 너무 없어서 이런 오류들이 힘들었는데 그냥 오류를 접하면 원인 찾고 구글링하고,     
-구글링 해서 없으면 문제를 단계별로 해결하면서 개념을 숙지하면 대부분 해결된다.     
+구글링해서 없으면 문제를 단계별로 해결하면서 개념을 숙지하면 대부분 해결된다.     
 이제는 딱히 어려울 것도 없다 :)
 
 ```code
@@ -143,13 +143,13 @@ Environment details for: django-greatkart-env
 
 위와 같이 Health: Red 로 나오면 그냥 서버를 다시 시작하면 된다.   
 
-이때 실수했었던 게 AWS에서 빌드가 끝날 때까지 기다리고 했어야 했는데 그냥 무시하고 진행해서 오류가 났었다.     
+이때 실수했었던 게 AWS에서 빌드가 끝날 때까지 기다리고 했야 했는데 그냥 무시하고 진행해서 오류가 났었다.     
 
 git을 로컬 버전에 맞춰서 설정했다면 AWS와 버전이 맞아야 인스턴스가 빌드 되기 때문에 이 부분을 꼭 확인하자    
 
 위에 CNAME은 도메인 네임이다.    
 해당 도메인 네임을 settings.py 에서 변경해야 한다.    
-정상적으로 빌드 해서 올렸는데도 계속 페이지를 찾을 수 없다고해서 찾아보니까 장고의 보안정책 때문에 HOST 주소가 안 맞으면 실행이 안 된다.    
+정상적으로 빌드 해서 올렸는데도 계속 페이지를 찾을 수 없다고 해서 찾아보니까 장고의 보안정책 때문에 HOST 주소가 안 맞으면 실행이 안 된다.    
 
 ```settings.py
 ALLOWED_HOSTS = ['django-greatkart-env.eba-hgmyb93v.ap-northeast-2.elasticbeanstalk.com']
@@ -254,7 +254,7 @@ option_settings:
     DJANGO_SETTINGS_MODULE: greatkart.settings
 ```
 
-2번은 관리자 아이디를 만드는 거라 만들고 지워야한다.
+2번은 관리자 아이디를 만드는 거라 만들고 지워야 한다.
 AWS에서 migrate를 하는 작업이다.   
 근데 어차피 로컬에서 만든 DB를 연결시키면 로컬에서 쓰던 게 그대로 옮겨지니 딱히 크게 상관은 없없다.    
 
@@ -281,7 +281,7 @@ cfnbootstrap.construction_errors.ToolError: Command 02_createsuperuser failed
 
 위에 관리자 계정이 안 만들어져서 오류가 계속 발생했다.    
 Nginx 에서 계속 가상환경을 못 불러오는 게 문제였다.     
-그래서 생각한 게 기존에 데이터를 옮길 수만 있다면 관리자 계정도 어차피 옮겨질 거라고 생각해서 관리자 아이디를 만드는 부분을 빼고 마이그레이션해줬다.      
+그래서 생각한 게 기존에 데이터를 옮길 수만 있다면 관리자 계정도 어차피 옮겨질 거라고 생각해서 관리자 아이디를 만드는 부분을 빼고 마이그레이션 해줬다.      
 
 
 ## Error DB 마이그레이션
@@ -295,7 +295,7 @@ python manage.py dumpdata > data.json
 
 AWS에 연결된 PostgresSQL 의 엔드포인트와 아이디 비번 등을 설정해 주면 로컬에서도 연결이 된다 해당 상태에서 json 데이터 파일을 이식해 주면 되는데 또 오류가 생겼다.    
 
-해결 방법은 기존에 AWS에서 마이그레이션을 했을 때 생기는 권한 같은 잡다한 설정들을 초기화해주고 진행해 주면 된다.     
+해결 방법은 기존에 AWS에서 마이그레이션을 했을 때 생기는 권한 같은 잡다한 설정들을 초기화해 주고 진행해 주면 된다.     
 
 ```
 python manage.py shell
@@ -334,7 +334,7 @@ botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupporte
 
 [참고 자료 2](https://stackoverflow.com/questions/71080354/getting-the-bucket-does-not-allow-acls-error/71144414#71144414)
 
-어떤 애가 `AWS_DEFAULT_ACL = None` 이렇게 하라고 했는데 해결이 안되서 밑에 글을 더 읽어 보니 권한 문제였다.      
+어떤 애가 `AWS_DEFAULT_ACL = None` 이렇게 하라고 했는데 해결이 안 돼서 밑에 글을 더 읽어 보니 권한 문제였다.      
 static 폴더에서 이미지 등을 못 갖고 왔는데 그냥 권한 문제만 해결해 주면 된다.    
 
 ![](https://i.imgur.com/NOfyH5E.png)
@@ -384,7 +384,7 @@ nslookup -type=cname _example-cname.example.com
 nslookup -type=ns example.com
 ```
 
-문제는 확인 결과 cname도 정상적으로 등록되어있고 구매했던 도매인의 벨류 값도 다 제대로 인식하고 이상이 없었는데 주말이라서 그런 건지 아니면 아마도 aws 내에서 문제가 있는 것 같았다.    
+문제는 확인 결과 cname도 정상적으로 등록되어 있고 구매했던 도매인의 벨류 값도 다 제대로 인식하고 이상이 없었는데 주말이라서 그런 건지 아니면 아마도 aws 내에서 문제가 있는 것 같았다.    
 aws에 따로 문의하고 그러기에는 오래 걸릴 거 같고 지금 당장 내가 해결할 수 있는 방법은 버지니아 북부 리전으로 인증서를 받은 다음 cdn으로 배포하는 식도 있는 데 그냥 이메일 인증으로 빠르게 해결했다.      
 
 ![](https://i.imgur.com/zRLtCxq.png)
