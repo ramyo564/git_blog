@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Basic React.md",
+                "file": "Django/Django_Celery/2023-10-05-django_celery_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Basic React.md",
+                "file": "Django/Django_Celery/2023-10-05-django_celery_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Basic React.md"
+                "file": "Django/Django_Celery/2023-10-05-django_celery_1.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Basic React.md",
+                "file": "Django/Django_Celery/2023-10-05-django_celery_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,10 +159,13 @@
   },
   "active": "21b064b2ce2e41de",
   "lastOpenFiles": [
-    "React/Basic JavaScript0.md",
-    "React/Basic React.md",
-    "Django/Django_Celery/django_celery_.md",
     "Django/Django_Celery/django_celery_ 1.md",
+    "Django/Django_Celery/2023-10-05-django_celery_1.md",
+    "Algorithm/boj/Heap/2023-10-05-backjoon_number_17503.md",
+    "Algorithm/boj/backjoon_number_.md",
+    "Algorithm/boj/Heap/2023-10-04-backjoon_number_14235.md",
+    "React/Basic React.md",
+    "React/Basic JavaScript0.md",
     "Django/Django_middle_class/2023-10-03-middle_class_2.md",
     "Django/Django_Celery",
     "Django/Django4_upgrade/Section12/2023-05-19-shopping_mall_7s.md",
@@ -176,16 +179,12 @@
     "Django/Django4_upgrade/Section19/2023-05-30-shopping_mall_14s.md",
     "Django/Django4_upgrade/Section20/2023-06-09-django aws.md",
     "Django/Django_middle_class/2023-10-02-middle_class_1.md",
-    "Algorithm/boj/Heap/2023-10-04-backjoon_number_14235.md",
     "Algorithm/boj/Heap/backjoon_number_14235.md",
-    "Algorithm/boj/Heap/backjoon_number_ 1.md",
-    "Algorithm/boj/backjoon_number_ 1.md",
     "Django/Django_middle_class/middle_class_.md",
     "Algorithm/leetcode/2023-10-02-378. Kth Smallest Element in a Sorted Matrix.md",
     "Django/Django DRF/Untitled.md",
     "Algorithm/boj/Graph navigation/backjoon_number_1260.md",
     "Algorithm/boj/Heap/2023-09-29-backjoon_number_1927.md",
-    "Algorithm/boj/Heap/2023-10-02-backjoon_number_11279.md",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",

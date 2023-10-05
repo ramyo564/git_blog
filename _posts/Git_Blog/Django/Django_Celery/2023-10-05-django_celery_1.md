@@ -72,4 +72,8 @@ It's going to take a couple of seconds.
 - API development
 
 
-샐러리는 비동기 작업, 분산 작업 큐, 작업 예약 결과, 오류 처리 및 모니터링 기능을 향상시키는데 좋은 툴이다.      
+샐러리는 비동기 작업, 분산 작업 큐, 작업 예약 결과, 오류 처리 및 모니터링 기능을 향상시키는데 활용하는 툴이다.       
+이번에는 좀 가볍게 도커로 셋팅해서 연습해 봐야겠다.     
+
+![](https://media3.giphy.com/media/l3vRlT2k2L35Cnn5C/giphy.gif?cid=ecf05e47dpwc16cg8hplk8r08znd3mam8crnd3rd50zfvbo1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
