@@ -14,8 +14,6 @@ sidebar:
 ---
 # 로그인 페이지 연결하기
 
-{% raw %}
-
 #### accounts/views.py
 
 ```python
@@ -51,6 +49,7 @@ def logout(request):
 
 
 ## Activation link
+
 
 #### accounts/views.py
 ```python
@@ -124,6 +123,9 @@ def register(request):
 >- `'/accounts/login/?command-verification&email='+email` 를 통해 유저가 로그인 페이지에서 패스워드만 입력하면 되게 만든다. (email 주소는 이미 써져있음)
 
 #### account_verification_email.html
+
+{% raw %}
+
 ```python
 {% autoescape off %}
 
@@ -136,7 +138,7 @@ If you think it's not you, please ignore this email.
 
 {% endautoescape %}
 ```
-
+{% endraw %}
 #### settings.py
 ```python
 EMAIL_HOST = 'smtp.gmail.com'
@@ -216,4 +218,3 @@ In the above code, `**_default_manager**` is used to retrieve a user object ba
 Overall, `**_default_manager**` and `**_base_manager**` provide different ways to access the managers associated with a model, allowing you to work with the default manager or any custom managers you have defined, depending on your needs.      
 
 
-{% endraw %}

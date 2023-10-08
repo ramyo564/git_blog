@@ -164,7 +164,7 @@ def product_detail(request, category_slug, product_slug):
 
 
 
-srtore . views.py
+*srtore .views.py*
 ```python
 
 def product_detail(request, category_slug, product_slug):

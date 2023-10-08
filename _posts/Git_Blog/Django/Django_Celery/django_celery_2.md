@@ -70,27 +70,8 @@ Hyper-V는 하드웨어 가상화 -> 물리적 하드웨어에서 분리된 가�
 
 파일이 분명히 있는데도 왜 실행을 못하니?
 
-https://sungbumv.tistory.com/12
 ```
-sudo apt-get install libc6-i386 libc32gcc1
-```
-
-```
-sudo apt-get install ia32-libs g++-multilib
+python manage.py startapp cworker
 ```
 
-![](https://i.imgur.com/hT5r3Zo.png)
-
-
-
-
-
-
-![](https://i.imgur.com/aFeVeFC.png)
-
-
-![](https://i.imgur.com/0WNmii6.png)
-
-
-https://devicetests.com/fix-docker-service-not-found-error-ubuntu
-![](https://i.imgur.com/kVuAwEn.png)
+우분투에서는 위와 같은 방식으로 진행하면된다.

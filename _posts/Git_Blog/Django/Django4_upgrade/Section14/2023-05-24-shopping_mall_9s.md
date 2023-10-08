@@ -77,7 +77,10 @@ class Registrationform(forms.ModelForm):
 
 
 #### 라이브러리 설치
-`pip install "django-phonenumber-field[phonenumberslite]"`
+```
+pip install "django-phonenumber-field[phonenumberslite]
+```
+
 > 생각보다 라이브러리 크기가 크기도하고 어차피 한국 번호만 쓰면 되니까 라이트버전을 설치했다.
 
 #### settings.py

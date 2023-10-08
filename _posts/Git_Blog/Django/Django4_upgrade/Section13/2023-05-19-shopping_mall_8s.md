@@ -66,6 +66,7 @@ class CartItem(models.Model):
 >- [2. ManyToMany](https://himanmengit.github.io/django/2018/02/05/DjangoModels-04-ManyToMany.html)
 >- [3. ManyToManyField](https://velog.io/@jiffydev/Django-9.-ManyToManyField-1)
 
+
 ## 어드민 페이지 커스텀
 
 - 현재 어드민에서는 object 형태로 보이는데 이렇게 보면 뭔지 알 수가 없다.
@@ -121,6 +122,7 @@ def add_cart(request, product_id):
 ```
 >- len 으로 `product_variation` (장바구니에) 아이템이 존재한다면 `cart_item` 의 `variations` 에 해당 상품들을 넣어준다.
 
+
 #### store/models.py
 ```python
 class Variation(models.Model):
@@ -142,6 +144,7 @@ class Variation(models.Model):
 ![](https://i.imgur.com/J2yGl7K.png)
 
 
+
 ## 문제점 버그 발견
 
 - 해당 코드로는 같은 상품이지만 옵션을 다르게 할 경우 카운트는 제대로 되지만 사이즈가 중첩되어 버린다 
@@ -155,6 +158,7 @@ class Variation(models.Model):
 
 - 장바구니에 담긴 후 만약 담겨있고 동일한 옵션을 갖고 있다면 수량을 올리고 옵션이 다르다면 다른 옵션으로 새롭게 하나가 생기도록 코드를 만들었다.
 - 우선 옵션이 다를 경우 중첩이 안 되게 만들어야 하니 중첩을 없애도록 만들었다.
+
 
 #### cart/views.py
 ```python
@@ -278,7 +282,10 @@ def add_cart(request, product_id):
 >- 만들어 놓은 `ex_var_list` 에 걸리는게 없으면 처음에 만들어 놓았던 로직을 활용해서 새로 등록해주면 끝
 
 
-이제 똑같은 바지는 따로 잘 나오고 중복되는 상품은 알아서 쌓인다.
+
+이제 똑같은 바지는 따로 잘 나오고 중복되는 상품은 알아서 쌓인다.     
+
+
 
 ![](https://i.imgur.com/Dsy4feR.png)
 
@@ -329,7 +336,9 @@ def add_cart(request, product_id):
 </td>
 ```
 
+
 ### 마이너스 버튼
+
 ```python
 def remove_cart(request, product_id, cart_item_id):
     cart = Cart.objects.get(cart_id=_cart_id(request))
@@ -350,6 +359,7 @@ def remove_cart(request, product_id, cart_item_id):
 ```
 >- `cart_item_id` 를 추가해준다.
 >- 마이너스 버튼을 누르면 수량을 1개씩 삭제해서 업데이트 시켜준다.
+
 
 
 ```python
@@ -375,6 +385,7 @@ urlpatterns = [
 ]
 ```
 
+
 ### 장바구니 삭제 버튼
 
 ```python
@@ -384,6 +395,7 @@ urlpatterns = [
 
 </td>
 ```
+
 >- 같은 원리로 `cart_item.id` 값을 넘겨준다.
 >- 위에 미리 수정해 놓았는데 url 도 값을 받을 수 있도록 수정해준다.
 >- 자바스크립트로 삭제 할껀지 물어봐주는 것도 처리해준다.

@@ -101,6 +101,7 @@ def home(request):
 ## 숫자 포맷 적용시키기
 
 - 장고에는 숫자나 날씨 포맷이 이미 내장되어있다.
+
 ### settings.py
 ```python
 INSTALLED_APPS = [
@@ -126,6 +127,7 @@ INSTALLED_APPS = [
 ## 페이지 연결시키기
 - 메인화면이 아닌 store 페이지를 따로 만들고 거기서 카테고리 별로 나눈 페이지를 만들려고 했는데 그 이유는 페북이나 구글 스크립트를 심어 놨을 때 세분화 할 수록 추적할 때도 좋고 인사이트를 얻기도 좋다
 - 두 번째로는 사용자가 원하는 상품을 찾기 쉽게 하기 위해서다.
+
 ### urls.py
 ```python
 from django.urls import path
@@ -161,6 +163,7 @@ def store(request):
 
 - 왼쪽에 카테고리들은 현재 데모로 구현되어있다. 이 카테고리들 중 하나를 클릭하면 해당 카테고리에 맞는 아이템들만 반복문으로 출력하게 만들고 싶었다.
 	- 이를 구현하기 위해서 slug를 사용하면 편하다.
+
 ### urls.py
 ```python
 from django.urls import path
