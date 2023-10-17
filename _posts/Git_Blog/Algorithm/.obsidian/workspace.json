@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "boj/Heap/2023-10-07-backjoon_number_1766.md",
+                "file": "code_test_project_basic/backjoon_number_ 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "boj/Heap/2023-10-07-backjoon_number_1766.md",
+                "file": "code_test_project_basic/backjoon_number_ 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "boj/Heap/2023-10-07-backjoon_number_1766.md",
+                "file": "code_test_project_basic/backjoon_number_ 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "boj/Heap/2023-10-07-backjoon_number_1766.md"
+                "file": "code_test_project_basic/backjoon_number_ 1.md"
               }
             }
           }
@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,16 +148,22 @@
   },
   "active": "bfabf6dede5cf71f",
   "lastOpenFiles": [
-    "codetree/racing with rabbits.md",
+    "boj/Gold/backjoon_number_23290.md",
+    "code_test_project_basic/backjoon_number_ 1.md",
+    "code_test_project_basic",
+    "boj/Graph navigation/backjoon_number_1260.md",
+    "boj/Graph navigation/2023-10-13-backjoon_number_1388.md",
+    "boj/Heap/2023-10-02-backjoon_number_11279.md",
+    "boj/Untitled/Untitled",
+    "boj/Gold",
     "boj/Heap/2023-10-07-backjoon_number_1766.md",
+    "codetree/racing with rabbits.md",
     "Untitled.canvas",
     "boj/Heap/2023-10-06-backjoon_number_15903.md",
     "boj/Heap/2023-10-04-backjoon_number_14235.md",
     "boj/Heap/2023-09-29-backjoon_number_1417.md",
-    "boj/Heap/2023-10-02-backjoon_number_11279.md",
     "boj/Heap/2023-09-29-backjoon_number_1927.md",
     "boj/backjoon_number_.md",
-    "boj/Graph navigation/backjoon_number_1260.md",
     "leetcode/2023-09-12-215. Kth Largest Element in an Array.md",
     "leetcode/373. Find K Pairs with Smallest Sums.md",
     "Untitled.md",

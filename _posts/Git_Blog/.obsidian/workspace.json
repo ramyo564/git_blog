@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a0e3e7256d1a0b88",
+        "id": "eae0e76ca17ff089",
         "type": "tabs",
         "children": [
           {
-            "id": "21b064b2ce2e41de",
+            "id": "b3def0ff9fff8f12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
+                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md"
+                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
+                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
+                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,8 +156,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "21b064b2ce2e41de",
+  "active": "b3def0ff9fff8f12",
   "lastOpenFiles": [
+    "Django/Django_Celery/2023-10-17-django_celery_3.md",
+    "Algorithm/code_test_project_basic/backjoon_number_ 1.md",
+    "Algorithm/boj/backjoon_number_ 1.md",
+    "Algorithm/code_test_project_basic",
+    "Algorithm/Untitled",
+    "Django/Django_Celery/2023-10-13-django_celery_2.md",
+    "Django/Django_Celery/2023-10-05-django_celery_1.md",
+    "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
     "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
     "Django/Django4_upgrade/Section13/2023-05-19-shopping_mall_8s.md",
     "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
@@ -168,13 +176,10 @@
     "Django/Django DRF/2023-07-08-dev103.md",
     "Algorithm/codetree/racing with rabbits.md",
     "Algorithm/leetcode/2023-10-02-378. Kth Smallest Element in a Sorted Matrix.md",
-    "Django/Django_Celery/2023-10-05-django_celery_1.md",
-    "Django/Django_Celery/django_celery_2.md",
     "Algorithm/boj/Heap/2023-10-07-backjoon_number_1766.md",
     "Algorithm/Untitled.canvas",
     "Algorithm/boj/Heap/backjoon_number_1766.md",
     "Algorithm/boj/Heap/backjoon_number_ 1.md",
-    "Algorithm/boj/backjoon_number_ 1.md",
     "Django/Django_Celery/django_celery_.md",
     "Algorithm/boj/Heap/2023-10-06-backjoon_number_15903.md",
     "Algorithm/boj/Heap/2023-10-05-backjoon_number_17503.md",
@@ -182,10 +187,7 @@
     "Algorithm/boj/backjoon_number_.md",
     "React/Basic React.md",
     "React/Basic JavaScript0.md",
-    "Django/Django_middle_class/2023-10-03-middle_class_2.md",
     "Django/Django_Celery",
-    "Django/Django4_upgrade/Section12/2023-05-19-shopping_mall_7s.md",
-    "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",
@@ -193,8 +195,6 @@
     "Django/Django4_upgrade/Section8",
     "Django/Django4_upgrade/Section7",
     "Django/Django4_upgrade/Section6",
-    "Django/Django4_upgrade/Section5",
-    "Django/Django4_upgrade/Section4",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",

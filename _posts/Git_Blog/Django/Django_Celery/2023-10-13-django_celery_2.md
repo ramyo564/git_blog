@@ -11,6 +11,7 @@ author_profile: false
 sidebar:
 ---
 # Creating and Registering Celery Tasks in Django
+`셀러리 초기설정하기!`
 
 - 도커에 컨테이너를 만들어서 연습해서 셀러리를 실행할 때 도커 컨테이너에 명령을 실행해줘야 한다. 
 
@@ -75,3 +76,84 @@ python manage.py startapp cworker
 ```
 
 우분투에서는 위와 같은 방식으로 진행하면된다.
+
+
+## Celery
+
+루트 폴더에 셀러리파일을 만들어준다.
+
+*celery.py*
+```python
+import os
+from celery import Celery
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings')
+
+app = Celery("djcelery")
+app.config_from_object("django.conf:settings", namespace="CELERY")
+
+@app.task
+def add_numbers():
+    return
+
+app.autodiscover_tasks()
+```
+
+이렇게 설정하면 셀러리가 루트폴더의 셋팅에 CELERY로 시작하는 파일을 알아서 찾아준다.     
+
+뷰처럼 함수 또는 클래스로 작업을 만들 수 있다.     
+
+```
+  celery:
+    container_name: celery
+    build:
+      context: ./djcelery
+    command: celery --app=djcelery worker -l INFO
+    volumes:
+      - ./djcelery:/usr/src/app/
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=zxzxw2sdsdaas219fj01j9f
+      - ALLOWED_HOSTS=localhost,127.0.0.1
+    depends_on:
+      - redis
+```
+
+- 초기 설정 이후 셀러리를 실행할 수 있게 커맨드 라인을 심어준다.
+
+*tasks.py*
+```python
+from celery import shared_task
+
+@shared_task
+def sharedtask():
+    return
+    
+```
+
+### `__init__.py`
+루트 폴더에 있는 celery 파일에서 셀러리 인스턴스를 만들고 장고 인스턴스 내부에 메시지 브로커 (레디스) 로 작업을 보낸다.
+
+따라서 루트 폴더에 있는 `__init__.py` 파일에 셀러리와 장고 프로젝트를 연결시켜서 장고 프로젝트가 실핼 될 때마다 해당 파일을 읽으면서 샐러리 앱에 대한 엑세스를 초기화 한다.
+
+```python
+from .celery import app as celery_app
+
+__all__ = ("celery_app",)
+```
+
+이렇게 해서 settings.py에서 Celery 어플리케이션을 설정하고 관리할 수 있으며 celery_app 이라는 이름으로 작업을 시킬 수 있다.
+
+등록한 cworker 앱에 tasks.py 를 만들어준 후 터미널에서 도커에 진입한뒤 파이썬 쉘에서 명령하면 된다.
+
+```
+docker exec -it django /bin/sh
+python manage.py shell
+```
+
+![](https://i.imgur.com/Hq0ohnt.png)
+
+![](https://i.imgur.com/gUhPVQJ.png)
+
+에러가 발생했을 경우 이슈를 찾아서 해결하면 되는데 깜빡하고 기록을 안했다.      
+문제 없이 환경설정을 제대로 한다면 위와 같이 잘 작동한다.
