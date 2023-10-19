@@ -118,4 +118,48 @@ def my_task2():
 
 ## Error Handling: Try Except Blocks
 
+- Coverage:
+	- Try Except Block
+	- Logging / Customizing Output
+	- Create and Inspect a Failed Task in Flower
 
+[셀러리 에러 공식문서](https://docs.celeryq.dev/en/main/reference/celery.exceptions.html)
+
+```python
+import logging
+from djcelery.celery_config import app
+
+"""
+from djcelery.celery_tasks.ex_name import my_task
+my_task.delay()
+"""
+
+logging.basicConfig(
+    filename="app.log", level=logging.ERROR, format="%(actime)s %(levelname)s %(message)s"
+)
+
+  
+@app.task(queue="tasks")
+def my_task():
+    try:
+        raise ConnectionError("Connection Error Occured...")
+    except ConnectionError:
+        logging.error("Connection error occurred....")
+        raise ConnectionError()
+```
+
+![](https://i.imgur.com/zkYyIcc.png)
+
+- 일부러 에러를 발생시키고 플라워에서 어떻게 나오는지 확인
+
+![](https://i.imgur.com/tmT6Fu1.png)
+
+
+## Handling Errors in Celery Tasks with Custom Task Classes
+
+- Key topics covered in the tutorial:
+	- Creating a custom task class in Celery
+	- Overriding the on_failure method to handle errors
+	- Differentiating and handling specific types of exceptions
+	- Logging error messages using the logging module
+	- Performing additional error handling actions
