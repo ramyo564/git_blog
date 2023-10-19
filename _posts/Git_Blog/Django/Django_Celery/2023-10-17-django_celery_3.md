@@ -5,6 +5,7 @@ categories: Django_Celery
 tags:
   - Python
   - Celery
+  - Flower
 toc: true
 toc_sticky: true
 author_profile: false

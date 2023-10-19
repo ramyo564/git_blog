@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f16fde4f086708d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Django_Celery/django_celery_4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md"
+                "file": "Django/Django_Celery/django_celery_4.md"
               }
             }
           },
@@ -106,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md",
+                "file": "Django/Django_Celery/django_celery_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django_Celery/2023-10-17-django_celery_3.md",
+                "file": "Django/Django_Celery/django_celery_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,14 +169,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b3def0ff9fff8f12",
+  "active": "2f16fde4f086708d",
   "lastOpenFiles": [
-    "Django/Django_Celery/2023-10-17-django_celery_3.md",
-    "Algorithm/code_test_project_basic/backjoon_number_ 1.md",
+    "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
+    "Algorithm/Pasted image 20231019134728.png",
+    "Algorithm/boj/Stage/backjoon_number_.md",
+    "Algorithm/boj/Stage/backjoon_number_ 1.md",
     "Algorithm/boj/backjoon_number_ 1.md",
-    "Algorithm/code_test_project_basic",
+    "Algorithm/boj/Stage",
+    "Algorithm/Stage",
     "Algorithm/Untitled",
+    "CS/개발상식/2023-05-21-Basic Computer Science.md",
+    "Django/Django_Celery/django_celery_4.md",
+    "Django/Django_Celery/2023-10-17-django_celery_3.md",
     "Django/Django_Celery/2023-10-13-django_celery_2.md",
+    "Django/Django_Celery/django_celery_.md",
+    "Algorithm/code_test_project_basic/backjoon_number_ 1.md",
+    "Algorithm/code_test_project_basic",
     "Django/Django_Celery/2023-10-05-django_celery_1.md",
     "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
     "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
@@ -180,21 +202,13 @@
     "Algorithm/Untitled.canvas",
     "Algorithm/boj/Heap/backjoon_number_1766.md",
     "Algorithm/boj/Heap/backjoon_number_ 1.md",
-    "Django/Django_Celery/django_celery_.md",
     "Algorithm/boj/Heap/2023-10-06-backjoon_number_15903.md",
-    "Algorithm/boj/Heap/2023-10-05-backjoon_number_17503.md",
-    "Algorithm/boj/Heap/2023-10-04-backjoon_number_14235.md",
-    "Algorithm/boj/backjoon_number_.md",
-    "React/Basic React.md",
-    "React/Basic JavaScript0.md",
     "Django/Django_Celery",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
     "Algorithm/programmers/kakao",
     "Algorithm/codetree",
     "Django/Django4_upgrade/Section8",
-    "Django/Django4_upgrade/Section7",
-    "Django/Django4_upgrade/Section6",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",
