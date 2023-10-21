@@ -27,6 +27,7 @@ sidebar:
 - Both methods can lead to the same results
 - Let's first show the syntax for a "general" CASE
 
+
 ```postgresql
 # General Syntax
 CASE
@@ -45,13 +46,15 @@ END
 FROM test;
 ```
 
+
 | a   | label |
 | --- | ----- |
 | 1   | one   |
 | 2   | two      |
 
+
 ```postgresql
-# Example
+Example
 SELECT customer_id,
 CASE
 	WHEN (customer_id <= 100) THEN 'Premium'
