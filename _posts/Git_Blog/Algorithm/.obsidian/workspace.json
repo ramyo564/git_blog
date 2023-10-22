@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "05842c70386ee459",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "boj/Stage/2023-10-19-backjoon_number_1316.md",
+                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "boj/Stage/2023-10-19-backjoon_number_1316.md",
+                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "boj/Stage/2023-10-19-backjoon_number_1316.md"
+                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfabf6dede5cf71f",
+  "active": "05842c70386ee459",
   "lastOpenFiles": [
-    "boj/Gold/backjoon_number_23290.md",
+    "boj/backjoon_number_.md",
+    "boj/Stage/2023-10-22-backjoon_number_2563.md",
     "boj/Stage/2023-10-19-backjoon_number_1316.md",
+    "boj/Gold/backjoon_number_23290.md",
     "Pasted image 20231019134728.png",
     "code_test_project_basic/backjoon_number_ 1.md",
     "Untitled.canvas",
@@ -166,7 +181,6 @@
     "boj/Heap/2023-10-04-backjoon_number_14235.md",
     "boj/Heap/2023-09-29-backjoon_number_1417.md",
     "boj/Heap/2023-09-29-backjoon_number_1927.md",
-    "boj/backjoon_number_.md",
     "leetcode/2023-09-12-215. Kth Largest Element in an Array.md",
     "leetcode/373. Find K Pairs with Smallest Sums.md",
     "Untitled.md",
