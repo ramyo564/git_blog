@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md",
+                "file": "Django/Django_Celery/django_celery_4.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md"
+                "file": "Django/Django_Celery/django_celery_4.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md",
+                "file": "Django/Django_Celery/django_celery_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md",
+                "file": "Django/Django_Celery/django_celery_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,8 +158,12 @@
   },
   "active": "2f16fde4f086708d",
   "lastOpenFiles": [
-    "Algorithm/boj/Stage/2023-10-21-backjoon_number_2738.md",
+    "Algorithm/boj/Stage/2023-10-23-backjoon_number_2745.md",
+    "Algorithm/boj/2023-10-23-backjoon_number_2745.md",
+    "Algorithm/boj/backjoon_number_2745.md",
+    "Algorithm/boj/backjoon_number_ 1.md",
     "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md",
+    "Algorithm/boj/Stage/2023-10-21-backjoon_number_2738.md",
     "Algorithm/boj/backjoon_number_.md",
     "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
@@ -185,10 +189,6 @@
     "Django/Django4_upgrade/Section7/2023-05-16-shopping_mall_4s.md",
     "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
     "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
-    "Django/Django DRF/2023-07-08-dev103.md",
-    "Algorithm/codetree/racing with rabbits.md",
-    "Algorithm/leetcode/2023-10-02-378. Kth Smallest Element in a Sorted Matrix.md",
-    "Algorithm/boj/Heap/2023-10-07-backjoon_number_1766.md",
     "Algorithm/Untitled.canvas",
     "Django/Django_Celery",
     "Django/Django_middle_class",

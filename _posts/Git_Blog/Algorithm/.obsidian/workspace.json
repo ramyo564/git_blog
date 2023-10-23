@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
+                "file": "boj/Stage/2023-10-23-backjoon_number_2745.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
+                "file": "boj/Stage/2023-10-23-backjoon_number_2745.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md",
+                "file": "boj/Stage/2023-10-23-backjoon_number_2745.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "boj/Stage/2023-10-22-backjoon_number_2563.md"
+                "file": "boj/Stage/2023-10-23-backjoon_number_2745.md"
               }
             }
           }
@@ -162,6 +162,8 @@
   "active": "05842c70386ee459",
   "lastOpenFiles": [
     "boj/backjoon_number_.md",
+    "boj/Stage/2023-10-23-backjoon_number_2745.md",
+    "Untitled.md",
     "boj/Stage/2023-10-22-backjoon_number_2563.md",
     "boj/Stage/2023-10-19-backjoon_number_1316.md",
     "boj/Gold/backjoon_number_23290.md",
@@ -183,7 +185,6 @@
     "boj/Heap/2023-09-29-backjoon_number_1927.md",
     "leetcode/2023-09-12-215. Kth Largest Element in an Array.md",
     "leetcode/373. Find K Pairs with Smallest Sums.md",
-    "Untitled.md",
     "boj/Heap"
   ]
 }
