@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/django_celery_ 1.md",
+                "file": "Linux/2023-10-27-Linux_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/django_celery_ 1.md"
+                "file": "Linux/2023-10-27-Linux_1.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/django_celery_ 1.md",
+                "file": "Linux/2023-10-27-Linux_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/django_celery_ 1.md",
+                "file": "Linux/2023-10-27-Linux_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 243.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,8 +159,10 @@
   },
   "active": "2f16fde4f086708d",
   "lastOpenFiles": [
+    "Pasted image 20231027004013.png",
+    "Linux/2023-10-27-Linux_1.md",
+    "Pasted image 20231027003941.png",
     "Django/Django_Celery/django_celery_4.md",
-    "Linux/django_celery_ 1.md",
     "Django/Django_Celery/django_celery_.md",
     "Linux",
     "diary",
@@ -190,7 +193,6 @@
     "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
     "Django/Django4_upgrade/Section8/2023-05-16-shopping_mall_5s.md",
     "Django/Django4_upgrade/Section7/2023-05-16-shopping_mall_4s.md",
-    "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
     "Algorithm/Untitled.canvas",
     "Django/Django_Celery",
     "Django/Django_middle_class",
