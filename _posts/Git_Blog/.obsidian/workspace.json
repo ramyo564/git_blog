@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/2023-10-27-Linux_1.md",
+                "file": "CS/Operating Systems/CS 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/2023-10-27-Linux_1.md"
+                "file": "CS/Operating Systems/CS 1.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/2023-10-27-Linux_1.md",
+                "file": "CS/Operating Systems/CS 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/2023-10-27-Linux_1.md",
+                "file": "CS/Operating Systems/CS 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,13 +157,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2f16fde4f086708d",
+  "active": "db48f9cdfef3b3ef",
   "lastOpenFiles": [
-    "Pasted image 20231027004013.png",
-    "Linux/2023-10-27-Linux_1.md",
-    "Pasted image 20231027003941.png",
-    "Django/Django_Celery/django_celery_4.md",
+    "CS/CS.md",
+    "CS/Operating Systems/CS 1.md",
     "Django/Django_Celery/django_celery_.md",
+    "Django/Django_Celery/django_celery_4.md",
+    "Linux/2023-10-27-Linux_1.md",
+    "upgrade_django.md",
+    "wanted.md",
+    "CS/Operating Systems",
+    "Pasted image 20231027004013.png",
+    "Pasted image 20231027003941.png",
     "Linux",
     "diary",
     "Algorithm/boj/Stage/2023-10-23-backjoon_number_2745.md",
@@ -190,14 +195,10 @@
     "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
     "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
     "Django/Django4_upgrade/Section13/2023-05-19-shopping_mall_8s.md",
-    "Django/Django4_upgrade/Section11/2023-05-17-shopping_mall_6s.md",
-    "Django/Django4_upgrade/Section8/2023-05-16-shopping_mall_5s.md",
-    "Django/Django4_upgrade/Section7/2023-05-16-shopping_mall_4s.md",
     "Algorithm/Untitled.canvas",
     "Django/Django_Celery",
     "Django/Django_middle_class",
     "Django/Django4_upgrade/Section20",
-    "Algorithm/programmers/kakao",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",
