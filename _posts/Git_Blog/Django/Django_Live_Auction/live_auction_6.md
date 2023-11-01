@@ -65,30 +65,40 @@ Yohan -> develop
 
 ## 결제과정
 ---- 
+### 초기 환경 설정
+- 초기설정
+	- 모든 앱의 migrations 폴더 안에 `__init__.py`파일 밑에 숫자로 시작하는 파일들 삭제
+		- ex) 0001.py
+	- db.sqlite3 삭제
+	- `python manage.py makemigrations`
+	- `python manage.py migrate`
+	- `python manage.py createsuperuser`
+	- 위 순서로 진행하면 됩니다.
+- 그 이후 레디스나 셀러리 서버를 켜주는건 이전과 동일하게 진행하면 됩니다.
 
 
-#### 디폴트 결과 값
-
-![디폴트 결과 값](https://github.com/wodnrP/realtime_auction/assets/103474568/3cfbc7da-367b-4696-9d3b-ba8872a53dae)
+![초기환경설정](https://github.com/wodnrP/realtime_auction/assets/103474568/edafc188-d48f-4430-981a-a51c5c622eea)
 
 
-#### 키워드 검색
+### 카카오페이 결제 API 사용 과정
 
-![키워드 적용](https://github.com/wodnrP/realtime_auction/assets/103474568/6e7cfc6e-cedb-4ddc-b5bd-26dfab8f390d)
+#### 상품등록과정 + 채팅과정 (테스트 확인)
 
+![상품등록및채팅과정](https://github.com/wodnrP/realtime_auction/assets/103474568/fcae8868-0122-45f9-b62f-2ea832ab6d33)
 
-#### 카테고리 적용
+#### 결제과정 (테스트 확인)
 
-![카테고리 적용](https://github.com/wodnrP/realtime_auction/assets/103474568/99cf5c09-2441-41a8-9bde-1dfc82e39434)
+![결제 과정](https://github.com/wodnrP/realtime_auction/assets/103474568/ad1e62af-8ec9-469d-a349-d4cbd69ae422)
 
+##### 낙찰목록 불러오기
 
+- 사용자가 프론트단에서 낙찰된 상태에서 payment_list (마이페이지에서 결제목록) 을 클릭을 트리거로 실시간으로 결제목록이 업데이트 됩니다. 테스트는 아래와 같습니다.
+	- 결제 안하고 시간 초과
+	- 결제 안했지만 아직 결제할 시간 남은 경우 (영상에서는 일괄적으로 불러와져서 전부 삭제되지만 실제로는 정상작동합니다)
+	- 결제 완료
+	- 낙찰자 없이 끝난 경우
+- 상품이 삭제될 경우 제품도 삭제되기 때문에 다음과 같은 상황을 생각해봐야 될 것 같습니다.
+	- 상대방이 결제를 했을 경우 PROTECT로 payment 데이터를 보호 하던가 최종 결제된 상품은 판매자가 해당 상품을 삭제 할 수 없도록 비공개로 해놔야함
 
-## 어드민 패널 썸네일 적용
-
-![어드민 패널](https://github.com/wodnrP/realtime_auction/assets/103474568/4d338d12-b95a-4e9f-9b6c-35008543ba35)
-
-
-
-
-
+## 프론트 테스트 파일
 
