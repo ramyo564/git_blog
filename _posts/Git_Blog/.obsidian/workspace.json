@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Operating Systems/CS 1.md",
+                "file": "Django/Django_Live_Auction/live_auction_6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Operating Systems/CS 1.md"
+                "file": "Django/Django_Live_Auction/live_auction_6.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Operating Systems/CS 1.md",
+                "file": "Django/Django_Live_Auction/live_auction_6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Operating Systems/CS 1.md",
+                "file": "Django/Django_Live_Auction/live_auction_6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,8 +147,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,12 +164,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f1ad7f261ca2db93",
+  "active": "2f16fde4f086708d",
   "lastOpenFiles": [
-    "CS/CS.md",
-    "CS/Operating Systems/CS 1.md",
-    "Django/Django_Celery/django_celery_.md",
+    "Django/Django_Live_Auction/template 1.md",
+    "Django/Django_Live_Auction/2023-09-16-live_auction_3.md",
+    "Django/Django_Live_Auction/2023-09-14-live auction_2.md",
+    "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
+    "Django/Django_Live_Auction/live_auction_5.md",
+    "Django/Django_Live_Auction/live_auction_6.md",
     "Django/Django_Celery/django_celery_4.md",
+    "Django/Django_Celery/2023-10-17-django_celery_3.md",
+    "CS/Operating Systems/CS 1.md",
+    "CS/CS.md",
+    "Django/Django_Celery/django_celery_.md",
     "Linux/2023-10-27-Linux_1.md",
     "upgrade_django.md",
     "wanted.md",
@@ -189,20 +195,13 @@
     "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
-    "Django/Django_Celery/2023-10-17-django_celery_3.md",
     "Django/Django_Celery/2023-10-13-django_celery_2.md",
     "Django/Django_Celery/2023-10-05-django_celery_1.md",
     "Algorithm/Pasted image 20231019134728.png",
-    "Algorithm/boj/Stage/backjoon_number_.md",
     "Algorithm/boj/Stage",
     "Algorithm/Stage",
     "Algorithm/Untitled",
-    "CS/개발상식/2023-05-21-Basic Computer Science.md",
-    "Algorithm/code_test_project_basic/backjoon_number_ 1.md",
     "Algorithm/code_test_project_basic",
-    "Django/Django4_upgrade/Section15/2023-05-24-shopping_mall_10s.md",
-    "Django/Django4_upgrade/Section14/2023-05-24-shopping_mall_9s.md",
-    "Django/Django4_upgrade/Section13/2023-05-19-shopping_mall_8s.md",
     "Algorithm/Untitled.canvas",
     "Django/Django_Celery",
     "Django/Django_middle_class",

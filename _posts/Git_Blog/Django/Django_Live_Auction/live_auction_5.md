@@ -4,7 +4,6 @@ title: " [Django DRF] 실시간 경매 live auction (5)"
 categories: Django
 tags:
   - Python
-  - MongoDB
   - Project_Live_Auction
 toc: true
 toc_sticky: true
@@ -37,3 +36,8 @@ sidebar:
 - 이번에 풀 리퀘등 한 번에 뭉턱이로 되있으니까 오류가 되는 시점을 찾으려고 할 때 꽤 힘들었다.
 - 그리고 테스트 코드가 왜 중요한지도 알게 되었다.
 
+## 카카오페이 오류 
+
+![](https://i.imgur.com/TqUxFAk.png)
+
+![](https://i.imgur.com/sT7Ug2w.png)
