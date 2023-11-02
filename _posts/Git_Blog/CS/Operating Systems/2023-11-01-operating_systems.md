@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " [운영체제]"
+title: " [운영체제] 운영체제 공부 시작"
 categories: CS
 tags:
   - CS
@@ -11,11 +11,17 @@ author_profile: false
 sidebar:
 ---
 # 운영체제란 무엇인가?
+
 - 컴퓨터 하드웨어 바로 위에 설치되어 사용자 및 다른 모든 소프트웨어와 하드웨어를 연결하는 소프트웨어 계층
 - 협의의 운영체제(커널) - 좁은 의미
 	- 운영체제의 핵심 부분으로 메모리에 상주하는 부분
 - 광의의 운영체제 - 넓은 의미 - 윈도우 (파일복사등)
 	- 커널 뿐 아니라 각종 주변 시스템 유틸리티를 포함하는 개념
+
+## 운영 체제의 구조
+
+![](https://i.imgur.com/Sl1zkP8.png)
+
 
 ## 운영 체제의 목적
 - 컴퓨터 시스템의 자원을 효율적으로 관릴
@@ -102,10 +108,6 @@ sidebar:
 
 ### Handheld device 를 위한 OS
 - PalmOS, Pocket PC (WinCE), Tiny OS
-
-## 운영 체제의 구조
-
-![](https://i.imgur.com/Sl1zkP8.png)
 
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django_Live_Auction/live_auction_6.md",
+                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5011329650879
+    "width": 281.5011329650879,
+    "collapsed": true
   },
   "right": {
     "id": "899f72456e634839",
@@ -85,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django_Live_Auction/live_auction_6.md"
+                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md"
               }
             }
           },
@@ -106,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django_Live_Auction/live_auction_6.md",
+                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django_Live_Auction/live_auction_6.md",
+                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 243.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,16 +168,18 @@
   },
   "active": "2f16fde4f086708d",
   "lastOpenFiles": [
+    "CS/Operating Systems/2023-11-01-operating_systems.md",
+    "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
+    "CS/Operating Systems/Untitled.md",
+    "CS/CS.md",
+    "Django/Django_Live_Auction/live_auction_6.md",
     "Django/Django_Live_Auction/template 1.md",
     "Django/Django_Live_Auction/2023-09-16-live_auction_3.md",
     "Django/Django_Live_Auction/2023-09-14-live auction_2.md",
     "Django/Django_Live_Auction/2023-09-21-live_auction_4.md",
     "Django/Django_Live_Auction/live_auction_5.md",
-    "Django/Django_Live_Auction/live_auction_6.md",
     "Django/Django_Celery/django_celery_4.md",
     "Django/Django_Celery/2023-10-17-django_celery_3.md",
-    "CS/Operating Systems/CS 1.md",
-    "CS/CS.md",
     "Django/Django_Celery/django_celery_.md",
     "Linux/2023-10-27-Linux_1.md",
     "upgrade_django.md",
@@ -195,8 +199,6 @@
     "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
     "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
-    "Django/Django_Celery/2023-10-13-django_celery_2.md",
-    "Django/Django_Celery/2023-10-05-django_celery_1.md",
     "Algorithm/Pasted image 20231019134728.png",
     "Algorithm/boj/Stage",
     "Algorithm/Stage",
