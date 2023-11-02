@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " [운영체제]"
+title: " [운영체제] 시스템 구조"
 categories: CS
 tags:
   - CS
