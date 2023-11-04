@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
+                "file": "Django/Django_Live_Auction/live_auction_5.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md"
+                "file": "Django/Django_Live_Auction/live_auction_5.md"
               }
             }
           },
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
+                "file": "Django/Django_Live_Auction/live_auction_5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
+                "file": "Django/Django_Live_Auction/live_auction_5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,8 +168,8 @@
   },
   "active": "2f16fde4f086708d",
   "lastOpenFiles": [
-    "CS/Operating Systems/2023-11-01-operating_systems.md",
     "CS/Operating Systems/2023-11-03-system_structure_and_program_execution.md",
+    "CS/Operating Systems/2023-11-01-operating_systems.md",
     "CS/Operating Systems/Untitled.md",
     "CS/CS.md",
     "Django/Django_Live_Auction/live_auction_6.md",
