@@ -4,7 +4,7 @@ title: "[Hoops PJ] 트러블 슈팅 & TIL (1)"
 categories: Spring_Project_Hoops
 toc: true
 toc_sticky: true
-author_profile: 
+author_profile: false
 sidebar: 
 tags:
   - TIL
