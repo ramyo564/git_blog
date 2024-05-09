@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Hoops/2024-05-05-hoops_4.md",
+                "file": "Spring/Hoops/2024-05-09-hoops_5.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Hoops/2024-05-05-hoops_4.md"
+                "file": "Spring/Hoops/2024-05-09-hoops_5.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Hoops/2024-05-05-hoops_4.md",
+                "file": "Spring/Hoops/2024-05-09-hoops_5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Hoops/2024-05-05-hoops_4.md",
+                "file": "Spring/Hoops/2024-05-09-hoops_5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,52 +166,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "floating": {
-    "id": "b22ef5fd88d224b2",
-    "type": "floating",
-    "children": [
-      {
-        "id": "603c8920b3b8dc7d",
-        "type": "window",
-        "children": [
-          {
-            "id": "821bca9985ffc46d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2f16fde4f086708d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1145,
-        "y": -74,
-        "width": 1135,
-        "height": 679,
-        "maximize": false,
-        "zoom": -1.5
-      }
-    ]
-  },
   "active": "7dbd3f6420214a31",
   "lastOpenFiles": [
-    "Spring/Hoops/hoops_3.md",
-    "Spring/Hoops/2024-05-05-hoops_4.md",
-    "Spring/Hoops/hoops_.md",
     "Spring/Hoops/2024-05-08-hoops_1.md",
     "Spring/Hoops/2024-05-06-hoops_3.md",
     "Spring/Hoops/2024-05-07-hoops_2.md",
+    "Spring/Hoops/2024-05-09-hoops_5.md",
+    "Spring/Hoops/2024-05-05-hoops_4.md",
+    "Spring/Hoops/hoops_.md",
     "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
+    "Spring/Hoops/hoops_3.md",
     "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
     "Django/Django_Live_Auction/template 1.md",
     "Spring/Hoops",
@@ -237,7 +201,6 @@
     "Algorithm/boj/Stage/2023-10-20-backjoon_number_2566.md",
     "Algorithm/boj/Stage/2023-10-21-backjoon_number_2738.md",
     "Algorithm/boj/backjoon_number_.md",
-    "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
     "Algorithm/Pasted image 20231019134728.png",
     "Algorithm/boj/Stage",
     "Algorithm/Stage",
