@@ -186,6 +186,3 @@ Specification를 사용하면 직접 쿼리를 작성하는 것 보다 조건을
 
 솔직히 간단한 쿼리인데도 귀찮아서 이렇게 만들게 되었다.  
 아마 내가 SQL을 더 잘 다뤘으면 쿼리로 해결했을 것 같다...
-
-좀 더 공 부? 
-https://tecoble.techcourse.co.kr/post/2022-10-11-jpa-dynamic-query/

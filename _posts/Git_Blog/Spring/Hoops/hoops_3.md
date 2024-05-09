@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Hoops PJ] 트러블 슈팅 & TIL (1)"
+title: "[Hoops PJ] 트러블 슈팅 & TIL (3)"
 categories: Spring_Project_Hoops
 toc: true
 toc_sticky: true
@@ -14,19 +14,9 @@ tags:
   - 항해
 ---
 
-# GET -> 동적 쿼리 어떻게 쓸까?
+# JWT 토큰 난 좀 더 편하게 쓰고 싶은데
 
-![](https://i.imgur.com/D0Bp3Wa.png)
 
-프론트 단에서 필터링 기능이 있었는데 이 부분을 어떻게 구현할 지 고민했었다.   
-또한 상단에 있는 날짜에 따라서도 변해야 하며 경기 시작일이 조회 시점보다 늦으면 자동으로 없애야 했다.   
-
-어떻게 해야할지 몰라서 클릭할 때 마다 Post로 다 처리하려고 하다가 너무 귀찮아서 GET으로 한 번에 처리하고 싶었다.   
-
-근데 내가 아는 GET 방식은 파라미터가 꼭 들어가야 되는데 이걸 어떻게 조건에 따라 변화하면서 한 번에 처리할 수 있게 하는지 알아봤다.  
-
-우선 GET을 사용할 때 조건을 어떻게 컨트롤할 수 있는지 다시 한 번 찾아봤고
-`@RequestParam`, `@PathVariable` 이렇게 두가지 어노테이션을 주로 사용한다.
 ## @RequestParam vs @PathVariable 뭐가 다르지?
 
 - 위 2개의 어노테이션은 GET 방식에서 주로 쓴다.
@@ -186,6 +176,3 @@ Specification를 사용하면 직접 쿼리를 작성하는 것 보다 조건을
 
 솔직히 간단한 쿼리인데도 귀찮아서 이렇게 만들게 되었다.  
 아마 내가 SQL을 더 잘 다뤘으면 쿼리로 해결했을 것 같다...
-
-좀 더 공 부? 
-https://tecoble.techcourse.co.kr/post/2022-10-11-jpa-dynamic-query/

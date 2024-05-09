@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Hoops/2024-05-08-hoops_1.md",
+                "file": "Spring/Hoops/2024-05-06-hoops_3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Hoops/2024-05-08-hoops_1.md"
+                "file": "Spring/Hoops/2024-05-06-hoops_3.md"
               }
             }
           },
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Hoops/2024-05-08-hoops_1.md",
+                "file": "Spring/Hoops/2024-05-06-hoops_3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Hoops/2024-05-08-hoops_1.md",
+                "file": "Spring/Hoops/2024-05-06-hoops_3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,13 +140,20 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "bc3e27b1792b1316",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 213.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,47 +166,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "floating": {
-    "id": "b22ef5fd88d224b2",
-    "type": "floating",
-    "children": [
-      {
-        "id": "2fb8c0b482bb9132",
-        "type": "window",
-        "children": [
-          {
-            "id": "399ac3f1c8803b04",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ddb9c7b2db6fdc77",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -877,
-        "y": -7,
-        "width": 833,
-        "height": 677,
-        "maximize": false,
-        "zoom": -1.5
-      }
-    ]
-  },
   "active": "2f16fde4f086708d",
   "lastOpenFiles": [
-    "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
+    "Spring/Hoops/2024-05-07-hoops_2.md",
+    "Spring/Hoops/2024-05-06-hoops_3.md",
     "Spring/Hoops/2024-05-08-hoops_1.md",
+    "Spring/Hoops/hoops_4.md",
+    "Spring/Hoops/hoops_3.md",
+    "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
+    "Spring/Hoops/hoops_.md",
     "Django/Django_Live_Auction/template 1.md",
     "Spring/Hoops",
     "Spring",
@@ -226,12 +201,7 @@
     "Algorithm/boj/backjoon_number_.md",
     "Algorithm/boj/Stage/2023-10-19-backjoon_number_1316.md",
     "SQL/PostgreSQL/2023-05-28-Conditional Expressions and Operators.md",
-    "SQL/PostgreSQL/2023-05-22-PostgreSQL.md",
-    "Django/Django_Celery/2023-10-17-django_celery_3.md",
-    "Django/Django_Celery/2023-10-13-django_celery_2.md",
-    "Django/Django_Celery/2023-10-05-django_celery_1.md",
     "Algorithm/Pasted image 20231019134728.png",
-    "Algorithm/boj/Stage/backjoon_number_.md",
     "Algorithm/boj/Stage",
     "Algorithm/Stage",
     "Algorithm/Untitled",
