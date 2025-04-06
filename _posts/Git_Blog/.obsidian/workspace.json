@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Hoops/2024-06-27-hoops_8.md",
+                "file": "Spring/Todo/2025-04-06-todo_1.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2025-04-06-todo_1"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,10 +93,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Hoops/2024-06-27-hoops_8.md",
+                "file": "Spring/Todo/2025-04-06-todo_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-04-06-todo_1"
             }
           }
         ]
@@ -103,8 +113,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Hoops/2024-06-27-hoops_8.md"
-              }
+                "file": "Spring/Todo/2025-04-06-todo_1.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-04-06-todo_1"
             }
           },
           {
@@ -115,7 +127,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -127,7 +141,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -136,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Hoops/2024-06-27-hoops_8.md",
+                "file": "Spring/Todo/2025-04-06-todo_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +160,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-04-06-todo_1"
             }
           },
           {
@@ -152,14 +170,17 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,18 +195,24 @@
   },
   "active": "7dbd3f6420214a31",
   "lastOpenFiles": [
-    "Spring/Hoops/hoops_ 1.md",
-    "Spring/Hoops/2024-06-27-hoops_8.md",
-    "Spring/Hoops/2024-06-10-hoops_6.md",
-    "Spring/Hoops/2024-05-09-hoops_5.md",
-    "Spring/Hoops/2024-06-23-hoops_7.md",
-    "Spring/Hoops/hoops_aws 1.md",
-    "Spring/Hoops/2024-05-08-hoops_4.md",
-    "Spring/Hoops/hoops_aws.md",
-    "Spring/Hoops/hoops_6.md",
-    "Spring/Hoops/2024-05-06-hoops_2.md",
     "Spring/Hoops/2024-05-05-hoops_1.md",
+    "Spring/Todo/2025-04-06-todo_1.md",
+    "Spring/Todo/Untitled 1.md",
+    "Spring/Todo",
+    "Spring/Hoops/2024-06-27-hoops_8.md",
+    "Spring/Hoops/hoops_ 1.md",
+    "Spring/Hoops/hoops_6.md",
+    "Spring/Hoops/hoops_aws.md",
+    "Spring/Hoops/hoops_aws 1.md",
+    "Spring/Hoops/Untitled.md",
+    "Spring/Hoops/2024-05-09-hoops_5.md",
+    "Spring/Hoops/2024-06-10-hoops_6.md",
+    "Spring/Hoops/2024-05-08-hoops_4.md",
     "Spring/Hoops/2024-05-07-hoops_3.md",
+    "Spring/Hoops/2024-05-06-hoops_2.md",
+    "Spring/Hoops/2024-06-23-hoops_7.md",
+    "Pasted image 20240728204203.png",
+    "Untitled",
     "Django/Django4_upgrade/Section6/2023-05-16-shopping_mall_3s.md",
     "Django/Django4_upgrade/Section4/2023-05-15-shopping_mall_1s.md",
     "Django/Django_Live_Auction/template 1.md",
@@ -199,21 +226,16 @@
     "Django/Django_Celery/django_celery_.md",
     "Linux/2023-10-27-Linux_1.md",
     "upgrade_django.md",
-    "wanted.md",
     "CS/Operating Systems",
     "Pasted image 20231027004013.png",
     "Pasted image 20231027003941.png",
     "Linux",
     "diary",
-    "Algorithm/boj/Stage/2023-10-23-backjoon_number_2745.md",
-    "Algorithm/boj/2023-10-23-backjoon_number_2745.md",
     "Algorithm/Pasted image 20231019134728.png",
     "Algorithm/boj/Stage",
     "Algorithm/Stage",
     "Algorithm/Untitled",
-    "Algorithm/code_test_project_basic",
     "Algorithm/Untitled.canvas",
-    "Django/Django_Celery",
     "Pasted image 20230516140646.png",
     "Pasted image 20230516140237.png",
     "Pasted image 20230516140803.png",
