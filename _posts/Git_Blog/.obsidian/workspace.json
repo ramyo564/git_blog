@@ -13,12 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-05-14-daily_1.md",
+                "file": "Daily/2025-05-14-daily_2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-14-daily_1"
+              "title": "2025-05-14-daily_2"
+            }
+          },
+          {
+            "id": "a349621bffe3b13b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -87,6 +97,7 @@
       {
         "id": "5d1a677b2de93bff",
         "type": "tabs",
+        "dimension": 17.825311942959,
         "children": [
           {
             "id": "c34908b72feea977",
@@ -94,12 +105,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2025-05-14-daily_1.md",
+                "file": "Daily/2025-05-14-daily_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-05-14-daily_1"
+              "title": "Outgoing links from 2025-05-14-daily_2"
             }
           }
         ]
@@ -107,6 +118,7 @@
       {
         "id": "51bdbeecd8df2d0c",
         "type": "tabs",
+        "dimension": 82.174688057041,
         "children": [
           {
             "id": "f17c0b3c4bfab596",
@@ -114,13 +126,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2025-05-14-daily_1.md",
+                "file": "Daily/2025-05-14-daily_2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-14-daily_1"
+              "title": "Outline of 2025-05-14-daily_2"
             }
           },
           {
@@ -196,49 +208,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "floating": {
-    "id": "af6a1f48626d606b",
-    "type": "floating",
-    "children": [
-      {
-        "id": "9f86b070100c3b5b",
-        "type": "window",
-        "children": [
-          {
-            "id": "16a1d406b3b9e7ec",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "56ef4a23e10885c7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Spring/Todo/2025-04-06-todo_1.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-04-06-todo_1"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1255,
-        "y": -170,
-        "width": 1019,
-        "height": 543,
-        "maximize": false,
-        "zoom": -1.5
-      }
-    ]
-  },
   "active": "d3d683fcc70d5159",
   "lastOpenFiles": [
-    "Spring/Todo/2025-04-06-todo_1.md",
+    "Daily/2025-05-14-daily_2.md",
     "Daily/2025-05-14-daily_1.md",
+    "Spring/Todo/2025-04-06-todo_1.md",
     "Spring/Todo/Untitled 1.md",
     "Spring/Hoops/2024-06-27-hoops_8.md",
     "Spring/Hoops/2024-05-05-hoops_1.md",
@@ -267,7 +241,6 @@
     "Django/Django_Celery/django_celery_4.md",
     "CS/Operating Systems/CS 1.md",
     "CS/CS.md",
-    "Django/Django_Celery/django_celery_.md",
     "CS/Operating Systems",
     "Pasted image 20231027004013.png",
     "Pasted image 20231027003941.png",
