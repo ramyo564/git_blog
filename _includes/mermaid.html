@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  mermaid.initialize({ startOnLoad: true, theme: "default" });
+  // 아래는 코드블록이 <pre><code class="language-mermaid">로 변환되는 Jekyll 기본 동작을 지원
+  document.querySelectorAll('code.language-mermaid').forEach(function(block) {
+    var pre = block.parentElement;
+    var container = document.createElement('div');
+    container.className = 'mermaid';
+    container.textContent = block.textContent;
+    pre.parentNode.replaceChild(container, pre);
+  });
+  // Mermaid 다시 초기화
+  mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+});
+</script>
