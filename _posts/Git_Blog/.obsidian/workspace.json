@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-05-14-daily_2.md",
+                "file": "Spring/Todo/2025-06-14-todo_2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-14-daily_2"
+              "title": "2025-06-14-todo_2"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2025-05-14-daily_2.md",
+                "file": "Spring/Todo/2025-06-14-todo_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-05-14-daily_2"
+              "title": "Outgoing links from 2025-06-14-todo_2"
             }
           }
         ]
@@ -108,7 +108,7 @@
       {
         "id": "51bdbeecd8df2d0c",
         "type": "tabs",
-        "dimension": 82.174688057041,
+        "dimension": 82.17468805704101,
         "children": [
           {
             "id": "f17c0b3c4bfab596",
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2025-05-14-daily_2.md",
+                "file": "Spring/Todo/2025-06-14-todo_2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-14-daily_2"
+              "title": "Outline of 2025-06-14-todo_2"
             }
           },
           {
@@ -200,14 +200,16 @@
   },
   "active": "d3d683fcc70d5159",
   "lastOpenFiles": [
-    "Daily/2025-05-14-daily_1.md",
-    "Daily/2025-05-14-daily_2.md",
-    "Spring/Todo/2025-04-06-todo_1.md",
     "Spring/Todo/Untitled 1.md",
+    "Spring/Todo/2025-06-14-todo_2.md",
+    "Spring/Todo/Untitled.md",
+    "Spring/Todo/2025-04-06-todo_1.md",
+    "Pasted image 20240728204203.png",
+    "Daily/2025-05-14-daily_2.md",
+    "Daily/2025-05-14-daily_1.md",
     "Spring/Hoops/2024-06-27-hoops_8.md",
     "Spring/Hoops/2024-05-05-hoops_1.md",
     "django 초기설정.md",
-    "Pasted image 20240728204203.png",
     "Spring/Todo",
     "Spring/Hoops/hoops_ 1.md",
     "Spring/Hoops/hoops_6.md",
@@ -229,8 +231,6 @@
     "Django/Django_Live_Auction/live_auction_6.md",
     "Django/Django_Live_Auction/2023-12-30-live_auction_5.md",
     "Django/Django_Celery/django_celery_4.md",
-    "CS/Operating Systems/CS 1.md",
-    "CS/CS.md",
     "CS/Operating Systems",
     "Pasted image 20231027004013.png",
     "Pasted image 20231027003941.png",
