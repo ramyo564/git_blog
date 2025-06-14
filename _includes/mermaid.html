@@ -1,7 +1,5 @@
-<!-- Mermaid.js 및 svg-pan-zoom.js 로드 -->
+<!-- Mermaid.js만 로드 -->
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
-
 <script>
 document.addEventListener('DOMContentLoaded', async function() {
   mermaid.initialize({ startOnLoad: true, theme: "default" });
@@ -17,56 +15,5 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // Mermaid 다이어그램 렌더링 (비동기)
   await mermaid.run({ querySelector: '.mermaid' });
-
-  // 모든 .mermaid SVG에 panzoom 적용
-  document.querySelectorAll('.mermaid svg').forEach(function(svg) {
-    svgPanZoom(svg, {
-      zoomEnabled: true,
-      controlIconsEnabled: true,
-      fit: true,
-      center: true
-    });
-  });
-
-  // 팝업(모달) 기능: 클릭 시 모달로 SVG 복제
-  document.querySelectorAll('.mermaid').forEach(function(div) {
-    div.style.cursor = "zoom-in";
-    div.addEventListener('click', function() {
-      var modal = document.getElementById('mermaid-modal');
-      modal.style.display = 'flex';
-      modal.querySelector('.modal-content').innerHTML = div.innerHTML;
-      // 팝업 SVG에도 panzoom 적용
-      setTimeout(function() {
-        modal.querySelectorAll('svg').forEach(function(svg) {
-          svgPanZoom(svg, {
-            zoomEnabled: true,
-            controlIconsEnabled: true,
-            fit: true,
-            center: true
-          });
-        });
-      }, 100);
-    });
-  });
-});
-</script>
-
-<!-- 팝업(모달) 스타일 및 구조 -->
-<style>
-#mermaid-modal {
-  display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.75); justify-content: center; align-items: center;
-}
-#mermaid-modal .modal-content {
-  background: white; padding: 1em; border-radius: 8px; max-width: 90vw; max-height: 90vh; overflow: auto;
-}
-</style>
-<div id="mermaid-modal"><div class="modal-content"></div></div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var modal = document.getElementById('mermaid-modal');
-  modal.addEventListener('click', function(e) {
-    if (e.target === this) this.style.display = 'none';
-  });
 });
 </script>
