@@ -29,20 +29,19 @@
     justify-content: center;
     align-items: center;
   }
+
+  svg[id^="mermaid-"] {
+    background: white !important;
+  }
 </style>
+
 <div id="mermaid-modal">
   <div class="modal-content"></div>
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', async function () {
-    mermaid.initialize({
-      startOnLoad: true, 
-      theme: "default", 
-      themeVariables: {
-        background: "#ffffff"  // 여기서 원하는 색상으로 변경
-      }
-    });
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
 
     // 1. Jekyll이 <pre><code class="language-mermaid">...</code></pre>로 바꾼 코드블록을 .mermaid div로 변환
     document.querySelectorAll('code.language-mermaid').forEach(function (block) {
