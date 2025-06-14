@@ -2,7 +2,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   mermaid.initialize({ startOnLoad: true, theme: "default" });
-  // 아래는 코드블록이 <pre><code class="language-mermaid">로 변환되는 Jekyll 기본 동작을 지원
+  // Jekyll이 <pre><code class="language-mermaid">...</code></pre>로 바꾼 코드블록을 Mermaid div로 변환
   document.querySelectorAll('code.language-mermaid').forEach(function(block) {
     var pre = block.parentElement;
     var container = document.createElement('div');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     container.textContent = block.textContent;
     pre.parentNode.replaceChild(container, pre);
   });
-  // Mermaid 다시 초기화
+  // 변환된 Mermaid div에 대해 Mermaid 렌더링 실행
   mermaid.init(undefined, document.querySelectorAll('.mermaid'));
 });
 </script>
