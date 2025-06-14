@@ -1,19 +1,46 @@
-<!-- Mermaid.js만 로드 -->
+<!-- Mermaid.js 및 svg-pan-zoom.js 로드 -->
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+
+<style>
+#mermaid-modal {
+  display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.75); justify-content: center; align-items: center;
+}
+#mermaid-modal .modal-content {
+  background: white; padding: 1em; border-radius: 8px;
+  width: 80vw; height: 80vh; max-width: 80vw; max-height: 80vh;
+  overflow: auto; display: flex; justify-content: center; align-items: center;
+}
+</style>
+<div id="mermaid-modal"><div class="modal-content"></div></div>
 <script>
-document.addEventListener('DOMContentLoaded', async function() {
-  mermaid.initialize({ startOnLoad: true, theme: "default" });
-
-  // Jekyll의 <pre><code class="language-mermaid">...</code></pre>를 변환
-  document.querySelectorAll('code.language-mermaid').forEach(function(block) {
-    var pre = block.parentElement;
-    var container = document.createElement('div');
-    container.className = 'mermaid';
-    container.textContent = block.textContent;
-    pre.parentNode.replaceChild(container, pre);
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.mermaid').forEach(function(div) {
+    div.style.cursor = "zoom-in";
+    div.addEventListener('click', function() {
+      var modal = document.getElementById('mermaid-modal');
+      modal.style.display = 'flex';
+      modal.querySelector('.modal-content').innerHTML = div.innerHTML;
+      setTimeout(function() {
+        modal.querySelectorAll('svg').forEach(function(svg) {
+          svg.style.width = "100%";
+          svg.style.height = "100%";
+          svg.setAttribute("width", "100%");
+          svg.setAttribute("height", "100%");
+          svgPanZoom(svg, {
+            zoomEnabled: true,
+            controlIconsEnabled: true,
+            fit: true,
+            center: true
+          });
+        });
+      }, 100);
+    });
   });
-
-  // Mermaid 다이어그램 렌더링 (비동기)
-  await mermaid.run({ querySelector: '.mermaid' });
+  var modal = document.getElementById('mermaid-modal');
+  modal.addEventListener('click', function(e) {
+    if (e.target === this) this.style.display = 'none';
+  });
 });
 </script>
