@@ -29,3 +29,7 @@ _asset_bundler_cache
 _site
 
 /.obsidian/
+
+# temp
+*temp*
+*Untitled*
