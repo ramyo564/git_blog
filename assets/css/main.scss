@@ -8,9 +8,10 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+#page-title > a {
+  line-height: 1.5;   /* 원하는 줄 간격(배수)로 조절 */
+  display: inline-block; /* 줄 간격 적용이 확실하게 되도록 */
 }
 
 section h1, section h2, section h3, section h4, section h5, section h6 {
@@ -20,7 +21,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 }
 
 section p, .page__content p {
-  line-height: 2;
+  line-height: 1.9;
   margin-bottom: 18px;
 }
 
