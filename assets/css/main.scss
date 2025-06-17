@@ -25,6 +25,28 @@ section p, .page__content p {
   margin-bottom: 18px;
 }
 
+.breadcrumbs ol {
+  width: auto;              /* 내용에 따라 너비 조절 */
+  max-width: 100%;          /* 부모 컨테이너를 넘지 않도록 제한 */
+  display: flex;            /* 플렉스박스로 유동적 배치 */
+  flex-wrap: wrap;          /* 길어지면 줄바꿈 허용 */
+  gap: 0.5em;               /* 아이템 간 간격 */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs ol li {
+  white-space: nowrap;      /* 각 아이템은 줄바꿈 없이 한 줄에 */
+}
+
+.breadcrumbs ol li.current {
+  flex-shrink: 1;           /* 필요시 줄어들게 설정 */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* 넘치는 텍스트는 ... 으로 표시 */
+  max-width: 100%;
+}
+
 
 
 // h1 {
