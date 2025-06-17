@@ -14,7 +14,7 @@
     {% include head/custom.html %}
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="layout--{{ page.layout | default: layout.layout }} {{ page.header.overlay_color | prepend: 'has-overlay ' if page.header.overlay_color }}{{ page.header.overlay_image | prepend: 'has-overlay-image ' if page.header.overlay_image }}{{ page.header.image | prepend: 'has-image ' if page.header.image }}{{ page.header.video.id | prepend: 'has-video ' if page.header.video.id }}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% if page.layout == 'single' or page.id %} post-toc-active{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
@@ -34,6 +34,17 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+
+    {%- if page.layout == 'single' or page.id -%}
+    <!-- Floating TOC Button and Modal/Slide-Out TOC (posts only) -->
+    <button id="toc-toggle-btn" aria-label="목차 열기"><i class="fas fa-list"></i></button>
+    <div id="toc-float" class="toc-float--hidden" tabindex="-1">
+      <button id="toc-close-btn" aria-label="목차 닫기">&times;</button>
+      <!-- The TOC HTML will be injected here by JavaScript -->
+      <ul class="toc-float__list"></ul>
+      <div class="toc-float__empty" style="display:none;">이 글에는 목차가 없습니다.</div>
+    </div>
+    {%- endif -%}
 
     {% include scripts.html %}
     {% include mermaid.html %}
