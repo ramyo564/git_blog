@@ -25,6 +25,7 @@ section p, .page__content p {
   margin-bottom: 18px;
 }
 
+
 .breadcrumbs ol {
   display: flex;
   justify-content: center;   /* 항상 중앙 정렬 */
@@ -39,7 +40,7 @@ section p, .page__content p {
 }
 
 .breadcrumbs {
-  text-align: initial;      /* 상위 text-align 무효화 */
+  text-align: center;      /* 상위 text-align 무효화 */
 }
 
 @media (max-width: 600px) {
