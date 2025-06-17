@@ -8,24 +8,28 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
 #page-title > a {
-  line-height: 1.5;   /* 원하는 줄 간격(배수)로 조절 */
+  line-height: 1.5; /* 원하는 줄 간격(배수)로 조절 */
   display: inline-block; /* 줄 간격 적용이 확실하게 되도록 */
 }
 
-section h1, section h2, section h3, section h4, section h5, section h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
   margin-top: 36px;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-section p, .page__content p {
+section p,
+.page__content p {
   line-height: 1.9;
   margin-bottom: 18px;
 }
-
-
+// 폭/마진/패딩/중앙정렬 등 레이아웃 스타일은 _page.scss에서만 관리
 
 // 사이드바
 
@@ -39,16 +43,18 @@ section p, .page__content p {
 //   z-index: 1000;     /* 다른 요소 위에 표시 */
 // }
 
-// h1 {
-//   color: #fff;
-//   font-weight: 700;
-//   letter-spacing: -0.02em;
-// }
+h2,
+h3 {
+  color: #96083e;
+  letter-spacing: -0.02em;
+}
 
-// h2, h3 {
-//   color: #c0c3cc;
-//   font-weight: 600;
-// }
+h4,
+h5,
+h6 {
+  color: #ff4f81;
+  letter-spacing: -0.02em;
+}
 
 // a {
 //   color: #e5e6ea;
@@ -63,10 +69,26 @@ section p, .page__content p {
 //   text-shadow: 0 0 4px #00fff7;
 // }
 
-// strong, em {
-//   color: #f21368;
-//   font-weight: 600;
-// }
+strong {
+  color: #ff6f91;
+}
+em {
+  color: #a79a9a;
+}
+
+.language-plaintext.highlighter-rouge {
+  // background: #f21368;
+  background: #a40e47;
+  color: #ffffffda;
+}
+
+h2.archive__item-title.no_toc {
+  color: #f21368;
+  font-weight: bold;
+}
+.archive__item-title no_toc {
+  color: #fff;
+}
 
 // code, pre {
 //   background: #23232a;
