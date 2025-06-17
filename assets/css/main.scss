@@ -47,7 +47,15 @@ section p, .page__content p {
   max-width: 100%;
 }
 
-
+.sidebar__right.sticky {
+  position: fixed;
+  top: 80px;         /* 헤더 높이에 맞게 조정 */
+  right: 40px;       /* 오른쪽 여백 */
+  width: 320px;      /* 원하는 폭, 필요시 조정 */
+  max-height: 80vh;  /* 뷰포트 높이의 80%까지 */
+  overflow-y: auto;  /* 내용이 많을 때 스크롤 */
+  z-index: 1000;     /* 다른 요소 위에 표시 */
+}
 
 // h1 {
 //   color: #fff;
