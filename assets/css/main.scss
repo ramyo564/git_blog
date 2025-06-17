@@ -9,72 +9,72 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-// #page-title > a {
-//   line-height: 1.5;   /* 원하는 줄 간격(배수)로 조절 */
-//   display: inline-block; /* 줄 간격 적용이 확실하게 되도록 */
-// }
+#page-title > a {
+  line-height: 1.5;   /* 원하는 줄 간격(배수)로 조절 */
+  display: inline-block; /* 줄 간격 적용이 확실하게 되도록 */
+}
 
-// section h1, section h2, section h3, section h4, section h5, section h6 {
-//   margin-top: 36px;
-//   margin-bottom: 20px;
-//   line-height: 1.5;
-// }
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
 
-// section p, .page__content p {
-//   line-height: 1.9;
-//   margin-bottom: 18px;
-// }
+section p, .page__content p {
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
 
-// aside.sidebar__right.sticky {
-//   right: 0;
+aside.sidebar__right.sticky {
+  right: 0;
   
+}
+
+
+// body {
+//   background: #18181c;
+//   color: #e5e6ea;
 // }
 
+// h1 {
+//   color: #fff;
+//   font-weight: 700;
+//   letter-spacing: -0.02em;
+// }
 
-body {
-  background: #18181c;
-  color: #e5e6ea;
-}
+// h2, h3 {
+//   color: #c0c3cc;
+//   font-weight: 600;
+// }
 
-h1 {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
+// a {
+//   color: #e5e6ea;
+//   border-bottom: 1px solid #f21368;
+//   transition: color 0.2s, border-color 0.2s;
+//   text-decoration: none;
+// }
 
-h2, h3 {
-  color: #c0c3cc;
-  font-weight: 600;
-}
+// a:hover, a:focus {
+//   color: #f21368;
+//   border-bottom: 1px solid #00fff7;
+//   text-shadow: 0 0 4px #00fff7;
+// }
 
-a {
-  color: #e5e6ea;
-  border-bottom: 1px solid #f21368;
-  transition: color 0.2s, border-color 0.2s;
-  text-decoration: none;
-}
+// strong, em {
+//   color: #f21368;
+//   font-weight: 600;
+// }
 
-a:hover, a:focus {
-  color: #f21368;
-  border-bottom: 1px solid #00fff7;
-  text-shadow: 0 0 4px #00fff7;
-}
+// code, pre {
+//   background: #23232a;
+//   color: #fff;
+//   border-radius: 4px;
+// }
 
-strong, em {
-  color: #f21368;
-  font-weight: 600;
-}
-
-code, pre {
-  background: #23232a;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.page__title {
-  color: #fff;
-  font-size: 2.2em;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.7em;
-}
+// .page__title {
+//   color: #fff;
+//   font-size: 2.2em;
+//   font-weight: 700;
+//   letter-spacing: -0.01em;
+//   margin-bottom: 0.7em;
+// }
