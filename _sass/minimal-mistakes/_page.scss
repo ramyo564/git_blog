@@ -581,6 +581,17 @@ body {
 }
 
 
+// Breadcrumbs center alignment fix
+.breadcrumbs ol {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: center;
+  float: none !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
 // disqus
 
 #disqus_thread {
