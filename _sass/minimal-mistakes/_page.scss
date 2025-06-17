@@ -582,6 +582,11 @@ body {
 
 
 // Breadcrumbs center alignment fix
+.breadcrumbs {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
 .breadcrumbs ol {
   display: flex !important;
   flex-wrap: wrap;
