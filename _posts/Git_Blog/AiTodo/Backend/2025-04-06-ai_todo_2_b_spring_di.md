@@ -226,6 +226,8 @@ public Optional<User> findByEmail(String email) {
 		↓
     UserRepository (Port/도메인 추상화)
 
+---------------------------------------------------------------
+
 [Infrastructure Layer]
 		↓
 	UserRepositoryImpl (Adapter - 인터페이스 구현)
