@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "'[ AI_Todo 프로젝트 개발기 #2 ] extends보다 implements를, 그리고 DI를 선택한 이유'"
+title: "[ AI_Todo 프로젝트 개발기 #2 ] extends보다 implements를, 그리고 DI를 선택한 이유"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true

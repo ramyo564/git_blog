@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "'[ AI_Todo 프로젝트 개발기 #1 ] 개발 계획표'"
+title: "[ AI_Todo 프로젝트 개발기 #1 ] 개발 계획표"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true
