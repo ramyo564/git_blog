@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_Todo] 인증 시스템 재설계 : JWT & Refresh Token Rotation으로 확장성과 보안 구축"
+title: "'[ AI_Todo 프로젝트 개발기 #3 ] 인증(Auth) 도메인 심층 구현 편'"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true
