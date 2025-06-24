@@ -211,10 +211,6 @@ public Optional<User> findByEmail(String email) {
 | **테스트**   | 어려움 (JPA Mock 필요)          | 쉬움 (Impl만 Mock 처리 가능)            |
 | **책임 분리** | 모호                         | 명확                               |
 
-그렇다면, 이렇게 수립한 아키텍처 원칙들은 다른 부분에서 어떻게 적용되었을까요?  
-
-이어지는 *[ AI_Todo 프로젝트 개발기 #3 ] 인증(Auth) 도메인 심층 구현* 편 글에서는, 이 설계 원칙을 바탕으로 `Auth` 도메인의 인증 시스템을 구현한 구체적인 과정을 확인하실 수 있습니다.
-
 **의존성 흐름 시각화:**
 
 ```
@@ -234,6 +230,10 @@ public Optional<User> findByEmail(String email) {
 		↓
 	JpaUserRepository (JPA 어댑터 - Spring Data JPA 활용)
 ```
+
+그렇다면, 이렇게 수립한 아키텍처 원칙들은 다른 부분에서 어떻게 적용되었을까요?  
+
+이어지는 *[ AI_Todo 프로젝트 개발기 #3 ] 인증(Auth) 도메인 심층 구현* 편 글에서는, 이 설계 원칙을 바탕으로 `Auth` 도메인의 인증 시스템을 구현한 구체적인 과정을 확인하실 수 있습니다.
 
 ---
 
