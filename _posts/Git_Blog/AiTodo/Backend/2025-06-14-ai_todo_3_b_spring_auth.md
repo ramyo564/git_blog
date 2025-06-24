@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_Todo] 인증 시스템 재설계: Spring Boot에서 JWT & Refresh Token Rotation으로 확장성과 보안 구축"
+title: "[AI_Todo] 인증 시스템 재설계 : JWT & Refresh Token Rotation으로 확장성과 보안 구축"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true

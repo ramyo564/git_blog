@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_Todo] extends와 implements를 넘어: 유연하고 견고한 백엔드 애플리케이션 설계를 위한 DI (의존성 주입) 및 Repository 계층 분리 전략"
+title: "[AI_Todo] 유연하고 견고한 백엔드 애플리케이션 설계 : DI (의존성 주입) 및 Repository 계층 분리 전략"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true

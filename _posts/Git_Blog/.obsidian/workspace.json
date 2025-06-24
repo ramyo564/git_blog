@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-05-ai_todo_1_masterTable"
+              "title": "2025-06-14-ai_todo_3_b_spring_auth"
             }
           }
         ],
@@ -110,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-04-05-ai_todo_1_masterTable"
+              "title": "Outgoing links from 2025-06-14-ai_todo_3_b_spring_auth"
             }
           }
         ]
@@ -131,13 +131,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-05-ai_todo_1_masterTable"
+              "title": "Outline of 2025-06-14-ai_todo_3_b_spring_auth"
             }
           },
           {
@@ -215,11 +215,12 @@
   },
   "active": "34ae86fd6ff73757",
   "lastOpenFiles": [
+    "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
+    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
+    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
     "AiTodo/Backend/2025-04-06-ai_todo_1_backend.md",
     "AiTodo/Dev/2025-04-06-ai_todo_1_dev.md",
     "AiTodo/Frontend/2025-04-06-ai_todo_1_frontend.md",
-    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
-    "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
     "AiTodo/Todo/2025-06-14-ai_todo_5.md",
     "Spring/Hoops/2024-05-05-hoops_1.md",
     "AiTodo/Dev",
@@ -228,7 +229,6 @@
     "Daily/2025-05-14-daily_2.md",
     "AiTodo",
     "Daily/2025-05-14-daily_1.md",
-    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
     "AiTodo/Todo/Untitled 1 Oauth2.md",
     "AiTodo/Todo/Untitled - 0 template.md",
     "AiTodo/Todo/2025-06-14-todo_5_test.md",
