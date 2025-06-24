@@ -8,7 +8,6 @@ author_profile: false
 sidebar: 
 tags:
 ---
-
 # `extends` vs `implements`, 언제 써야 할까? 유연한 설계 고민
 
 
@@ -214,24 +213,24 @@ public Optional<User> findByEmail(String email) {
 
 그렇다면, 이렇게 수립한 아키텍처 원칙들은 다른 부분에서 어떻게 적용되었을까요?  
 
-이어지는 **[ AI_Todo 프로젝트 개발기 #2 ]** Spring Boot에서 JWT 토큰 방식으로 서버 부담을 줄이고 보안을 강화하는 전략 글에서는, 이 설계 원칙을 바탕으로 `Auth` 도메인의 인증 시스템을 구현한 구체적인 과정을 확인하실 수 있습니다.
+이어지는 *[ AI_Todo 프로젝트 개발기 #3 ] 인증(Auth) 도메인 심층 구현* 편 글에서는, 이 설계 원칙을 바탕으로 `Auth` 도메인의 인증 시스템을 구현한 구체적인 과정을 확인하실 수 있습니다.
 
 **의존성 흐름 시각화:**
 
 ```
 [Application Layer]
 		↓
-        UserService (도메인 서비스 사용)
+    UserService (도메인 서비스 사용)
 
 [Domain Layer]
 		↓
-        UserRepository (Port/도메인 추상화)
+    UserRepository (Port/도메인 추상화)
 
 [Infrastructure Layer]
 		↓
-		UserRepositoryImpl (Adapter - 인터페이스 구현)
+	UserRepositoryImpl (Adapter - 인터페이스 구현)
 		↓
-		JpaUserRepository (JPA 어댑터 - Spring Data JPA 활용)
+	JpaUserRepository (JPA 어댑터 - Spring Data JPA 활용)
 ```
 
 ---
