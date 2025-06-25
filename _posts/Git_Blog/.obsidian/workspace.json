@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-05-ai_todo_1_masterTable"
+              "title": "2025-06-14-ai_todo_3_b_spring_auth"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-04-05-ai_todo_1_masterTable"
+              "title": "Outgoing links from 2025-06-14-ai_todo_3_b_spring_auth"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-05-ai_todo_1_masterTable"
+              "title": "Outline of 2025-06-14-ai_todo_3_b_spring_auth"
             }
           },
           {
@@ -200,16 +200,16 @@
   },
   "active": "597f60c7251d93cf",
   "lastOpenFiles": [
+    "AiTodo/Backend/Untitled - 0 template.md",
+    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
+    "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
     "AiTodo/Frontend/Untitled - 0 template 1 1.md",
+    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
     "AiTodo/Frontend/Untitled - 0 template 1.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_frontend.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_backend.md",
-    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
     "AiTodo/Dev/Untitled - 0 template 1.md",
-    "AiTodo/Backend/Untitled - 0 template.md",
-    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
-    "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
     "AiTodo/Todo/2025-06-14-ai_todo_5.md",
     "AiTodo/Todo/2025-06-14-ai_todo_5 개선 노답이라 내가함.md",
     "AiTodo/Todo/Untitled - 0 template.md",
