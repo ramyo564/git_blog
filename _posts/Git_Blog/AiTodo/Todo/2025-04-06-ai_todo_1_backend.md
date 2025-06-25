@@ -10,7 +10,7 @@ tags:
 ---
 # AI_Todo 프로젝트 백엔드 기록 모음
 
-*[ AI_Todo 프로젝트 개발기 - Backend #1 ] Backend 기록 모음*
+*[ AI_Todo 프로젝트 개발기 - Backend #0 ] Backend 기록 모음*
 
 - 백엔드 아키텍처를 설계하면서의 기록과정입니다.
 
