@@ -20,8 +20,8 @@ section h4,
 section h5,
 section h6 {
   margin-top: 36px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  margin-bottom: 25px;
+  line-height: 1.7;
 }
 
 section p,
@@ -29,31 +29,74 @@ section p,
   line-height: 1.9;
   margin-bottom: 18px;
 }
-// 폭/마진/패딩/중앙정렬 등 레이아웃 스타일은 _page.scss에서만 관리
 
-// 사이드바
-
-// .sidebar__right.sticky {
-//   position: fixed;
-//   top: 80px;         /* 헤더 높이에 맞게 조정 */
-//   right: 40px;       /* 오른쪽 여백 */
-//   width: 320px;      /* 원하는 폭, 필요시 조정 */
-//   max-height: 80vh;  /* 뷰포트 높이의 80%까지 */
-//   overflow-y: auto;  /* 내용이 많을 때 스크롤 */
-//   z-index: 1000;     /* 다른 요소 위에 표시 */
-// }
-
-h2,
-h3 {
+h2 {
   color: #96083e;
   letter-spacing: -0.02em;
 }
 
-h4,
+h3 {
+  color: #cc2f5c;
+}
+
+h4 {
+  color: #b23a56;
+}
+
 h5,
 h6 {
-  color: #ff4f81;
-  letter-spacing: -0.02em;
+  color: #ff2f66;
+}
+
+em {
+  color: #a79a9a;
+  font-size: 1.01em;
+}
+
+strong {
+  color: hsl(344, 71%, 86%);
+  font-size: 1.05em;
+}
+
+/* 전체 박스 색상 적용 */
+.language-plaintext.highlighter-rouge .highlight {
+  background: #a40e47 !important;
+  color: #ffffffda !important;
+  padding: 1em;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+
+  /* 기존 코드블록의 폰트와 줄간격 유지하려면 기본값으로 둔다 */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* 코드 자체는 배경 없음으로 */
+.language-plaintext.highlighter-rouge code {
+  background: none !important;
+  color: inherit !important;
+
+  /* 원래 폰트 그대로 유지 */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre-wrap; /* 줄바꿈 유지 */
+}
+
+.language-plaintext.highlighter-rouge {
+  // background: #f21368; a40e47
+  background: #a40e4748;
+  color: #ffffffda;
+}
+
+h2.archive__item-title.no_toc {
+  color: #f21368;
+  font-weight: bold;
+}
+.archive__item-title no_toc {
+  color: #fff;
 }
 
 // a {
@@ -69,26 +112,19 @@ h6 {
 //   text-shadow: 0 0 4px #00fff7;
 // }
 
-strong {
-  color: #ff6f91;
-}
-em {
-  color: #a79a9a;
-}
+// 폭/마진/패딩/중앙정렬 등 레이아웃 스타일은 _page.scss에서만 관리
 
-.language-plaintext.highlighter-rouge {
-  // background: #f21368;
-  background: #a40e47;
-  color: #ffffffda;
-}
+// 사이드바
 
-h2.archive__item-title.no_toc {
-  color: #f21368;
-  font-weight: bold;
-}
-.archive__item-title no_toc {
-  color: #fff;
-}
+// .sidebar__right.sticky {
+//   position: fixed;
+//   top: 80px;         /* 헤더 높이에 맞게 조정 */
+//   right: 40px;       /* 오른쪽 여백 */
+//   width: 320px;      /* 원하는 폭, 필요시 조정 */
+//   max-height: 80vh;  /* 뷰포트 높이의 80%까지 */
+//   overflow-y: auto;  /* 내용이 많을 때 스크롤 */
+//   z-index: 1000;     /* 다른 요소 위에 표시 */
+// }
 
 // code, pre {
 //   background: #23232a;
@@ -102,4 +138,18 @@ h2.archive__item-title.no_toc {
 //   font-weight: 700;
 //   letter-spacing: -0.01em;
 //   margin-bottom: 0.7em;
+// }
+
+// h4,
+// h5,
+// h6 {
+//   color: #ff4f81;
+//   letter-spacing: -0.02em;
+// }
+
+// strong {
+//   color: #ff6f91;
+// }
+// em {
+//   color: #a79a9a;
 // }
