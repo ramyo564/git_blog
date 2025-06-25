@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-24-ai_todo_2_f_react_architecture"
+              "title": "2025-06-24-ai_todo_3_f_react_architecture"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Frontend/Untitled - 프론트 총정리.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled - 프론트 총정리"
+              "title": "2025-06-24-ai_todo_2_f_react_architecture"
             }
           },
           {
@@ -47,15 +47,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
+                "file": "AiTodo/Frontend/Untitled - 프론트 총정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-07-ai_todo_2_b_spring_di"
+              "title": "Untitled - 프론트 총정리"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,12 +130,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-06-24-ai_todo_2_f_react_architecture"
+              "title": "Outgoing links from 2025-06-24-ai_todo_3_f_react_architecture"
             }
           }
         ]
@@ -150,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-06-24-ai_todo_2_f_react_architecture"
+              "title": "Outline of 2025-06-24-ai_todo_3_f_react_architecture"
             }
           },
           {
@@ -234,13 +235,13 @@
   },
   "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
-    "AiTodo/Frontend/Untitled - AI 요약.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture.md",
     "AiTodo/Frontend/Untitled - 프론트 총정리.md",
     "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
-    "AiTodo/Frontend/template.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_architecture.md",
+    "AiTodo/Frontend/Untitled - AI 요약.md",
+    "AiTodo/Frontend/template.md",
     "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_backend.md",
     "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",

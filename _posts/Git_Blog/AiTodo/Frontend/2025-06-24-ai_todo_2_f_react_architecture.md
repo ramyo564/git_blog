@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 지옥에서 살아 생존한 리액트 리팩토링
+title: 지옥에서 살아 생존한 리액트 리팩토링 (1)
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true
