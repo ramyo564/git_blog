@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[ AI_Todo 프로젝트 개발기 - #0 ] 개발 계획표"
+title: AI_Todo 프로젝트 - 개발 계획표
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true
@@ -9,6 +9,8 @@ sidebar:
 tags:
 ---
 # AI_Todo 프로젝트 마스터 테이블
+
+[ AI_Todo 프로젝트 개발기 - #0 ] 개발 계획표
 
 ## 프로젝트 선정 이유와 목표
 
