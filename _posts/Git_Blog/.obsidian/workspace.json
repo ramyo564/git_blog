@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b187fba15e679596",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-04-06-ai_todo_2_b_spring_di"
-            }
-          },
-          {
             "id": "597f60c7251d93cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-14-ai_todo_3_b_spring_auth"
+              "title": "2025-04-05-ai_todo_1_masterTable"
             }
           }
         ]
@@ -109,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-04-06-ai_todo_2_b_spring_di"
+              "title": "Outgoing links from 2025-04-05-ai_todo_1_masterTable"
             }
           }
         ]
@@ -130,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-06-ai_todo_2_b_spring_di"
+              "title": "Outline of 2025-04-05-ai_todo_1_masterTable"
             }
           },
           {
@@ -212,18 +198,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b187fba15e679596",
+  "active": "597f60c7251d93cf",
   "lastOpenFiles": [
+    "AiTodo/Frontend/Untitled - 0 template 1 1.md",
+    "AiTodo/Frontend/Untitled - 0 template 1.md",
+    "AiTodo/Todo/2025-04-06-ai_todo_1_frontend.md",
+    "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+    "AiTodo/Todo/2025-04-06-ai_todo_1_backend.md",
+    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
+    "AiTodo/Dev/Untitled - 0 template 1.md",
+    "AiTodo/Backend/Untitled - 0 template.md",
     "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
     "AiTodo/Backend/2025-04-06-ai_todo_2_b_spring_di.md",
-    "AiTodo/Backend/2025-04-06-ai_todo_1_backend.md",
     "AiTodo/Todo/2025-06-14-ai_todo_5.md",
-    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
-    "AiTodo/Frontend/Untitled - 0 template 1.md",
-    "AiTodo/Frontend/2025-04-06-ai_todo_1_frontend.md",
-    "AiTodo/Dev/Untitled - 0 template 1.md",
-    "AiTodo/Dev/2025-04-06-ai_todo_1_dev.md",
-    "AiTodo/Backend/Untitled - 0 template.md",
+    "AiTodo/Todo/2025-06-14-ai_todo_5 개선 노답이라 내가함.md",
     "AiTodo/Todo/Untitled - 0 template.md",
     "AiTodo/Todo/2025-06-14-todo_5_test.md",
     "AiTodo/Backend 1/2025-06-14-ai_todo_3_b_spring_auth.md",
@@ -240,11 +228,9 @@
     "Daily/2025-05-14-daily_1.md",
     "AiTodo/Todo/Untitled 1 Oauth2.md",
     "AiTodo/Todo/2025-06-14-ai_todo_5 개선안!.md",
-    "AiTodo/Todo/2025-06-14-ai_todo_5 개선 노답이라 내가함.md",
     "AiTodo/Todo/Untitled 3.md",
     "AiTodo/Todo/Untitled 2 시스템 튜닝.md",
     "AiTodo/Todo/Untitled - 2 모노레포 다시 처음부터 리팩토링.md",
-    "AiTodo/Todo/2025-06-14-todo_5-분석단계.md",
     "Pasted image 20240728204203.png",
     "AiTodo/Todo",
     "Untitled",

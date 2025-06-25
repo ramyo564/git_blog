@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[ AI_Todo 프로젝트 개발기 #0 ] Frontend 기록 모음"
+title: "[ AI_Todo 프로젝트 개발기 - Frontend #1 ] Frontend 기록 모음"
 categories: Spring_Project_AI_Todo
 toc: true
 toc_sticky: true
