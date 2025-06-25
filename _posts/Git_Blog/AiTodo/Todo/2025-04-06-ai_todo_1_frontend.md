@@ -10,4 +10,4 @@ tags:
 ---
 # AI_Todo 프로젝트 프론트 기록 모음
 
-[ AI_Todo 프로젝트 개발기 - Frontend #1 ] Frontend 기록 모음
+*[ AI_Todo 프로젝트 개발기 - Frontend #1 ] Frontend 기록 모음*

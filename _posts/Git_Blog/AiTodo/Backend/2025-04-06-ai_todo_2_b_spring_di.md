@@ -10,7 +10,7 @@ tags:
 ---
 # `extends` vs `implements`, 언제 써야 할까? 유연한 설계 고민
 
-[ AI_Todo 프로젝트 개발기 - Backend #2] extends보다 implements를, 그리고 DI를 선택한 이유
+*[ AI_Todo 프로젝트 개발기 - Backend #2] extends보다 implements를, 그리고 DI를 선택한 이유*
 
 ## 1. 서론: 그럼 왜 유연한 설계가 필요한가? (Why)
 
