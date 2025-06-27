@@ -52,9 +52,9 @@ graph TD;
 - `shared` 패키지의 역할 과부하
 	- `shared/components` 에서 `core/ui`를 분리하려고 하면, `core/ui`가 다시 `shared/domain`의 타입을 필요로 하면서 `shared ↔ core` 라는 거대한 순환 참조가 발생하여 작은 단위로 리팩토링 하는 게 불가능 했습니다.
 - 플랫폼 종속성 문제
-	- `shared` 패키지에 웹에서만 사용되는 `react-dom` , `tailwind` 같은 라이브러리가 포함되어, 모바일 앱에서 재사용하게 될 경우 문제가 있었습니다.
+	- `shared` 패키지에 웹에서만 사용되는 `react-dom` , `tailwind` 같은 라이브러리가 포함되어, 모바일 앱에서 재사용하게 될 경우 문제가 될 수 있었습니다.
 - 모호한 설정과 별칭 (Alias)
-	- Vite, ESLint, TypeScript의 경로 별칭 설정이 서로 달라 '모듈을 찾을 수 없음' 오류가 빈번하게 발생했습니다.   
+	- Vite, ESLint, TypeScript의 경로 별칭 설정이 서로 달라 '모듈을 찾을 수 없음' 오류가 빈번하게 발생했습니다.    
 	- 또한 `@shared/*` 같은 단일 별칭은 구조 변경할 때마다 `tsconfig.json` 파일을 대규모 수정해야 했습니다.
 
 ### 2. 해결 전략 : 새로운 설계 원칙 수립
@@ -70,10 +70,10 @@ graph TD;
 - **순환 참조 끊기:**
 	- 빌드 실패의 주원인이었던 순환 참조를 해결하기 위해 `madge --circular` 같은 도구를 사용해 의존성 그래프를 분석
 	- `Domain` 패키지에서 모든 React 컴포넌트를 제거하고 순수 타입과 로직만 남기기
-	- `UI`는 `Store`를 직접 참조하지 않고, `Store`는 `Domain`만 참조하도록 의존성 방향을 단방향으로 강제적용
+	- `UI`는 `Store`를 직접 참조하지 않고, `Store`는 `Domain`만 참조하도록 의존성 방향을 단방향으로 강제 적용
 - **`tsconfig.json` 문제 해결:**
-	- `tsc -b` (프로젝트 참조 빌드) 시, 각 패키지의 `tsconfig.json`이 잘못된 상대 경로를 참조하거나(`extends`), `rootDir` 및 `references` 설정이 잘못되어 수많은 타입 에러(TS6307 등)가 발생
-	- 모든`tsconfig.json`의 경로를 수정하고, `references`를 단방향 의존성에 맞게 재설정하여 타입 빌드가 성공하도록 만들기
+	- `tsc -b` (프로젝트 참조 빌드) 시, 각 패키지의 `tsconfig.json`이 잘못된 상대 경로를 참조하거나(`extends`), `rootDir` 및 `references` 설정이 잘못되어 수많은 타입 에러(TS6307 등)가 발생 ->
+		- 모든`tsconfig.json`의 경로를 수정하고, `references`를 단방향 의존성에 맞게 재설정하여 타입 빌드가 성공하도록 만들기
 - **캐시 문제 해결:**
 	- 이전 설정으로 인한 고질적인 오류를 예방하기 위해`node_modules`, `pnpm-lock.yaml`, `.turbo` 등 캐시 파일을 완전히 삭제하고 `pnpm install`로 클린 슬레이트에서 시작하는 과정을 반복
 
@@ -88,7 +88,9 @@ graph TD;
 	1. 플랫폼에 독립적인 순수 "Dumb" 컴포넌트들의 집합
 5. **`apps/*`:** 최종 애플리케이션. `core`의 모든 요소를 조합하여 비즈니스 로직을 완성하는 "Smart" 컴포넌트들이 위치
 
-이 구조에서는 **어떤 패키지도 자신보다 바깥 계층의 패키지를 참조할 수 없습니다.** 예를 들어, `ui` 패키지는 `apps/web`을 절대 `import` 할 수 없습니다. 이 단순하지만 강력한 규칙이 순환 참조를 원천적으로 방지하는 안전장치가 됩니다.
+이 구조에서는 **어떤 패키지도 자신보다 바깥 계층의 패키지를 참조할 수 없습니다.** 예를 들어, `ui` 패키지는 `apps/web`을 절대 `import` 할 수 없습니다. 이 단순하지만 강력한 규칙이 순환 참조를 원천적으로 방지하는 안전장치가 됩니다.   
+-> 어떻게? 
+	husky 를 사용하여 커밋을 할 때 eslint와 순환참조 검사 스크립트등 여러 조건을 걸어두고 해당 조건을 통과하지 못 할 경우 커밋을 강제적으로 막게 설계
 
 > **두 번째 깨달음:** 좋은 아키텍처는 개발자의 주의력에 의존하는 것이 아니라, 구조 자체로 실수를 방지해야 한다. **규칙을 코드로 강제할 수 있는 시스템**이 필요하다.
 
@@ -155,13 +157,22 @@ graph TD;
 
 ```mermaid
 graph TD
-  WebApp["packages/apps/web"]
-  WebSrc["src/index.css"]
-  Tailwind["tailwindcss (라이브러리)"]
-  PostCSS["postcss.config.ts"]
-  CoreUI["packages/core/ui"]
-  Preset["tailwind.preset.ts (preset/토큰)"]
+	subgraph Level 1
+		Packages["packages"]
+	end
+	subgraph Level 2
+		WebApp["apps/web"]
+		Core["core"]
+	end
+	  CoreUI["ui"]
+	  WebSrc["src/index.css"]
+	  Tailwind["tailwindcss (라이브러리)"]
+	  PostCSS["postcss.config.ts"]
+	  Preset["tailwind.preset.ts (preset/토큰)"]
 
+  Packages --> WebApp
+  Packages --> Core
+  Core --> CoreUI
   WebApp --> WebSrc
   WebApp --> PostCSS
   WebSrc --> Tailwind
@@ -176,7 +187,17 @@ graph TD
 
 #### 문제 2: 히드라 같은 순환 참조와의 전쟁
 
-파일을 옮겼음에도 불구하고 숨어있던 순환 참조들이 빌드 실패를 일으켰습니다.
+파일을 기능별로 분리했음에도 불구하고, 여전히 숨어 있던 순환 참조가 지속적으로 빌드 오류를 발생시켰습니다.   
+
+빌드할 때마다 이러한 에러를 일일이 확인하는 작업은 예상보다 훨씬 많은 시간과 에너지를 소모했습니다.   
+
+작은 규모의 프로젝트임에도 이런 식으로 반복적인 비용이 발생한다면, 추후 유지보수나 확장성을 고려할 때 **자동화가 반드시 필요하다**는 결론에 도달했습니다.   
+
+이런 ‘노가다성 작업’은 정말 귀찮을 뿐 아니라, 정신적으로도 큰 피로를 유발했고, 결과적으로 **생산성까지 크게 저하**시켰습니다.   
+
+“어떻게 하면 더 효율적으로, 꿀을 빨 수 있을까”라는 생각과 함께, 앞으로의 방향성과 동기부여를 다잡게 되었습니다.   
+
+물론 편하게 개발하고 싶다는 욕심도 있었지만, 모바일 개발을 시작할 걸 생각하면, 이러한 반복 작업은 초기 비용이 좀 들더라도 **반드시 해결해야 할 과제**라고 느꼈습니다.   
 
 #### 해결책
 
@@ -189,16 +210,18 @@ graph TD
 
 과거에 사용하던 `@shared/*` 같은 루트 기반 단일 별칭은 패키지 구조가 바뀌자 재앙이 되었습니다. 모든 `import` 경로를 수동으로 수정해야 했습니다.
 
-
 #### 해결책
 
 - **패키지 기반 별칭 도입:**
 	- `@core/ui/*`, `@apps/web/*`처럼 패키지 이름을 그대로 별칭으로 사용했습니다. 이는 코드가 어떤 패키지에 의존하는지 명확히 보여주며, 설정을 더 직관적으로 만들 수 있었습니다.
 - **Codemod 활용:** 
-	- 여러 개의 `import` 구문을 바꾸기 위해 AST(추상 구문 트리)를 활용한 간단한 Codemod 스크립트, 즉 **프로그램 소스 코드를 분석하고 자동으로 수정하는 프로그램**을 작성하여 변경 작업을 자동화했습니다.
+	- 여러 개의 `import` 구문을 바꾸기 위해 AST(추상 구문 트리)를 활용한 간단한 Codemod 스크립트, **프로그램 소스 코드를 분석하고 자동으로 수정하는 프로그램**을 작성하여 변경 작업을 자동화했습니다.
 
-> **세 번째 깨달음:** "가정하지 말고, 항상 확인하라." 캐시가 문제일 것이라, 설정이 맞을 것이라 가정하지 않고 `node_modules`, `.turbo` 캐시를 모두 지우고 클린 슬레이트에서 빌드하며 문제의 진짜 원인을 찾아야 했아야 한다. 
+> **세 번째 깨달음:** "가정하지 말고, 항상 확인하라." 캐시가 문제일 것이라, 설정이 맞을 것이라 가정하지 않고 `node_modules`, `.turbo` 캐시를 모두 지우고 클린 슬레이트에서 빌드하며 문제의 진짜 원인을 찾아야 했어야 한다. 
+> 
 > 또한, **설정 파일은 단순한 메타데이터가 아니라, 프로젝트의 뼈대를 이루는 중요한 '코드'**임을 명심해야 한다.
+> 
+> ( 귀찮다고, 시간 오래걸린다고 회피하려다 더 귀찮아진다.... )
 
 ---
 
@@ -208,18 +231,18 @@ graph TD
 
 ```mermaid
 graph TD
-    subgraph Phase4_Final [4. 최종 아키텍처 및 개발 워크플로우];
+    subgraph Phase4_Final [4.최종 아키텍처 및 개발 워크플로우];
         direction LR;
         style Phase4_Final fill:#E3F2FD,stroke:#2196F3,stroke-width:2px;
 
         subgraph DevWorkflow [개발 워크플로우];
-            Code["1. 코드 작성"];
-            Commit["2. Git Commit"];
-            Push["3. Push to Remote"];
+            Code[1.코드 작성];
+            Commit[2.Git Commit];
+            Push[3.Push to Remote];
 
             Code --> Commit;
             Commit --> Husky;
-            Husky["Husky (pre-commit hook)"] --> LintStaged["lint-staged (변경된 파일만 검사)"];
+            Husky["Husky - pre-commit hook"] --> LintStaged["lint-staged - 변경된 파일만 검사"];
             LintStaged --> Linters["ESLint & Prettier"];
             Linters --> Commit;
             Commit --> Push;
@@ -240,7 +263,8 @@ graph TD
 - **품질 자동화:** 
 	- `husky`와 `lint-staged`를 사용하여, 개발자가 `commit`을 할 때마다 변경된 파일에 한해 자동으로 린트와 포맷팅 검사를 수행합니다.
 - **CI를 통한 아키텍처 수호:**
-	- GitHub Actions 워크플로우에 `madge --circular` 체크를 추가했습니다. 이제 누군가 실수로 순환 참조를 유발하는 코드를 푸시하면, CI 단계에서 빌드가 실패하며 Merge를 원천적으로 차단합니다. 아키텍처 규칙이 더 이상 사람의 기억이 아닌, 시스템에 의해 강제되는 것입니다.
+	- GitHub Actions 워크플로우에 `madge --circular` 체크를 추가했습니다. 이제 실수로 순환 참조를 유발하는 코드를 푸시하면, CI 단계에서 빌드가 실패하며 Merge를 원천적으로 차단합니다.  
+	- 아키텍처 규칙이 더 이상 사람의 기억이 아닌, 시스템에 의해 강제되도록 만들었습니다.
 
 ## 5. 완성된 아키텍처
 
@@ -284,13 +308,25 @@ graph TD
 
 #### 예 : web app의 흐름도
 
+- core 에서서 의존방향 규칙을 준수한다면 web에서 어떻게 사용하든 상관이 없다.
+
 ```mermaid
 graph TD
-  webapp["apps/web"]
-  core_ui["core/ui"]
-  core_store["core/store"]
-  core_hooks["core/hooks"]
-  core_domain["core/domain"]
+	subgraph level 1
+		webapp["apps/web"]
+	end
+	subgraph level 2
+		core_ui["core/ui"]
+	end
+	subgraph level 3
+		core_store["core/store"]
+	end
+	subgraph level 4
+		core_hooks["core/hooks"]
+	end
+	subgraph level 5
+		core_domain["core/domain"]
+	end
 
   webapp --> core_ui
   webapp --> core_store
@@ -423,11 +459,14 @@ graph LR
 
 ### 결론: 리팩토링은 코드를 넘어 시스템을 재설계하는 과정
 
-이번 리팩토링은 단순히 낡은 코드를 정리하는 작업이 아니었습니다. **'문제의 근본 원인을 파악하고, 재발을 방지하는 시스템을 설계하며, 그 원칙을 모두가 따를 수 있도록 자동화하는'** 전 과정이었습니다.   
+이번 리팩토링은 단순히 낡은 코드를 정리하는 작업이 아니었습니다. **'문제의 근본 원인을 파악하고, 재발을 방지하는 시스템을 설계하며, 그 원칙을 따를 수 있도록 자동화하는'** 과정이었습니다.   
 
-돌이켜보면, 지옥 같았던 빌드 에러와 순환 참조의 밤들은 저희에게 더 좋은 개발자가 될 기회를 주었습니다. 이제 저희는 에러 메시지 뒤에 숨은 구조적 문제를 볼 수 있게 되었고, 더 견고하고 확장 가능한 시스템을 자신 있게 설계할 수 있게 되었습니다.   
+돌이켜보면, 힘들었지만 지옥 같았던 빌드 에러와 순환 참조는 제가 더 좋은 개발자가 될 기회가 되었습니다.   
 
-만약 당신의 프로젝트가 알 수 없는 버그와 느린 빌드 속도에 시달리고 있다면, 지금 당장 의존성 그래프를 열어보시길 바랍니다. 아마도 그 거미줄 속에, 당신이 풀어야 할 진짜 문제가 숨어있을 것입니다.   
+이런 경험들은 제가 에러 메시지 뒤에 숨은 구조적 문제를 볼 수 있게 되었고, 더 견고하고 확장 가능한 시스템을 자신 있게 설계할 수 있는 능력을 갖추게 되었다고 생각합니다.
 
+만약 프로젝트가 알 수 없는 버그와 느린 빌드 속도에 시달리고 있다면, 의존성 그래프를 확인하는 걸 추천합니다.
 
+아마도 그 거미줄 속에, 진짜 문제가 숨어있을 확률이 높습니다..
 
+다음 글에서는 이러한 설계 원칙 위에서 구현된 **인증(Auth)과 Auth 도메인**에 대해 깊이 있게 다뤄보겠습니다.
