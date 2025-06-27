@@ -10,7 +10,7 @@ tags:
 ---
 # 모든 문제의 시작, 순환참조
 
-*[ AI_Todo 프로젝트 개발기 - Frontend #1] 모놀로프로 아키텍처 리팩토링을 선택한 이유*
+*[ AI_Todo 프로젝트 개발기 - Frontend #1 ] 모놀로프로 아키텍처 리팩토링을 선택한 이유*
 
 ## 1. 서론: 지뢰밭 같았던 첫 프론트엔드 프로젝트
 
@@ -149,7 +149,7 @@ graph TD
   style Interface fill:#ccccff,stroke:#333,stroke-width:2px
 ```
 
----
+
 #### 간소화 시킨 추상적인 구조
 
 ```mermaid
@@ -174,7 +174,6 @@ style C fill:#FFE0E0,stroke:#E53935,stroke-width:1.5px;
 style D fill:#FFE0E0,stroke:#E53935,stroke-width:1.5px;
 ```
 
----
 
 이 구조는 다음과 같은 심각한 문제들을 안고 있었습니다.
 

@@ -8,9 +8,9 @@ author_profile: false
 sidebar: 
 tags:
 ---
-# 모노레포 아키텍처 Auth 시스템, 그리고 Router v7로의 여정
+# 모노레포 아키텍처 Auth 시스템, 그리고 Router v7 로의 여정
 
-*[ AI_Todo 프로젝트 개발기 - Frontend #3] Auth 시스템 초석 다지기 ( The v6 Era ) & v7 진화 예고*
+*[ AI_Todo 프로젝트 개발기 - Frontend #3 ] Auth 시스템 초석 다지기 ( The v6 Era ) & v7 진화 예고*
 
 ---
 ## 서론: 견고한 토대 위, 첫 번째 기둥을 세우다
@@ -45,6 +45,7 @@ tags:
 
 - 인증 경로 제어:
 	- 별도의 레이아웃 컴포넌트 없이, 인증이 필요한 라우트를 감싸는 `<ProtectedRoute>` 컴포넌트를 구현하여 접근 제어 로직을 중앙화했습니다.
+
 #### 라우터 구도 
 
 ```mermaid
