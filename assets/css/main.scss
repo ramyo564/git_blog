@@ -8,6 +8,11 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
+h2.archive__item-title {
+  font-size: 1.25em;
+}
+
 #page-title > a {
   line-height: 1.5; /* 원하는 줄 간격(배수)로 조절 */
   display: inline-block; /* 줄 간격 적용이 확실하게 되도록 */
