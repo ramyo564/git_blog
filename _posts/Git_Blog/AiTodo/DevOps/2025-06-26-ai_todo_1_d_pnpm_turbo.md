@@ -11,7 +11,7 @@ tags:
 
 # 꿈: "JavaScript 하나로 세 마리 토끼를 다 잡을 수 있지 않을까?"
 
-*[ AI_Todo 프로젝트 개발기 - DevOps #1 ] JavaScript로 세 마리 토끼 잡는 방법 *
+*[ AI_Todo 프로젝트 개발기 - DevOps #1 ] JavaScript로 세 마리 토끼 잡는 방법*
 
 **React** 로 웹 개발을 시작했을 때, **React Native** 와 **Electron** 의 존재는 엄청난 가능성으로 다가왔습니다.   
 "어차피 다 **JavaScript** 인데, 공통 로직 (core) 만 잘 분리하고 각 플랫폼의 **UI** 렌더링 방식만 처리해주면, 코드 한 벌로 웹, 모바일 앱, 데스크탑 앱을 모두 만들 수 있는 거 아닐까? **tailwindCSS** ? 어 이것도 그냥 다 같이 쓸 수 있는거 아니야?"
