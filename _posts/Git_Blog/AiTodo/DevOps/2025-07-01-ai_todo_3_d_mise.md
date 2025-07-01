@@ -95,7 +95,7 @@ mise exec -- pnpm exec lint-staged
 
 ### **3단계: CI 파이프라인과 완벽한 동기화**
 
-로컬에서의 경험을 CI에 그대로 이식했다. `jdx/mise-action`은 이 모든 과정을 단 한 줄로 처리! 
+로컬에서의 경험을 CI에 그대로 이식 -> `jdx/mise-action`은 이 모든 과정을 단 한 줄로 처리! 
 
 ```bash
 # .github/workflows/ci.yml
