@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
+                "file": "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-01-ai_todo_3_d_mise"
+              "title": "2025-06-26-ai_todo_1_d_pnpm_turbo"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
+                "file": "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-07-01-ai_todo_3_d_mise"
+              "title": "Outgoing links from 2025-06-26-ai_todo_1_d_pnpm_turbo"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
+                "file": "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-07-01-ai_todo_3_d_mise"
+              "title": "Outline of 2025-06-26-ai_todo_1_d_pnpm_turbo"
             }
           },
           {
@@ -199,9 +199,10 @@
   },
   "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
+    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
+    "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
     "AiTodo/DevOps/2025-06-28-ai_todo_2_d_husky_eslint.md",
     "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
-    "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행.md",
@@ -225,7 +226,6 @@
     "AiTodo/Todo/Untitled 3.md",
     "AiTodo/Todo/Untitled 2 시스템 튜닝.md",
     "AiTodo/Todo/Untitled 1 Oauth2.md",
-    "AiTodo/Todo/Untitled - test!! 참고하기.md",
     "AiTodo/Backend 1",
     "AiTodo/Dev",
     "AiTodo/Backend",
