@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "fb3551841df63cd4",
+        "id": "79b483e6d15440b8",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Todo/Untitled - test!! 참고하기.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled - test!! 참고하기"
+              "title": "2025-07-01-ai_todo_3_d_mise"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5011329650879
+    "width": 305.5
   },
   "right": {
     "id": "899f72456e634839",
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Todo/Untitled - test!! 참고하기.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled - test!! 참고하기"
+              "title": "Outgoing links from 2025-07-01-ai_todo_3_d_mise"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Todo/Untitled - test!! 참고하기.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled - test!! 참고하기"
+              "title": "Outline of 2025-07-01-ai_todo_3_d_mise"
             }
           },
           {
@@ -177,8 +177,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -194,49 +194,48 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
-    "AiTodo/Todo/2025-06-14-todo_5 개선안! 2.md",
-    "AiTodo/Todo/2025-06-14-ai_todo_5 개선안!.md",
-    "AiTodo/Todo/2025-06-14-ai_todo_5 개선 노답이라 내가함.md",
-    "AiTodo/Todo/2025-06-14-ai_todo_5.md",
-    "AiTodo/Todo/2025-04-06-ai_todo_1_frontend.md",
-    "AiTodo/Frontend/Untitled - 프론트 총정리.md",
-    "AiTodo/Frontend/template.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_architecture.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture.md",
+    "AiTodo/DevOps/2025-06-28-ai_todo_2_d_husky_eslint.md",
+    "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
+    "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
+    "AiTodo/Frontend/ai_todo_6_f_react_auth_3.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
+    "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_auth_1.md",
     "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
-    "AiTodo/Frontend/Untitled - AI 요약.md",
     "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
-    "AiTodo/Todo/2025-04-06-ai_todo_1_backend.md",
-    "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
-    "AiTodo/Todo/Untitled - test!! 참고하기.md",
-    "AiTodo/Dev/Untitled - 0 template 1.md",
-    "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+    "Untitled - 1) 블로그 글 초안 만들기.md",
+    "AiTodo/Frontend/Untitled - 프론트 총정리.md",
+    "Untitled - 2) 블로그 글 다듬기.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+    "AiTodo/DevOps/Untitled - 0 template 1.md",
+    "AiTodo/DevOps/2025-07-02-ai_todo_2_d_1 1.md",
+    "AiTodo/DevOps/2025-07-02-ai_todo_2_d_1 1 1.md",
     "AiTodo/Backend/Untitled - 0 template.md",
-    "AiTodo/Todo/Untitled - 0 template.md",
-    "AiTodo/Backend 1/2025-06-14-ai_todo_3_b_spring_auth.md",
-    "AiTodo/Backend 1/2025-04-06-ai_todo_2_b_spring_di.md",
-    "AiTodo/Backend 1/2025-04-06-ai_todo_1_backend.md",
+    "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행 2.md",
+    "AiTodo/DevOps",
+    "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행 1.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_999999999.md",
+    "AiTodo/Todo/Untitled 5 메모.md",
+    "AiTodo/Todo/Untitled 4.md",
+    "AiTodo/Todo/Untitled 3.md",
+    "AiTodo/Todo/Untitled 2 시스템 튜닝.md",
+    "AiTodo/Todo/Untitled 1 Oauth2.md",
+    "AiTodo/Todo/Untitled - test!! 참고하기.md",
     "AiTodo/Backend 1",
-    "AiTodo/Todo/Untitled - 1 모놀레프 개고생 빌드.md",
-    "Spring/Hoops/2024-05-05-hoops_1.md",
     "AiTodo/Dev",
     "AiTodo/Backend",
     "AiTodo/Frontend",
-    "Daily/2025-05-14-daily_2.md",
     "AiTodo",
     "Pasted image 20240728204203.png",
     "AiTodo/Todo",
     "Untitled",
     "Spring/Hoops",
     "Spring",
-    "CS/Operating Systems",
     "Pasted image 20231027004013.png",
     "Pasted image 20231027003941.png",
     "Algorithm/Pasted image 20231019134728.png",
