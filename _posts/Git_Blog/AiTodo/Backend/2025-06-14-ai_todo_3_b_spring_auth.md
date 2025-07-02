@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 인증(Auth) 도메인 심층 구현 편
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false

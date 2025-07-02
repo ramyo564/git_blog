@@ -1,7 +1,7 @@
 ---
 layout: single
 title: extends보다 implements를, 그리고 DI를 선택한 이유
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false

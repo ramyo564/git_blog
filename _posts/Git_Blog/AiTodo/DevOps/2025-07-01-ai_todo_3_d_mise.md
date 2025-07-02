@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 환경설정 2시간에서 15분으로 줄이는 방법
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-24-ai_todo_3_f_react_architecture_2"
+              "title": "2025-06-24-ai_todo_5_f_react_auth_2"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-06-24-ai_todo_3_f_react_architecture_2"
+              "title": "Outgoing links from 2025-06-24-ai_todo_5_f_react_auth_2"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-06-24-ai_todo_3_f_react_architecture_2"
+              "title": "Outline of 2025-06-24-ai_todo_5_f_react_auth_2"
             }
           },
           {
@@ -199,27 +199,27 @@
   },
   "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
+    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_auth_1.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
+    "AiTodo/DevOps/Untitled - 0 template 1.md",
+    "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
+    "AiTodo/DevOps/2025-06-28-ai_todo_2_d_husky_eslint.md",
+    "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
+    "AiTodo/Backend/Untitled - 0 template.md",
+    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
+    "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행 2.md",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_보류.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_999999999.md",
-    "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
-    "AiTodo/DevOps/2025-06-28-ai_todo_2_d_husky_eslint.md",
-    "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_auth_1.md",
-    "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
-    "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
     "Untitled - 1) 블로그 글 초안 만들기.md",
     "AiTodo/Frontend/Untitled - 프론트 총정리.md",
     "Untitled - 2) 블로그 글 다듬기.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
-    "AiTodo/DevOps/Untitled - 0 template 1.md",
     "AiTodo/DevOps/2025-07-02-ai_todo_2_d_1 1.md",
     "AiTodo/DevOps/2025-07-02-ai_todo_2_d_1 1 1.md",
-    "AiTodo/Backend/Untitled - 0 template.md",
     "AiTodo/DevOps",
     "AiTodo/Frontend/ai_todo_6_f_react_auth_3 진행 1.md",
     "AiTodo/Todo/Untitled 5 메모.md",

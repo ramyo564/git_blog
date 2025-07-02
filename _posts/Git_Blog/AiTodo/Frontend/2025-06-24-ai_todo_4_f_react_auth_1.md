@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 흔들리지 않는 기반 위에 Auth 시스템 구축하기 (1)
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false

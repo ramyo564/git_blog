@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 지옥에서 생존한 리액트 리팩토링 (1)
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false
