@@ -92,7 +92,7 @@ mise exec -- pnpm exec lint-staged
 `mise exec -- <command>`는 현재 셸의 상태와 무관하게, `.tool-versions`에 정의된 정확한 버전의 도구가 포함된 **임시 환경을 만들어 `<command>`를 실행** 합니다.   
 
 이 덕분에 **Windows Git Bash** , **WSL** , **macOS** , **CI** 등 어떤 환경에서도 `pre-commit` 훅은 100% 동일하게 동작하게 만들 수 있었습니다.  
-
+*( 물론 OS 차이에서 발생하는 미묘한 차이 ( 파일경로, OS 명령어등 )를 100% 통제할 수는 없지만 현재 상황에서는 아주 적당 )*
 ### **3단계: CI 파이프라인과 완벽한 동기화**
 
 로컬에서의 경험을 CI에 그대로 이식 -> `jdx/mise-action`은 이 모든 과정을 단 한 줄로 처리! 
