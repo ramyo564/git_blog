@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-24-ai_todo_5_f_react_auth_2"
+              "title": "2025-07-01-ai_todo_3_d_mise"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-06-24-ai_todo_5_f_react_auth_2"
+              "title": "Outgoing links from 2025-07-01-ai_todo_3_d_mise"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
+                "file": "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-06-24-ai_todo_5_f_react_auth_2"
+              "title": "Outline of 2025-07-01-ai_todo_3_d_mise"
             }
           },
           {
@@ -199,14 +199,14 @@
   },
   "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
-    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_auth_1.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
+    "AiTodo/Frontend/2025-06-24-ai_todo_4_f_react_auth_1.md",
     "AiTodo/DevOps/2025-07-01-ai_todo_3_d_mise.md",
     "AiTodo/DevOps/2025-06-28-ai_todo_2_d_husky_eslint.md",
     "AiTodo/Backend/2025-04-07-ai_todo_2_b_spring_di.md",
     "AiTodo/Backend/2025-06-14-ai_todo_3_b_spring_auth.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_5_f_react_auth_2.md",
-    "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
     "AiTodo/DevOps/Untitled - 0 template 1.md",
     "AiTodo/DevOps/2025-06-26-ai_todo_1_d_pnpm_turbo.md",
     "AiTodo/Backend/Untitled - 0 template.md",
