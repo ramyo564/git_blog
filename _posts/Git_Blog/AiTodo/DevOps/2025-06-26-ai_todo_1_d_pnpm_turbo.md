@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 하나의 코드로 웹, 앱, 데스크탑을? pnpm과 Turborepo로 삽질하며 배운 것들
+title: "[DevOps] 하나의 코드로 웹, 앱, 데스크탑을? pnpm과 Turborepo로 삽질하며 배운 것들"
 categories: Project_AI_Todo
 toc: true
 toc_sticky: true

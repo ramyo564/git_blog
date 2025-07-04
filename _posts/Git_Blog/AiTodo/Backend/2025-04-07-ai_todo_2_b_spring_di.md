@@ -1,6 +1,6 @@
 ---
 layout: single
-title: extends보다 implements를, 그리고 DI를 선택한 이유
+title: "[Backend] extends보다 implements를, 그리고 DI를 선택한 이유"
 categories: Project_AI_Todo
 toc: true
 toc_sticky: true

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 컴퓨터야, 순환 참조 좀 알아서 찾아주면 안 되겠니?
+title: "[DevOps] 컴퓨터야, 순환 참조 좀 알아서 찾아주면 안 되겠니?"
 categories: Project_AI_Todo
 toc: true
 toc_sticky: true

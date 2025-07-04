@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 환경설정 2시간에서 15분으로 줄이는 방법
+title: "[DevOps] 환경설정 2시간에서 15분으로 줄이는 방법"
 categories: Project_AI_Todo
 toc: true
 toc_sticky: true

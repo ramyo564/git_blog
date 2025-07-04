@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 지옥에서 생존한 리액트 리팩토링 (2)
+title: "[Frontend] 지옥에서 생존한 리액트 리팩토링 (2)"
 categories: Project_AI_Todo
 toc: true
 toc_sticky: true

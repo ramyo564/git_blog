@@ -14,6 +14,10 @@ tags:
 
 ## 프로젝트 선정 이유와 목표
 
+[ AI_Todo 프론트엔드 기록 모음 ](https://ramyo564.github.io/git_blog/spring_project_ai_todo/ai_todo_1_frontend/)
+[ AI_Todo 백엔드 기록 모음 ](https://ramyo564.github.io/git_blog/spring_project_ai_todo/ai_todo_1_backend/)
+[ AI_Todo DevOps 기록 모음 ](https://ramyo564.github.io/git_blog/spring_project_ai_todo/ai_todo_1_dev/)
+
 ### **프로젝트 선정 이유**
 
 #### **1. 개발 시너지 극대화를 위한 End-to-End 개발 역량의 필요성**
