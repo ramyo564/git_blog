@@ -1,7 +1,7 @@
 ---
 layout: single
 title: AI_Todo 프로젝트 - Backend 기록 모음
-categories: Spring_Project_AI_Todo
+categories: Project_AI_Todo
 toc: true
 toc_sticky: true
 author_profile: false
