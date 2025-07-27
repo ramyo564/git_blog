@@ -101,7 +101,7 @@ graph TD
 
 #### 예 : web app의 흐름도
 
-- core 에서서 의존방향 규칙을 준수한다면 web에서 어떻게 사용하든 상관이 없다.
+- core 에서 의존방향 규칙을 준수한다면 web이든 mobile 이든 어떻게 사용하든 상관이 없다.
 
 ```mermaid
 graph TD
