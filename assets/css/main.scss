@@ -108,7 +108,7 @@ h2.archive__item-title.no_toc {
 }
 
 /* appearance none으로 숨기면 이런 최소 스타일 필요 */
-input[type="checkbox"].custom {
+input[type="checkbox"].task-list-item-checkbox {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -119,12 +119,12 @@ input[type="checkbox"].custom {
   cursor: pointer;
 }
 
-input[type="checkbox"].custom:checked {
+input[type="checkbox"].task-list-item-checkbox:checked {
   background: #4caf50;         /* 체크된 상태의 배경 */
   border-color: #4caf50;       /* 테두리색 */
 }
 
-input[type="checkbox"].custom:checked::before {
+input[type="checkbox"].task-list-item-checkbox:checked::before {
   content: "✔";
   color: white;                /* 체크 표시 색상 */
   position: absolute;
