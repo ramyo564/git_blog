@@ -105,17 +105,23 @@ graph TD
 
 ## 다음 단계
 
-
-- [x] 초기 아키텍처 설계하기
-- [x] 도메인별 헥사고날 & DDD 적용하기
-- [x] Auth 구현
-	- [x] OAuth2 - Google 연동
-	- [x] 기본적인 구성 끝나면 카카오, 네이버 연동하기
-	- [x] JWT + HTTPOnlyCooky 구현하기
-	- [x] Redis 설정하기
-- [x] UUIDv7 변경하기
-	- [x] 도메인은 커스텀 필드 & JPA 는 UUID로 적용하기
-- [ ] Project VO 세밀점검
+- [x] Spring 
+	- [x] DDD & 헥사고날 아키텍처 설계 -> 도메인별로 분리
+	- [x] Swagger API 문서 자동화
+	- [x] 최소기능 MVP 구현
+		- [x] Auth
+			- [x] OAuth2 - Google 연동
+			- [ ] 기본적인 구성 끝나면 카카오, 네이버 연동하기
+			- [x] JWT 설정
+			- [x] Session 비활성화
+			- [x] Redis 설정하기
+		- [x] Project
+		- [x] User
+	- [x] UUIDv7 변경하기
 - [ ] FastAPI 서버 구축
+- [ ] Spring 성능 최적화 1차진행
+	- [ ] DB 튜닝 
+	- [ ] Redis 캐싱
+- [ ] rabbitMQ -> 알림 및 타이머등 고도화 진행
 
 > 단계가 완료될 때마다 지속적으로 업데이트 예정
