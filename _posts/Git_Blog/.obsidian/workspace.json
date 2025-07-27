@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-06-ai_todo_1_dev"
+              "title": "2025-04-05-ai_todo_1_masterTable"
             }
           }
         ]
@@ -95,12 +95,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-04-06-ai_todo_1_dev"
+              "title": "Outgoing links from 2025-04-05-ai_todo_1_masterTable"
             }
           }
         ]
@@ -116,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+                "file": "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-06-ai_todo_1_dev"
+              "title": "Outline of 2025-04-05-ai_todo_1_masterTable"
             }
           },
           {
@@ -197,12 +197,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f17c0b3c4bfab596",
+  "active": "9643b423f9fdb93f",
   "lastOpenFiles": [
-    "AiTodo/Todo/2025-04-06-ai_todo_1_frontend.md",
-    "AiTodo/Todo/2025-06-14-ai_todo_5.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_backend.md",
     "AiTodo/Todo/2025-04-06-ai_todo_1_dev.md",
+    "AiTodo/Todo/2025-04-06-ai_todo_1_frontend.md",
+    "AiTodo/Todo/2025-06-14-ai_todo_5.md",
     "AiTodo/Todo/2025-04-05-ai_todo_1_masterTable.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_2_f_react_architecture_1.md",
     "AiTodo/Frontend/2025-06-24-ai_todo_3_f_react_architecture_2.md",
