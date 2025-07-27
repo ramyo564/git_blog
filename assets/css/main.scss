@@ -107,6 +107,33 @@ h2.archive__item-title.no_toc {
   color: #fff;
 }
 
+/* appearance none으로 숨기면 이런 최소 스타일 필요 */
+input[type="checkbox"].custom {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaa;      /* 최소한 테두리 */
+  border-radius: 4px;          /* 모서리 둥글게(선택사항) */
+  background: #fafafa;         /* 배경색 */
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"].custom:checked {
+  background: #4caf50;         /* 체크된 상태의 배경 */
+  border-color: #4caf50;       /* 테두리색 */
+}
+
+input[type="checkbox"].custom:checked::before {
+  content: "✔";
+  color: white;                /* 체크 표시 색상 */
+  position: absolute;
+  left: 3px;
+  top: 0;
+  font-size: 16px;
+}
+
+
 // a {
 //   color: #e5e6ea;
 //   border-bottom: 1px solid #f21368;
