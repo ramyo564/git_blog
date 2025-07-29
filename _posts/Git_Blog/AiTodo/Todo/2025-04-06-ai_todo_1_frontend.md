@@ -290,6 +290,7 @@ graph TD
 	- [x] 사용자 보안 강화 -> JWT + HttpOnly 쿠기 
 	- [x] react-router-dom v6 -> v7 리팩토링
 	- [x] Core 및 전역 상태관리 -> Redux 적용
+	- [ ] Nest.JS (필요시)
 - [ ] RN
 - [ ] Electron
 
